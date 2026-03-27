@@ -1,0 +1,13 @@
+{
+  "id": "expo-build-validation",
+  "kind": "skill",
+  "version": 1,
+  "runtimePackages": ["jq"],
+  "supportedAgents": ["codex", "claude-code", "kiro-cli"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/expo-build-validation",
+    "skillFile": "skills/expo-build-validation/SKILL.md"
+  }
+}

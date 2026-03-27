@@ -1,0 +1,8 @@
+{
+  "id": "skill-bootstrap",
+  "kind": "tool",
+  "version": 1,
+  "packageName": "skill-bootstrap",
+  "runtimePackages": ["bash"],
+  "entrypoint": "tools/skill-bootstrap/bootstrap-skills.sh"
+}

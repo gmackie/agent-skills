@@ -1,0 +1,13 @@
+{
+  "id": "expo-build-submit",
+  "kind": "skill",
+  "version": 1,
+  "runtimePackages": ["jq"],
+  "supportedAgents": ["codex", "claude-code", "kiro-cli"],
+  "helperTools": ["skill-bootstrap"],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/expo-build-submit",
+    "skillFile": "skills/expo-build-submit/SKILL.md"
+  }
+}
