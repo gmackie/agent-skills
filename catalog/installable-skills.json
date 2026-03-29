@@ -53,6 +53,20 @@
       ]
     },
     {
+      "name": "observability",
+      "skillIds": [
+        "sentry-release-triage",
+        "posthog-product-instrumentation"
+      ]
+    },
+    {
+      "name": "infrastructure",
+      "skillIds": [
+        "hetzner-cloud-ops",
+        "namecheap-domain-dns-ops"
+      ]
+    },
+    {
       "name": "unity",
       "skillIds": [
         "unity-project-setup",

@@ -1,0 +1,13 @@
+{
+  "id": "namecheap-domain-dns-ops",
+  "kind": "skill",
+  "version": 1,
+  "runtimePackages": ["bash", "jq"],
+  "supportedAgents": ["codex", "claude-code"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/namecheap-domain-dns-ops",
+    "skillFile": "skills/namecheap-domain-dns-ops/SKILL.md"
+  }
+}

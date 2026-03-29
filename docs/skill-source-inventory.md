@@ -36,6 +36,10 @@ This note tracks outside skill sources and related repos worth reviewing for pos
 
 ### Namecheap
 
+- `namecheap-domains`
+  Source: `clasen/skills@namecheap-domains` via `npx skills find namecheap`
+  Why look: direct Namecheap-specific skill hit from the public skills ecosystem.
+
 - `domain-dns-ops`
   Source: [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills)
   Why look: explicitly spans Cloudflare, DNSimple, and Namecheap.
@@ -45,6 +49,10 @@ This note tracks outside skill sources and related repos worth reviewing for pos
   Why look: adjacent domain acquisition and registrar workflow.
 
 ### Hetzner
+
+- `hetzner-server`
+  Source: `connorads/dotfiles@hetzner-server` via `npx skills find hetzner`
+  Why look: strongest discoverable public Hetzner hit in the current registry.
 
 - `hetzner-cloud`
   Source: [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills)
@@ -83,13 +91,29 @@ These areas did not produce a strong public skill candidate in this pass.
 
 ### Sentry
 
-- no clear public skill source identified yet
-- likely better explored via MCP/tools or a private app-specific workflow skill
+- `getsentry/skills@security-review`
+  Source: `npx skills find sentry`
+  Why look: strong public Sentry-maintained ecosystem presence, even if security-focused rather than release-triage focused.
+
+- `getsentry/sentry-agent-skills@sentry-fix-issues`
+  Source: `npx skills find sentry`
+  Why look: direct Sentry-maintained issue workflow worth compositional review.
+
+- Local composite skill now added:
+  [sentry-release-triage](/Volumes/dev/agent-skills/skills/sentry-release-triage/SKILL.md)
 
 ### PostHog
 
-- no clear public skill source identified yet
-- likely better explored via MCP/tools or private product analytics workflows
+- `posthog/posthog-for-claude@posthog-instrumentation`
+  Source: `npx skills find posthog`
+  Why look: direct PostHog-owned instrumentation skill in the public registry.
+
+- `alinaqi/claude-bootstrap@posthog-analytics`
+  Source: `npx skills find posthog`
+  Why look: adjacent public analytics workflow reference.
+
+- Local composite skill now added:
+  [posthog-product-instrumentation](/Volumes/dev/agent-skills/skills/posthog-product-instrumentation/SKILL.md)
 
 ### QuickBooks
 
@@ -100,12 +124,21 @@ These areas did not produce a strong public skill candidate in this pass.
 - no clear primary-source repo or skill collection identified in this pass
 - if there is a specific repo to mine, add it here explicitly next round
 
+## Local Composite Skills Added
+
+- [sentry-release-triage](/Volumes/dev/agent-skills/skills/sentry-release-triage/SKILL.md)
+- [posthog-product-instrumentation](/Volumes/dev/agent-skills/skills/posthog-product-instrumentation/SKILL.md)
+- [hetzner-cloud-ops](/Volumes/dev/agent-skills/skills/hetzner-cloud-ops/SKILL.md)
+- [namecheap-domain-dns-ops](/Volumes/dev/agent-skills/skills/namecheap-domain-dns-ops/SKILL.md)
+
 ## Best Immediate Review Order
 
-1. [migrate-to-vinext](/Volumes/dev/agent-skills/skills/migrate-to-vinext/SKILL.md)
-2. [stripe-payments-integration](/Volumes/dev/agent-skills/skills/stripe-payments-integration/SKILL.md)
-3. [daymade/claude-code-skills](https://github.com/daymade/claude-code-skills)
-4. [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills)
+1. [sentry-release-triage](/Volumes/dev/agent-skills/skills/sentry-release-triage/SKILL.md)
+2. [posthog-product-instrumentation](/Volumes/dev/agent-skills/skills/posthog-product-instrumentation/SKILL.md)
+3. [hetzner-cloud-ops](/Volumes/dev/agent-skills/skills/hetzner-cloud-ops/SKILL.md)
+4. [namecheap-domain-dns-ops](/Volumes/dev/agent-skills/skills/namecheap-domain-dns-ops/SKILL.md)
+5. [daymade/claude-code-skills](https://github.com/daymade/claude-code-skills)
+6. [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills)
 
 ## Adjacent Internal Docs
 

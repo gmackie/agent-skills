@@ -34,7 +34,7 @@ jq '
       },
       web: {
         sourceIds: [],
-        defaultGroups: ["workflow-meta", "react", "nextjs-saas", "cloudflare"],
+        defaultGroups: ["workflow-meta", "react", "nextjs-saas", "cloudflare", "observability"],
         allowedArtifacts: []
       }
     },

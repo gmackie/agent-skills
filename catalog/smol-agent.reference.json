@@ -44,6 +44,14 @@
       "agent-skills:cloudflare-workers-bindings-local-dev",
       "agent-skills:cloudflare-d1-development"
     ],
+    "observability": [
+      "agent-skills:sentry-release-triage",
+      "agent-skills:posthog-product-instrumentation"
+    ],
+    "infrastructure": [
+      "agent-skills:hetzner-cloud-ops",
+      "agent-skills:namecheap-domain-dns-ops"
+    ],
     "unity": [
       "agent-skills:unity-project-setup",
       "agent-skills:unity-scripting-advanced",
@@ -80,7 +88,8 @@
         "workflow-meta",
         "react",
         "nextjs-saas",
-        "cloudflare"
+        "cloudflare",
+        "observability"
       ],
       "allowedArtifacts": []
     }
