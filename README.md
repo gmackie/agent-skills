@@ -2,6 +2,8 @@
 
 This repo is a tracked source of truth for reusable agent skills and a smaller set of example agent definitions. The immediate goal is to keep the installable skill surface compatible with `npx skills` while growing stronger mobile, QA, and release-engineering coverage.
 
+It is also being shaped into a canonical reference implementation of what an `agent-skills` repo should look like for individuals, teams, and orgs.
+
 ## Current Shape
 
 The installable part of the repo is the `skills/` directory.
@@ -108,6 +110,11 @@ Current installable skills include:
 
 Some existing skills still reflect an older Kiro-style authoring format. They are installable today, but the repo should keep moving toward the simpler open skills layout used by `npx skills`.
 
+See the reference-model docs:
+
+- [docs/reference-repo-model.md](/Volumes/dev/agent-skills/docs/reference-repo-model.md)
+- [docs/runtime-integration-model.md](/Volumes/dev/agent-skills/docs/runtime-integration-model.md)
+
 ## Next Steps
 
 The highest-value additions from here are:
@@ -120,3 +127,5 @@ See:
 
 - [docs/cloudflare-next-skill-opportunities.md](/Volumes/dev/agent-skills/docs/cloudflare-next-skill-opportunities.md)
 - [docs/skill-source-inventory.md](/Volumes/dev/agent-skills/docs/skill-source-inventory.md)
+- [docs/reference-repo-model.md](/Volumes/dev/agent-skills/docs/reference-repo-model.md)
+- [docs/runtime-integration-model.md](/Volumes/dev/agent-skills/docs/runtime-integration-model.md)
