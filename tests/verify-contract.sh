@@ -9,6 +9,8 @@ validation_skill_file="$root/skills/expo-build-validation/SKILL.md"
 submit_skill_file="$root/skills/expo-build-submit/SKILL.md"
 validation_reference_file="$root/skills/expo-build-validation/references/release-validation-checklist.md"
 submit_reference_file="$root/skills/expo-build-submit/references/submission-sequence.md"
+installable_config_file="$root/catalog/installable-skills.json"
+installable_config_verifier="$root/scripts/verify-installable-skills-config.sh"
 flake_file="$root/flake.nix"
 module_file="$root/nix/home-manager-module.nix"
 example_module_file="$root/nix/examples/combined-home-manager.nix"
@@ -23,6 +25,8 @@ test -f "$validation_skill_file"
 test -f "$submit_skill_file"
 test -f "$validation_reference_file"
 test -f "$submit_reference_file"
+test -f "$installable_config_file"
+test -f "$installable_config_verifier"
 test -f "$flake_file"
 test -f "$module_file"
 test -f "$example_module_file"
@@ -57,6 +61,8 @@ if rg -q '^(allowed-tools|metadata):' "$submit_skill_file"; then
   echo "expo-build-submit SKILL.md still contains legacy frontmatter" >&2
   exit 1
 fi
+
+"$installable_config_verifier"
 
 jq -e '
   .id == "skill-bootstrap" and

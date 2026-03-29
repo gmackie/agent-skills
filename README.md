@@ -95,16 +95,11 @@ See:
 
 ## Existing Skills
 
-Current installable skills include:
+The canonical installable skill inventory lives in:
 
-- Workflow/meta: `local-agent-context-discovery`, `llm-session-retrospective`, `x402-smol-agent-workflow`, `agent-skills-catalog-maintenance`
-- Mobile QA: `maestro-qa-report`, `maestro-qa`
-- Release orchestration: `react-native-expo-release-readiness`
-- Expo: `expo-build-validation`, `expo-build-submit`
-- React: `react-project-init`, `react-debugging-advanced`, `react-ui-shadcn-tailwind`
-- Next.js / SaaS: `nextjs-project-init`, `clerk-auth-integration`, `stripe-payments-integration`, `saas-turbo-bootstrap`
-- Unity: `unity-project-setup`, `unity-scripting-advanced`, `unity-debug-workflow`
-- ESP32: `esp32-project-init`, `esp32-wifi-setup`
+- [catalog/installable-skills.json](/Volumes/dev/agent-skills/catalog/installable-skills.json)
+
+That file is the source of truth for which skills are meant to be installable through `npx skills`. Repo docs and verification should point to it instead of duplicating skill lists by hand.
 
 ## Notes
 
