@@ -1,0 +1,13 @@
+{
+  "id": "react-native-expo-release-readiness",
+  "kind": "skill",
+  "version": 1,
+  "runtimePackages": ["bash", "jq"],
+  "supportedAgents": ["codex", "claude-code"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/react-native-expo-release-readiness",
+    "skillFile": "skills/react-native-expo-release-readiness/SKILL.md"
+  }
+}

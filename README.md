@@ -97,6 +97,7 @@ Current installable skills include:
 
 - Workflow/meta: `local-agent-context-discovery`, `llm-session-retrospective`, `x402-smol-agent-workflow`, `agent-skills-catalog-maintenance`
 - Mobile QA: `maestro-qa-report`, `maestro-qa`
+- Release orchestration: `react-native-expo-release-readiness`
 - Expo: `expo-build-validation`, `expo-build-submit`
 - React: `react-project-init`, `react-debugging-advanced`, `react-ui-shadcn-tailwind`
 - Next.js / SaaS: `nextjs-project-init`, `clerk-auth-integration`, `stripe-payments-integration`, `saas-turbo-bootstrap`
