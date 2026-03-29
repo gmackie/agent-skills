@@ -41,13 +41,15 @@
         "stripe-payments-integration",
         "saas-turbo-bootstrap",
         "migrate-to-vinext",
-        "nextjs-cloudflare-opennext"
+        "nextjs-cloudflare-opennext",
+        "vinext-cloudflare-hardening"
       ]
     },
     {
       "name": "cloudflare",
       "skillIds": [
-        "cloudflare-workers-bindings-local-dev"
+        "cloudflare-workers-bindings-local-dev",
+        "cloudflare-d1-development"
       ]
     },
     {

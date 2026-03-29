@@ -1,0 +1,13 @@
+{
+  "id": "vinext-cloudflare-hardening",
+  "kind": "skill",
+  "version": 1,
+  "runtimePackages": ["bash", "jq"],
+  "supportedAgents": ["codex", "claude-code"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/vinext-cloudflare-hardening",
+    "skillFile": "skills/vinext-cloudflare-hardening/SKILL.md"
+  }
+}

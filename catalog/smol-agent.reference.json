@@ -37,10 +37,12 @@
       "agent-skills:stripe-payments-integration",
       "agent-skills:saas-turbo-bootstrap",
       "agent-skills:migrate-to-vinext",
-      "agent-skills:nextjs-cloudflare-opennext"
+      "agent-skills:nextjs-cloudflare-opennext",
+      "agent-skills:vinext-cloudflare-hardening"
     ],
     "cloudflare": [
-      "agent-skills:cloudflare-workers-bindings-local-dev"
+      "agent-skills:cloudflare-workers-bindings-local-dev",
+      "agent-skills:cloudflare-d1-development"
     ],
     "unity": [
       "agent-skills:unity-project-setup",

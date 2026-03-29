@@ -35,6 +35,14 @@ bindings_skill="$root/skills/cloudflare-workers-bindings-local-dev/SKILL.md"
 bindings_metadata="$root/skills/cloudflare-workers-bindings-local-dev/skill.json"
 bindings_script="$root/skills/cloudflare-workers-bindings-local-dev/scripts/inspect-cloudflare-bindings.sh"
 bindings_reference="$root/skills/cloudflare-workers-bindings-local-dev/references/local-dev-checklist.md"
+d1_skill="$root/skills/cloudflare-d1-development/SKILL.md"
+d1_metadata="$root/skills/cloudflare-d1-development/skill.json"
+d1_script="$root/skills/cloudflare-d1-development/scripts/inspect-d1-development.sh"
+d1_reference="$root/skills/cloudflare-d1-development/references/d1-checklist.md"
+vinext_hardening_skill="$root/skills/vinext-cloudflare-hardening/SKILL.md"
+vinext_hardening_metadata="$root/skills/vinext-cloudflare-hardening/skill.json"
+vinext_hardening_script="$root/skills/vinext-cloudflare-hardening/scripts/inspect-vinext-cloudflare.sh"
+vinext_hardening_reference="$root/skills/vinext-cloudflare-hardening/references/hardening-checklist.md"
 
 test -f "$retrospective_skill"
 test -f "$retrospective_metadata"
@@ -67,6 +75,14 @@ test -f "$bindings_skill"
 test -f "$bindings_metadata"
 test -f "$bindings_script"
 test -f "$bindings_reference"
+test -f "$d1_skill"
+test -f "$d1_metadata"
+test -f "$d1_script"
+test -f "$d1_reference"
+test -f "$vinext_hardening_skill"
+test -f "$vinext_hardening_metadata"
+test -f "$vinext_hardening_script"
+test -f "$vinext_hardening_reference"
 
 grep -q '^name: llm-session-retrospective$' "$retrospective_skill"
 grep -q '^name: x402-smol-agent-workflow$' "$x402_skill"
@@ -77,6 +93,8 @@ grep -q '^name: maestro-qa$' "$maestro_fix_skill"
 grep -q '^name: react-native-expo-release-readiness$' "$release_skill"
 grep -q '^name: nextjs-cloudflare-opennext$' "$opennext_skill"
 grep -q '^name: cloudflare-workers-bindings-local-dev$' "$bindings_skill"
+grep -q '^name: cloudflare-d1-development$' "$d1_skill"
+grep -q '^name: vinext-cloudflare-hardening$' "$vinext_hardening_skill"
 
 jq -e '.id == "llm-session-retrospective" and .kind == "skill"' "$retrospective_metadata" >/dev/null
 jq -e '.id == "x402-smol-agent-workflow" and .kind == "skill"' "$x402_metadata" >/dev/null
@@ -87,6 +105,8 @@ jq -e '.id == "maestro-qa" and .kind == "skill"' "$maestro_fix_metadata" >/dev/n
 jq -e '.id == "react-native-expo-release-readiness" and .kind == "skill"' "$release_metadata" >/dev/null
 jq -e '.id == "nextjs-cloudflare-opennext" and .kind == "skill"' "$opennext_metadata" >/dev/null
 jq -e '.id == "cloudflare-workers-bindings-local-dev" and .kind == "skill"' "$bindings_metadata" >/dev/null
+jq -e '.id == "cloudflare-d1-development" and .kind == "skill"' "$d1_metadata" >/dev/null
+jq -e '.id == "vinext-cloudflare-hardening" and .kind == "skill"' "$vinext_hardening_metadata" >/dev/null
 
 "$retrospective_script" /Volumes/dev/agent-skills >/dev/null
 "$catalog_script" /Volumes/dev/agent-skills >/dev/null
@@ -96,3 +116,5 @@ jq -e '.id == "cloudflare-workers-bindings-local-dev" and .kind == "skill"' "$bi
 "$release_script" --help >/dev/null
 "$opennext_script" --help >/dev/null
 "$bindings_script" --help >/dev/null
+"$d1_script" --help >/dev/null
+"$vinext_hardening_script" --help >/dev/null
