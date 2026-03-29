@@ -11,6 +11,8 @@ validation_reference_file="$root/skills/expo-build-validation/references/release
 submit_reference_file="$root/skills/expo-build-submit/references/submission-sequence.md"
 installable_config_file="$root/catalog/installable-skills.json"
 installable_config_verifier="$root/scripts/verify-installable-skills-config.sh"
+smol_agent_reference_file="$root/catalog/smol-agent.reference.json"
+smol_agent_builder="$root/scripts/build-smol-agent-source-config.sh"
 flake_file="$root/flake.nix"
 module_file="$root/nix/home-manager-module.nix"
 example_module_file="$root/nix/examples/combined-home-manager.nix"
@@ -27,6 +29,8 @@ test -f "$validation_reference_file"
 test -f "$submit_reference_file"
 test -f "$installable_config_file"
 test -f "$installable_config_verifier"
+test -f "$smol_agent_reference_file"
+test -f "$smol_agent_builder"
 test -f "$flake_file"
 test -f "$module_file"
 test -f "$example_module_file"
@@ -63,6 +67,10 @@ if rg -q '^(allowed-tools|metadata):' "$submit_skill_file"; then
 fi
 
 "$installable_config_verifier"
+chmod +x "$smol_agent_builder"
+"$smol_agent_builder" "$root/catalog/smol-agent.reference.generated.json"
+cmp -s "$smol_agent_reference_file" "$root/catalog/smol-agent.reference.generated.json"
+rm "$root/catalog/smol-agent.reference.generated.json"
 
 jq -e '
   .id == "skill-bootstrap" and

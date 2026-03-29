@@ -70,6 +70,11 @@ The split is:
 - `tool.json`: machine-facing metadata for repo-owned helper tools
 - `agent-metadata.json`: machine-facing metadata for agent definitions
 
+Related generated catalog surfaces:
+
+- [catalog/installable-skills.json](/Volumes/dev/agent-skills/catalog/installable-skills.json)
+- [catalog/smol-agent.reference.json](/Volumes/dev/agent-skills/catalog/smol-agent.reference.json)
+
 See:
 
 - [docs/skill-metadata-contract.md](/Volumes/dev/agent-skills/docs/skill-metadata-contract.md)
@@ -100,6 +105,10 @@ The canonical installable skill inventory lives in:
 - [catalog/installable-skills.json](/Volumes/dev/agent-skills/catalog/installable-skills.json)
 
 That file is the source of truth for which skills are meant to be installable through `npx skills`. Repo docs and verification should point to it instead of duplicating skill lists by hand.
+
+`smol-agent` can consume the same schema through the generated reference config at:
+
+- [catalog/smol-agent.reference.json](/Volumes/dev/agent-skills/catalog/smol-agent.reference.json)
 
 ## Notes
 
