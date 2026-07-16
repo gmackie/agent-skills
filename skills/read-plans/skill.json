@@ -1,0 +1,13 @@
+{
+  "id": "read-plans",
+  "kind": "skill",
+  "version": 1,
+  "runtimePackages": ["nodejs", "curl"],
+  "supportedAgents": ["claude-code", "codex", "gemini", "cursor"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/read-plans",
+    "skillFile": "skills/read-plans/SKILL.md"
+  }
+}
