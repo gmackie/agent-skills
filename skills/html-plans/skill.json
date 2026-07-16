@@ -1,0 +1,13 @@
+{
+  "id": "html-plans",
+  "kind": "skill",
+  "version": 1,
+  "runtimePackages": ["nodejs"],
+  "supportedAgents": ["claude-code", "codex", "gemini", "cursor"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/html-plans",
+    "skillFile": "skills/html-plans/SKILL.md"
+  }
+}

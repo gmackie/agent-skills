@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PLAN TITLE — Implementation Plan</title>
+<style>
+  :root {
+    --bg: #fbfaf8; --surface: #ffffff; --ink: #1f2430; --muted: #6b7280;
+    --line: #e5e1d8; --accent: #2f6f4f; --accent-soft: #e7f0ea;
+    --warn: #9a6700; --warn-soft: #fff3d6; --bad: #b3261e; --bad-soft: #fbe9e7;
+    --info: #1f5f8b; --info-soft: #e3eef5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161b; --surface: #1c1f26; --ink: #e8e6e1; --muted: #9aa0aa;
+      --line: #2c303a; --accent: #7fb89a; --accent-soft: #22352b;
+      --warn: #e0b45c; --warn-soft: #3a3120; --bad: #e08a84; --bad-soft: #3a2422;
+      --info: #7fb1d4; --info-soft: #1f2d38;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .25rem; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 .75rem; padding-bottom: .35rem; border-bottom: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 .5rem; }
+  p { margin: .5rem 0 1rem; }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 1.5rem; }
+  .meta span + span::before { content: "·"; margin: 0 .5rem; }
+  .badge {
+    display: inline-block; padding: .1rem .55rem; border-radius: 999px;
+    font-size: .75rem; font-weight: 600; letter-spacing: .02em; vertical-align: middle;
+  }
+  .badge.draft    { background: var(--info-soft);   color: var(--info); }
+  .badge.approved { background: var(--accent-soft); color: var(--accent); }
+  .badge.risk     { background: var(--warn-soft);   color: var(--warn); }
+  .badge.blocked  { background: var(--bad-soft);    color: var(--bad); }
+  .badge.done     { background: var(--accent-soft); color: var(--accent); }
+  .badge.todo     { background: var(--line);        color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; margin: .75rem 0 1.25rem; font-size: .92rem; }
+  th { text-align: left; color: var(--muted); font-weight: 600; font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
+  th, td { padding: .5rem .65rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  code { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: .1rem .35rem; font-size: .85em; }
+  pre { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 1rem; overflow-x: auto; }
+  pre code { border: none; background: none; padding: 0; }
+  ul { padding-left: 1.3rem; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  .goals { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 640px) { .goals { grid-template-columns: 1fr; } }
+  .goals h3 { margin-top: 0; }
+  details { border: 1px solid var(--line); border-radius: 8px; padding: .6rem .9rem; margin: .6rem 0; background: var(--surface); }
+  summary { cursor: pointer; font-weight: 600; }
+  .callout { border-left: 3px solid var(--warn); background: var(--warn-soft); border-radius: 0 8px 8px 0; padding: .75rem 1rem; margin: 1rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>PLAN TITLE <span class="badge draft">Draft</span></h1>
+  <p class="meta">
+    <span>2026-07-16</span>
+    <span>repo: <code>org/repo</code> @ <code>branch</code></span>
+    <span>author: Claude</span>
+  </p>
+
+  <h2>Overview</h2>
+  <p>Two or three sentences: the problem, the chosen approach, and the expected outcome.</p>
+
+  <h2>Goals &amp; Non-goals</h2>
+  <div class="goals">
+    <div class="card">
+      <h3>Goals</h3>
+      <ul>
+        <li>Concrete, verifiable outcome one.</li>
+        <li>Outcome two.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Non-goals</h3>
+      <ul>
+        <li>Explicitly out of scope thing.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Phase 1 — Name <span class="badge todo">Todo</span></h2>
+  <p>One sentence on what this phase accomplishes.</p>
+  <table>
+    <thead><tr><th>Task</th><th>Files</th><th>Verification</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Do the thing</td>
+        <td><code>src/thing.ts</code></td>
+        <td><code>npm test -- thing</code> passes</td>
+        <td><span class="badge todo">Todo</span></td>
+      </tr>
+      <tr>
+        <td>Wire it up</td>
+        <td><code>src/app.ts</code></td>
+        <td>Manual: feature visible at <code>/route</code></td>
+        <td><span class="badge todo">Todo</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <details>
+    <summary>Implementation notes</summary>
+    <p>Longer detail that most readers can skip: edge cases, API shapes, code sketches.</p>
+  </details>
+
+  <h2>Phase 2 — Name <span class="badge todo">Todo</span></h2>
+  <p>…</p>
+
+  <h2>Risks &amp; Mitigations</h2>
+  <table>
+    <thead><tr><th>Risk</th><th>Severity</th><th>Mitigation</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Something could go wrong</td>
+        <td><span class="badge risk">Medium</span></td>
+        <td>How we prevent or recover.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Verification</h2>
+  <ul>
+    <li>Automated: which test suites / commands must pass.</li>
+    <li>Manual: what a human checks end-to-end.</li>
+  </ul>
+
+  <h2>Open Questions</h2>
+  <div class="callout">
+    <strong>Needs a decision:</strong> question for the user, with the recommended default.
+  </div>
+</main>
+</body>
+</html>
