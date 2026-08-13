@@ -5,7 +5,7 @@ runtime the source of truth.
 
 ## Data model
 
-Three layers make the selection:
+Four layers make the selection:
 
 1. `skills/*/SKILL.md` carries portable string metadata for tags, groups,
    invocation, and upstream source so generic Agent Skills clients can see it.
