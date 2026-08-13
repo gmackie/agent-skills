@@ -1,0 +1,39 @@
+{
+  "id": "install-anti-slop",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "anti-slop",
+    "javascript",
+    "lint",
+    "typescript"
+  ],
+  "groupIds": [
+    "typescript-evidence"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "dmmulroy-anti-slop",
+    "sourceRepository": "https://github.com/dmmulroy/anti-slop",
+    "sourceRevision": "9b80d9a5c317d3af94d88a577bdbde4d9a45f7be",
+    "sourcePath": "skills/install-anti-slop",
+    "sourceTree": "e65d6f71315c5ad8e954696826454532a85bdf7c",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/install-anti-slop",
+    "skillFile": "skills/install-anti-slop/SKILL.md"
+  }
+}

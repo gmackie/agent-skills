@@ -1,0 +1,42 @@
+{
+  "id": "handoff",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "context",
+    "continuity",
+    "handoff"
+  ],
+  "groupIds": [
+    "workflow-meta"
+  ],
+  "invocation": "user",
+  "runtimePackages": [
+
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [
+
+  ],
+  "mcpServers": [
+
+  ],
+  "provenance": {
+    "sourceId": "mattpocock-skills",
+    "sourceRepository": "https://github.com/mattpocock/skills",
+    "sourceRevision": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+    "sourcePath": "skills/productivity/handoff",
+    "sourceTree": "184d485ae68a2132893a94239b2b85d253e6152b",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/handoff",
+    "skillFile": "skills/handoff/SKILL.md"
+  }
+}

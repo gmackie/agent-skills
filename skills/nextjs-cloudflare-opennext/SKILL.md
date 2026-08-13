@@ -1,6 +1,10 @@
 ---
 name: nextjs-cloudflare-opennext
 description: Use when adopting, validating, or hardening a Next.js deployment on Cloudflare Workers via OpenNext. Maps the repo shape, checks adapter and Wrangler prerequisites, reviews bindings and local-dev setup, and produces an adoption plan before deeper implementation or migration work.
+metadata:
+  tags: "cloudflare,deployment,nextjs"
+  groups: "nextjs-saas"
+  invocation: "model"
 ---
 
 # Next.js Cloudflare OpenNext

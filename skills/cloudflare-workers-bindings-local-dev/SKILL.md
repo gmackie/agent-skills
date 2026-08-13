@@ -1,6 +1,10 @@
 ---
 name: cloudflare-workers-bindings-local-dev
 description: Use when setting up, debugging, or hardening local development for a Cloudflare Workers project that depends on bindings like D1, KV, R2, Queues, Durable Objects, or Workflows. Inventories Wrangler config, environment-specific bindings, and local-versus-remote development assumptions, then produces a concrete local-dev plan.
+metadata:
+  tags: "cloudflare,development,infrastructure"
+  groups: "cloudflare"
+  invocation: "model"
 ---
 
 # Cloudflare Workers Bindings Local Dev

@@ -1,17 +1,269 @@
 {
   "version": 1,
+  "projectPolicyFile": ".agent-skills.json",
+  "tagDefinitions": {
+    "agent-instructions": "The project authors skills or persistent agent instructions.",
+    "architecture": "The work changes module boundaries or system structure.",
+    "bugfix": "The project is debugging or correcting faulty behavior.",
+    "credentials": "The work includes credentials, secrets, or human-only setup.",
+    "cutover": "The project includes a migration or production cutover.",
+    "deployment": "The project builds, releases, or deploys software.",
+    "infrastructure": "The project operates hosts, networks, or cloud resources.",
+    "large-change": "The work spans multiple sessions or dependent decisions.",
+    "mobile": "The project targets a mobile application or mobile QA workflow.",
+    "expo": "The project uses Expo application or release tooling.",
+    "maestro": "The project uses Maestro for mobile QA.",
+    "nextjs": "The project uses Next.js.",
+    "prototype": "The project needs a throwaway state, logic, or UI experiment.",
+    "provisioning": "The project includes human-driven external service setup.",
+    "research": "The project needs evidence gathered from primary sources.",
+    "react": "The project uses React.",
+    "saas": "The project is a SaaS product or bootstrap project.",
+    "skills": "The project creates or maintains agent skills.",
+    "typescript": "The project contains TypeScript or JavaScript source.",
+    "ui-design": "The project is exploring or changing user interface design.",
+    "unity": "The project uses the Unity engine.",
+    "webapp": "The project contains a web application.",
+    "adversarial-review": "The work benefits from independent critical review or challenge.",
+    "agent-execution": "The project uses agents to execute specs, tickets, triage, or handoffs.",
+    "automation": "The work benefits from scripts, generators, codemods, or repeatable levers.",
+    "autonomy": "The work should proceed on safe reversible steps without unnecessary human blocking.",
+    "code-understanding": "The work needs codebase explanation, ownership mapping, or subsystem walkthroughs.",
+    "cursor": "The source skill depends on Cursor-shaped orchestration or configuration.",
+    "debugging": "The work investigates root causes or failing behavior.",
+    "design": "The work shapes an interface, module, domain, or system design.",
+    "documentation": "The project authors or maintains technical documentation.",
+    "domain-modeling": "The work encodes domain concepts and language into software structure.",
+    "git": "The work involves git history, merges, rebases, or review flow.",
+    "handoff": "The work prepares continuity for another session or agent.",
+    "implementation": "The work executes a prepared spec, ticket, or implementation brief.",
+    "issues": "The work uses an issue tracker or issue-state workflow.",
+    "merge-conflict": "The work resolves an in-progress merge or rebase conflict.",
+    "migration": "The work converges code toward a new architecture or API.",
+    "parallel-work": "The work benefits from parallel worker coverage or races.",
+    "planning": "The work produces specs, tickets, plans, or decision artifacts.",
+    "readability": "The work improves code clarity and reader load.",
+    "refactoring": "The work restructures code without changing product behavior.",
+    "reliability": "The work designs for retries, restarts, idempotency, or operational safety.",
+    "review": "The work reviews code, design, plans, or implementation risk.",
+    "simplicity": "The work should delete, flatten, or choose a smaller design before adding.",
+    "spec": "The work turns conversation or intent into an executable specification.",
+    "subagents": "The work uses independent agent workers or model reviewers.",
+    "tdd": "The work should follow a red-green-refactor test-first loop.",
+    "testing": "The work needs tests, TDD, or verification-driven implementation.",
+    "tickets": "The work decomposes plans into independently grabbable issues.",
+    "triage": "The work classifies, verifies, and briefs incoming issues or PRs.",
+    "types": "The work uses static types to encode constraints and prevent invalid states.",
+    "workflow": "The work defines repeatable agent or developer workflows.",
+    "writing": "The work creates or edits prose intended for humans or agents.",
+    "orchestration": "The work benefits from fan-out, multiple passes, or delegated agents."
+  },
   "groups": [
     {
+      "name": "core-quality",
+      "label": "Core quality",
+      "description": "Cross-agent continuity, scope discipline, and authored-output quality.",
+      "activation": {
+        "mode": "always"
+      },
+      "skillIds": [
+        "unslop",
+        "recall",
+        "principle-encode-lessons-in-structure",
+        "principle-guard-the-context-window",
+        "principle-boundary-discipline",
+        "figure-it-out"
+      ]
+    },
+    {
+      "name": "verification",
+      "label": "Verification",
+      "description": "Reusable proof, risk analysis, and evidence-rich reporting for software work.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "deployment",
+          "infrastructure",
+          "mobile",
+          "typescript",
+          "unity",
+          "webapp"
+        ]
+      },
+      "skillIds": [
+        "create-verification-skill",
+        "maintain-verification-skill",
+        "principle-sequence-verifiable-units",
+        "show-me-your-work",
+        "blast-radius",
+        "principle-prove-it-works",
+        "tdd"
+      ]
+    },
+    {
+      "name": "architecture",
+      "label": "Architecture",
+      "description": "Domain language, deep-module design, architecture surveys, and large-program navigation.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "architecture",
+          "large-change"
+        ]
+      },
+      "skillIds": [
+        "wayfinder",
+        "domain-modeling",
+        "codebase-design",
+        "improve-codebase-architecture",
+        "principle-type-system-discipline",
+        "principle-subtract-before-you-add",
+        "principle-foundational-thinking",
+        "principle-minimize-reader-load"
+      ]
+    },
+    {
+      "name": "diagnosis-review",
+      "label": "Diagnosis and review",
+      "description": "Feedback-loop-driven debugging and separate standards/spec review.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "bugfix"
+        ]
+      },
+      "skillIds": [
+        "code-review",
+        "diagnosing-bugs",
+        "principle-fix-root-causes"
+      ]
+    },
+    {
+      "name": "prototyping",
+      "label": "Prototyping",
+      "description": "Throwaway programs that answer state, logic, or interface questions.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "prototype",
+          "ui-design"
+        ]
+      },
+      "skillIds": [
+        "prototype"
+      ]
+    },
+    {
+      "name": "research",
+      "label": "Research",
+      "description": "Primary-source investigation captured for later engineering decisions.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "research"
+        ]
+      },
+      "skillIds": [
+        "research"
+      ]
+    },
+    {
+      "name": "agent-authoring",
+      "label": "Agent authoring",
+      "description": "Instruction architecture for skills and persistent agent guidance.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "agent-instructions",
+          "skills"
+        ]
+      },
+      "skillIds": [
+        "writing-for-agents"
+      ]
+    },
+    {
+      "name": "human-ops",
+      "label": "Human operations",
+      "description": "Interactive guidance for steps that genuinely require a person.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "credentials",
+          "cutover",
+          "provisioning"
+        ]
+      },
+      "skillIds": [
+        "wizard"
+      ]
+    },
+    {
+      "name": "typescript-evidence",
+      "label": "TypeScript evidence",
+      "description": "Vendored Oxlint rules that reject low-evidence TypeScript and JavaScript patterns.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "typescript"
+        ]
+      },
+      "skillIds": [
+        "install-anti-slop",
+        "typescript-best-practices"
+      ]
+    },
+    {
+      "name": "matt-workflow",
+      "label": "Matt Pocock workflow",
+      "description": "Optional setup and grilling primitives for the broader Pocock workflow.",
+      "activation": {
+        "mode": "manual"
+      },
+      "skillIds": [
+        "setup-matt-pocock-skills",
+        "grilling",
+        "grill-with-docs"
+      ]
+    },
+    {
+      "name": "plans",
+      "label": "Published plans",
+      "description": "Author and consume the repository's canonical Postplan HTML artifacts.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "large-change"
+        ]
+      },
+      "skillIds": [
+        "html-plans",
+        "read-plans"
+      ]
+    },
+    {
       "name": "workflow-meta",
+      "label": "Workflow and catalog maintenance",
+      "activation": {
+        "mode": "manual"
+      },
       "skillIds": [
         "agent-skills-catalog-maintenance",
         "llm-session-retrospective",
         "local-agent-context-discovery",
-        "x402-smol-agent-workflow"
+        "x402-smol-agent-workflow",
+        "handoff"
       ]
     },
     {
       "name": "mobile-qa",
+      "label": "Mobile QA",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "maestro"
+        ]
+      },
       "skillIds": [
         "maestro-qa-report",
         "maestro-qa",
@@ -20,6 +272,13 @@
     },
     {
       "name": "expo",
+      "label": "Expo",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "expo"
+        ]
+      },
       "skillIds": [
         "expo-build-validation",
         "expo-build-submit"
@@ -27,6 +286,13 @@
     },
     {
       "name": "react",
+      "label": "React",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "react"
+        ]
+      },
       "skillIds": [
         "react-project-init",
         "react-debugging-advanced",
@@ -35,6 +301,10 @@
     },
     {
       "name": "nextjs-saas",
+      "label": "Next.js and SaaS",
+      "activation": {
+        "mode": "manual"
+      },
       "skillIds": [
         "nextjs-project-init",
         "stripe-payments-integration",
@@ -46,6 +316,10 @@
     },
     {
       "name": "cloudflare",
+      "label": "Cloudflare",
+      "activation": {
+        "mode": "manual"
+      },
       "skillIds": [
         "cloudflare-workers-bindings-local-dev",
         "cloudflare-d1-development"
@@ -53,6 +327,10 @@
     },
     {
       "name": "observability",
+      "label": "Observability",
+      "activation": {
+        "mode": "manual"
+      },
       "skillIds": [
         "sentry-release-triage",
         "posthog-product-instrumentation"
@@ -60,6 +338,10 @@
     },
     {
       "name": "infrastructure",
+      "label": "Infrastructure",
+      "activation": {
+        "mode": "manual"
+      },
       "skillIds": [
         "hetzner-cloud-ops",
         "namecheap-domain-dns-ops"
@@ -67,6 +349,13 @@
     },
     {
       "name": "unity",
+      "label": "Unity",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "unity"
+        ]
+      },
       "skillIds": [
         "unity-project-setup",
         "unity-scripting-advanced",
@@ -75,6 +364,10 @@
     },
     {
       "name": "esp32",
+      "label": "ESP32",
+      "activation": {
+        "mode": "manual"
+      },
       "skillIds": [
         "esp32-project-init",
         "esp32-wifi-setup"
@@ -82,8 +375,118 @@
     },
     {
       "name": "naming",
+      "label": "Naming",
+      "activation": {
+        "mode": "manual"
+      },
       "skillIds": [
         "brand-domain-naming"
+      ]
+    },
+    {
+      "name": "execution-principles",
+      "label": "Execution principles",
+      "description": "Scoped principles for autonomous, simple, and tool-assisted delivery.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "large-change"
+        ]
+      },
+      "skillIds": [
+        "principle-build-the-lever",
+        "principle-never-block-on-the-human",
+        "principle-laziness-protocol"
+      ]
+    },
+    {
+      "name": "operations-reliability",
+      "label": "Operations reliability",
+      "description": "Retry-safe behavior for deployment and infrastructure operations.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "deployment",
+          "infrastructure"
+        ]
+      },
+      "skillIds": [
+        "principle-make-operations-idempotent"
+      ]
+    },
+    {
+      "name": "engineering-docs",
+      "label": "Engineering documentation",
+      "description": "Structured technical writing with anti-slop prose discipline.",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "documentation"
+        ]
+      },
+      "skillIds": [
+        "technical-writing"
+      ]
+    },
+    {
+      "name": "cursor-evidence",
+      "label": "Cursor evidence workflows",
+      "description": "Cursor-native architecture and historical evidence gathering.",
+      "activation": {
+        "mode": "manual"
+      },
+      "skillIds": [
+        "how",
+        "why"
+      ]
+    },
+    {
+      "name": "cursor-design",
+      "label": "Cursor design and review",
+      "description": "Cursor-native multi-agent design comparison and adversarial review.",
+      "activation": {
+        "mode": "manual"
+      },
+      "skillIds": [
+        "architect",
+        "arena",
+        "interrogate"
+      ]
+    },
+    {
+      "name": "cursor-setup",
+      "label": "Cursor pstack setup",
+      "description": "Cursor-specific pstack model configuration.",
+      "activation": {
+        "mode": "manual"
+      },
+      "skillIds": [
+        "setup-pstack"
+      ]
+    },
+    {
+      "name": "issue-workflow",
+      "label": "Issue workflow",
+      "description": "Explicit issue-tracker publishing and triage workflows.",
+      "activation": {
+        "mode": "manual"
+      },
+      "skillIds": [
+        "to-spec",
+        "to-tickets",
+        "triage"
+      ]
+    },
+    {
+      "name": "repo-hygiene",
+      "label": "Repository hygiene",
+      "description": "Mutating Git and pre-commit workflows that require explicit project selection.",
+      "activation": {
+        "mode": "manual"
+      },
+      "skillIds": [
+        "resolving-merge-conflicts",
+        "setup-pre-commit"
       ]
     }
   ]

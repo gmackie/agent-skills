@@ -1,0 +1,42 @@
+{
+  "id": "resolving-merge-conflicts",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "conflicts",
+    "git",
+    "merge"
+  ],
+  "groupIds": [
+    "repo-hygiene"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [
+
+  ],
+  "mcpServers": [
+
+  ],
+  "provenance": {
+    "sourceId": "mattpocock-skills",
+    "sourceRepository": "https://github.com/mattpocock/skills",
+    "sourceRevision": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+    "sourcePath": "skills/engineering/resolving-merge-conflicts",
+    "sourceTree": "6aa1ed0b40fac0ebea5c0cf6f2addf82c99b6323",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/resolving-merge-conflicts",
+    "skillFile": "skills/resolving-merge-conflicts/SKILL.md"
+  }
+}

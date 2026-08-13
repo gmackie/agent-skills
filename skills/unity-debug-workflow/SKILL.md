@@ -3,6 +3,9 @@ name: unity-debug-workflow
 description: Debug Unity projects using console logs, breakpoints, profiler, and unity-mcp integration. Use when troubleshooting Unity games, performance issues, or runtime errors.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "debugging,game-development,unity"
+  groups: "unity"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: gamedev

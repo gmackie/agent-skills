@@ -1,6 +1,10 @@
 ---
 name: maestro-qa-report
 description: Use when a React Native or Expo app needs report-only mobile QA with Maestro on a simulator or emulator. Verifies local prerequisites, runs flows with explicit artifact and report output, captures screenshots and logs, classifies severity, and produces exact repro notes without making code changes.
+metadata:
+  tags: "maestro,mobile,qa"
+  groups: "mobile-qa"
+  invocation: "model"
 ---
 
 # Maestro QA Report

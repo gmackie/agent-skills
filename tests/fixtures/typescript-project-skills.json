@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "projectTags": [
+    "typescript",
+    "webapp"
+  ],
+  "groupOverrides": {
+    "architecture": "disabled",
+    "typescript-evidence": "enabled"
+  },
+  "skillOverrides": {
+    "prototype": "enabled",
+    "show-me-your-work": "disabled"
+  }
+}

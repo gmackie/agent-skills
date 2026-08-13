@@ -1,0 +1,34 @@
+{
+  "id": "create-verification-skill",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "automation",
+    "cursor",
+    "testing",
+    "verification"
+  ],
+  "groupIds": [
+    "verification"
+  ],
+  "invocation": "user",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "cursor"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "cursor-pstack",
+    "sourceRepository": "https://github.com/cursor/plugins",
+    "sourceRevision": "195d9359bdc2890f83745df69927528ad4538406",
+    "sourcePath": "pstack/skills/create-verification-skill",
+    "sourceTree": "38a3e016bb42ba7ba6f66315e04ef64242937660",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/create-verification-skill",
+    "skillFile": "skills/create-verification-skill/SKILL.md"
+  }
+}

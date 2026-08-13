@@ -3,6 +3,9 @@ name: esp32-project-init
 description: Initialize a new ESP32 project with proper structure and configuration using ESP-IDF. Use when creating ESP32 embedded projects, IoT devices, or microcontroller applications.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "embedded,esp32,project-init"
+  groups: "esp32"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: embedded

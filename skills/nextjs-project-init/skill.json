@@ -1,0 +1,16 @@
+{
+  "id": "nextjs-project-init",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["nextjs", "project-init", "typescript", "webapp"],
+  "groupIds": ["nextjs-saas"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/nextjs-project-init",
+    "skillFile": "skills/nextjs-project-init/SKILL.md"
+  }
+}

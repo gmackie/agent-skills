@@ -2,6 +2,10 @@
 name: esp32-wifi-setup
 description: Configure and implement WiFi connectivity in ESP32 projects using ESP-IDF
 allowed-tools: fs_read, fs_write, execute_bash
+metadata:
+  tags: "embedded,esp32,networking"
+  groups: "esp32"
+  invocation: "model"
 ---
 
 # ESP32 WiFi Setup

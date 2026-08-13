@@ -3,6 +3,9 @@ name: unity-project-setup
 description: Initialize a new Unity game project with proper structure, settings, and essential packages. Use when creating Unity games, prototypes, or interactive applications.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "game-development,project-init,unity"
+  groups: "unity"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: gamedev

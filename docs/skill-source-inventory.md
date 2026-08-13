@@ -1,6 +1,6 @@
 # Skill Source Inventory
 
-Snapshot date: 2026-03-28
+Snapshot date: 2026-08-13
 
 This note tracks outside skill sources and related repos worth reviewing for possible import, adaptation, or inspiration. It is intentionally lightweight and grouped into:
 
@@ -9,6 +9,28 @@ This note tracks outside skill sources and related repos worth reviewing for pos
 - not-found-yet gaps
 
 ## Public Candidates
+
+## Imported and pinned
+
+The exact machine-readable inventory lives in
+[`catalog/upstream-sources.json`](../catalog/upstream-sources.json). The current
+curated import includes selected high-fit skills from:
+
+- [Cursor pstack](https://github.com/cursor/plugins/tree/195d9359bdc2890f83745df69927528ad4538406/pstack)
+- [Matt Pocock's skills](https://github.com/mattpocock/skills/tree/84fdeffd12f2ee307994d1eb6feb48173b6e0502)
+- [Dillon Mulroy's anti-slop](https://github.com/dmmulroy/anti-slop/tree/9b80d9a5c317d3af94d88a577bdbde4d9a45f7be)
+
+These are vendored copies, not floating dependencies. The current curated
+seed set imports 50 of the 80 upstream skill folders available at the pinned
+revisions: 30 from Cursor pstack, 19 from Matt Pocock's skills, and 1 from
+dmmulroy anti-slop. Updating one requires a new pinned revision, a reviewed
+diff, refreshed provenance, and catalog tests.
+
+Cursor pstack skills that depend on Cursor-shaped subagent orchestration,
+`.cursor` configuration, or Cursor skill-management paths are marked
+`supportedAgents: ["cursor"]` in `catalog/upstream-sources.json` and
+`skill.json`. Portable pstack principles and Matt Pocock workflow skills are
+marked for Codex, Claude Code, Cursor, and Grok.
 
 ### Cloudflare
 
@@ -31,7 +53,7 @@ This note tracks outside skill sources and related repos worth reviewing for pos
 ### vinext
 
 - `migrate-to-vinext`
-  Source: local skill at [migrate-to-vinext](/Volumes/dev/agent-skills/skills/migrate-to-vinext/SKILL.md)
+  Source: local skill at [migrate-to-vinext](../skills/migrate-to-vinext/SKILL.md)
   Why look: already the strongest concrete vinext skill in hand.
 
 ### Namecheap
@@ -61,7 +83,7 @@ This note tracks outside skill sources and related repos worth reviewing for pos
 ### Stripe
 
 - `stripe-payments-integration`
-  Source: local skill at [stripe-payments-integration](/Volumes/dev/agent-skills/skills/stripe-payments-integration/SKILL.md)
+  Source: local skill at [stripe-payments-integration](../skills/stripe-payments-integration/SKILL.md)
   Why look: already relevant and maintained here.
 
 - `stripe`
@@ -100,7 +122,7 @@ These areas did not produce a strong public skill candidate in this pass.
   Why look: direct Sentry-maintained issue workflow worth compositional review.
 
 - Local composite skill now added:
-  [sentry-release-triage](/Volumes/dev/agent-skills/skills/sentry-release-triage/SKILL.md)
+  [sentry-release-triage](../skills/sentry-release-triage/SKILL.md)
 
 ### PostHog
 
@@ -113,33 +135,35 @@ These areas did not produce a strong public skill candidate in this pass.
   Why look: adjacent public analytics workflow reference.
 
 - Local composite skill now added:
-  [posthog-product-instrumentation](/Volumes/dev/agent-skills/skills/posthog-product-instrumentation/SKILL.md)
+  [posthog-product-instrumentation](../skills/posthog-product-instrumentation/SKILL.md)
 
 ### QuickBooks
 
 - no strong public skill source identified yet
 
-### Dylan Milroy
+### dmmulroy anti-slop
 
-- no clear primary-source repo or skill collection identified in this pass
-- if there is a specific repo to mine, add it here explicitly next round
+- `install-anti-slop`
+  Source: [dmmulroy/anti-slop](https://github.com/dmmulroy/anti-slop/tree/9b80d9a5c317d3af94d88a577bdbde4d9a45f7be)
+  Why look: direct anti-slop Oxlint workflow and the only skill folder in the
+  pinned repo.
 
 ## Local Composite Skills Added
 
-- [sentry-release-triage](/Volumes/dev/agent-skills/skills/sentry-release-triage/SKILL.md)
-- [posthog-product-instrumentation](/Volumes/dev/agent-skills/skills/posthog-product-instrumentation/SKILL.md)
-- [hetzner-cloud-ops](/Volumes/dev/agent-skills/skills/hetzner-cloud-ops/SKILL.md)
-- [namecheap-domain-dns-ops](/Volumes/dev/agent-skills/skills/namecheap-domain-dns-ops/SKILL.md)
+- [sentry-release-triage](../skills/sentry-release-triage/SKILL.md)
+- [posthog-product-instrumentation](../skills/posthog-product-instrumentation/SKILL.md)
+- [hetzner-cloud-ops](../skills/hetzner-cloud-ops/SKILL.md)
+- [namecheap-domain-dns-ops](../skills/namecheap-domain-dns-ops/SKILL.md)
 
 ## Best Immediate Review Order
 
-1. [sentry-release-triage](/Volumes/dev/agent-skills/skills/sentry-release-triage/SKILL.md)
-2. [posthog-product-instrumentation](/Volumes/dev/agent-skills/skills/posthog-product-instrumentation/SKILL.md)
-3. [hetzner-cloud-ops](/Volumes/dev/agent-skills/skills/hetzner-cloud-ops/SKILL.md)
-4. [namecheap-domain-dns-ops](/Volumes/dev/agent-skills/skills/namecheap-domain-dns-ops/SKILL.md)
+1. [sentry-release-triage](../skills/sentry-release-triage/SKILL.md)
+2. [posthog-product-instrumentation](../skills/posthog-product-instrumentation/SKILL.md)
+3. [hetzner-cloud-ops](../skills/hetzner-cloud-ops/SKILL.md)
+4. [namecheap-domain-dns-ops](../skills/namecheap-domain-dns-ops/SKILL.md)
 5. [daymade/claude-code-skills](https://github.com/daymade/claude-code-skills)
 6. [sundial-org/awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills)
 
 ## Adjacent Internal Docs
 
-- [cloudflare-next-skill-opportunities.md](/Volumes/dev/agent-skills/docs/cloudflare-next-skill-opportunities.md)
+- [cloudflare-next-skill-opportunities.md](cloudflare-next-skill-opportunities.md)

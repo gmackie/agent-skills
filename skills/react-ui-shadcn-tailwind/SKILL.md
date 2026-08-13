@@ -3,6 +3,9 @@ name: react-ui-shadcn-tailwind
 description: Generate modern React UI components using shadcn/ui and Tailwind CSS. Create forms, dashboards, data tables, and interactive components with consistent design patterns.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "design,react,ui,webapp"
+  groups: "react"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: frontend

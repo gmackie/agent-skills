@@ -1,0 +1,16 @@
+{
+  "id": "saas-turbo-bootstrap",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["nextjs", "saas", "typescript", "webapp"],
+  "groupIds": ["nextjs-saas"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/saas-turbo-bootstrap",
+    "skillFile": "skills/saas-turbo-bootstrap/SKILL.md"
+  }
+}

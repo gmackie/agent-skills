@@ -1,0 +1,42 @@
+{
+  "id": "principle-subtract-before-you-add",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "refactoring",
+    "scope",
+    "simplicity"
+  ],
+  "groupIds": [
+    "architecture"
+  ],
+  "invocation": "user",
+  "runtimePackages": [
+
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [
+
+  ],
+  "mcpServers": [
+
+  ],
+  "provenance": {
+    "sourceId": "cursor-pstack",
+    "sourceRepository": "https://github.com/cursor/plugins",
+    "sourceRevision": "195d9359bdc2890f83745df69927528ad4538406",
+    "sourcePath": "pstack/skills/principle-subtract-before-you-add",
+    "sourceTree": "dcd8d09a19fc6c4795d5a4799c50db4108ae59ab",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/principle-subtract-before-you-add",
+    "skillFile": "skills/principle-subtract-before-you-add/SKILL.md"
+  }
+}

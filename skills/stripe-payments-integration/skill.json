@@ -1,0 +1,16 @@
+{
+  "id": "stripe-payments-integration",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["billing", "payments", "stripe"],
+  "groupIds": ["nextjs-saas"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/stripe-payments-integration",
+    "skillFile": "skills/stripe-payments-integration/SKILL.md"
+  }
+}

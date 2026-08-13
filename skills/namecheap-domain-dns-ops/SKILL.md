@@ -1,6 +1,10 @@
 ---
 name: namecheap-domain-dns-ops
 description: Use when planning or reviewing domain and DNS operations for domains registered at Namecheap. Inventories domain, nameserver, and host-record signals in a repo, checks whether the workflow belongs in Namecheap or a third-party DNS provider, and produces a concrete DNS operations plan instead of ad hoc panel clicking.
+metadata:
+  tags: "dns,infrastructure,namecheap"
+  groups: "infrastructure"
+  invocation: "model"
 ---
 
 # Namecheap Domain DNS Ops

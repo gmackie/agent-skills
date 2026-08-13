@@ -1,6 +1,10 @@
 ---
 name: migrate-to-vinext
 description: Migrates Next.js projects to vinext (Vite-based Next.js reimplementation for Cloudflare Workers). Load when asked to migrate, convert, or switch from Next.js to vinext. Handles compatibility scanning, package replacement, Vite config generation, ESM conversion, and Cloudflare deployment setup.
+metadata:
+  tags: "cloudflare,migration,nextjs,vinext"
+  groups: "nextjs-saas"
+  invocation: "model"
 ---
 
 # Migrate Next.js to vinext

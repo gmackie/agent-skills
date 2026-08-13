@@ -1,0 +1,36 @@
+{
+  "id": "principle-sequence-verifiable-units",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "execution",
+    "planning",
+    "verification"
+  ],
+  "groupIds": [
+    "verification"
+  ],
+  "invocation": "user",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "cursor-pstack",
+    "sourceRepository": "https://github.com/cursor/plugins",
+    "sourceRevision": "195d9359bdc2890f83745df69927528ad4538406",
+    "sourcePath": "pstack/skills/principle-sequence-verifiable-units",
+    "sourceTree": "a8d7d3d438b73f86b483a074f426ca64a7777cf1",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/principle-sequence-verifiable-units",
+    "skillFile": "skills/principle-sequence-verifiable-units/SKILL.md"
+  }
+}

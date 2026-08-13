@@ -1,0 +1,16 @@
+{
+  "id": "unity-debug-workflow",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["debugging", "game-development", "unity"],
+  "groupIds": ["unity"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/unity-debug-workflow",
+    "skillFile": "skills/unity-debug-workflow/SKILL.md"
+  }
+}

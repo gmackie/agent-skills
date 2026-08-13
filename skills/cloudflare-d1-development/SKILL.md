@@ -1,6 +1,10 @@
 ---
 name: cloudflare-d1-development
 description: Use when adding, debugging, or hardening Cloudflare D1 usage in a Workers app. Inventories Wrangler D1 configuration, local-vs-remote database assumptions, migration and seeding workflow, and app-level access patterns, then produces a concrete development plan before deeper implementation work.
+metadata:
+  tags: "cloudflare,database,development"
+  groups: "cloudflare"
+  invocation: "model"
 ---
 
 # Cloudflare D1 Development

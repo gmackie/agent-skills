@@ -1,6 +1,10 @@
 ---
 name: x402-smol-agent-workflow
 description: Use when working on the x402 challenge, `smol-agent`, or adjacent agent-economics demos where the task involves turning a small agent system into a credible product or challenge submission. Guides repo mapping, milestone shaping, demo-path prioritization, and what should become a reusable skill versus local glue.
+metadata:
+  tags: "agents,payments,x402"
+  groups: "workflow-meta"
+  invocation: "model"
 ---
 
 # X402 Smol Agent Workflow

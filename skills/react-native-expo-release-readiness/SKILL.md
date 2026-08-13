@@ -1,6 +1,10 @@
 ---
 name: react-native-expo-release-readiness
 description: Use when preparing a React Native or Expo app for internal release, TestFlight, Play internal testing, or store submission. Discovers the project’s release surface, sequences Maestro QA, Expo validation, versioning, environment, OTA, and review-note checks, then hands off to narrower skills for fixes, App Store review, and submission.
+metadata:
+  tags: "expo,mobile,release"
+  groups: "mobile-qa"
+  invocation: "model"
 ---
 
 # React Native Expo Release Readiness

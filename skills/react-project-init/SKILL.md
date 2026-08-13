@@ -3,6 +3,9 @@ name: react-project-init
 description: Initialize a modern React project with Vite, TypeScript, TanStack Query, Zustand, and shadcn/ui. Use when creating new React applications or setting up React development environments.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "project-init,react,typescript,webapp"
+  groups: "react"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: frontend

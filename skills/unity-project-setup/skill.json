@@ -1,0 +1,16 @@
+{
+  "id": "unity-project-setup",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["game-development", "project-init", "unity"],
+  "groupIds": ["unity"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/unity-project-setup",
+    "skillFile": "skills/unity-project-setup/SKILL.md"
+  }
+}

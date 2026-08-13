@@ -1,6 +1,10 @@
 ---
 name: llm-session-retrospective
 description: Use when reviewing recent Codex, Claude Code, or repo planning work to extract reusable patterns, mistakes, and candidate skills. Automatically searches the current repo, nearby repos, and home skill/session directories, then writes a retrospective report, proposed skill ideas, or scaffolds depending on the request.
+metadata:
+  tags: "continuity,retrospective,skills"
+  groups: "workflow-meta"
+  invocation: "model"
 ---
 
 # LLM Session Retrospective

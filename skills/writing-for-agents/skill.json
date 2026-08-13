@@ -1,0 +1,36 @@
+{
+  "id": "writing-for-agents",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "agent-instructions",
+    "context",
+    "skills"
+  ],
+  "groupIds": [
+    "agent-authoring"
+  ],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "mattpocock-skills",
+    "sourceRepository": "https://github.com/mattpocock/skills",
+    "sourceRevision": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+    "sourcePath": "skills/productivity/writing-for-agents",
+    "sourceTree": "bd9c9c4762db0a9a094fd419316ebd4b0444d06e",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/writing-for-agents",
+    "skillFile": "skills/writing-for-agents/SKILL.md"
+  }
+}

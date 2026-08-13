@@ -1,6 +1,10 @@
 ---
 name: sentry-release-triage
 description: Use when a web app or service has Sentry installed and the task is to verify release readiness, source map correctness, environment wiring, or basic issue-triage hygiene before or after shipping. Inventories SDK setup, config files, release markers, and error-boundary coverage, then writes a focused triage plan.
+metadata:
+  tags: "observability,release,sentry"
+  groups: "observability"
+  invocation: "model"
 ---
 
 # Sentry Release Triage

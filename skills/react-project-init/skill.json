@@ -1,0 +1,16 @@
+{
+  "id": "react-project-init",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["project-init", "react", "typescript", "webapp"],
+  "groupIds": ["react"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/react-project-init",
+    "skillFile": "skills/react-project-init/SKILL.md"
+  }
+}

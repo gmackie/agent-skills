@@ -3,6 +3,9 @@ name: saas-turbo-bootstrap
 description: Bootstrap a complete SaaS application using Turborepo with Next.js backend, Expo mobile app, an app-level auth layer, Stripe payments, Turso database, Sentry monitoring, PostHog analytics, tRPC, and TanStack Query.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "nextjs,saas,typescript,webapp"
+  groups: "nextjs-saas"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: fullstack

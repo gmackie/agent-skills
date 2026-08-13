@@ -1,6 +1,10 @@
 ---
 name: brand-domain-naming
 description: Use when naming or renaming a product, startup, feature, or app and the work depends on brand identity, design culture, domain research, or TLD tradeoffs. This skill starts by diagnosing the product's brand character from the app itself, treats the current name as a disposable codename unless told otherwise, generates naming territories from that identity, checks `.com`, `.net`, `.ai`, and `.io`, and recommends a full brand-plus-domain direction instead of treating availability alone as success.
+metadata:
+  tags: "branding,naming"
+  groups: "naming"
+  invocation: "model"
 ---
 
 # Brand Domain Naming

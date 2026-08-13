@@ -1,6 +1,10 @@
 ---
 name: expo-build-validation
 description: Use when validating an Expo app before internal release, TestFlight, Play testing, or store submission. Checks project config, EAS profiles, identifiers, assets, environment handling, and build-significant drift so the app is technically ready before QA handoff or submission.
+metadata:
+  tags: "expo,mobile,release"
+  groups: "expo"
+  invocation: "model"
 ---
 
 # Expo Build Validation

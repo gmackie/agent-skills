@@ -1,0 +1,16 @@
+{
+  "id": "esp32-wifi-setup",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["embedded", "esp32", "networking"],
+  "groupIds": ["esp32"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/esp32-wifi-setup",
+    "skillFile": "skills/esp32-wifi-setup/SKILL.md"
+  }
+}

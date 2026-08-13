@@ -3,6 +3,9 @@ name: nextjs-project-init
 description: Initialize a production-ready Next.js web application with TypeScript, an application auth layer, Stripe payments, and database setup. Use when creating SaaS applications, e-commerce sites, or full-stack web applications.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "nextjs,project-init,typescript,webapp"
+  groups: "nextjs-saas"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: fullstack

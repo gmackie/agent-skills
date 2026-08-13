@@ -148,9 +148,9 @@ jq -e '.id == "posthog-product-instrumentation" and .kind == "skill"' "$posthog_
 jq -e '.id == "hetzner-cloud-ops" and .kind == "skill"' "$hetzner_metadata" >/dev/null
 jq -e '.id == "namecheap-domain-dns-ops" and .kind == "skill"' "$namecheap_metadata" >/dev/null
 
-"$retrospective_script" /Volumes/dev/agent-skills >/dev/null
-"$catalog_script" /Volumes/dev/agent-skills >/dev/null
-"$context_script" /Volumes/dev/agent-skills >/dev/null
+"$retrospective_script" "$root" >/dev/null
+"$catalog_script" "$root" >/dev/null
+"$context_script" "$root" >/dev/null
 "$maestro_script" --help >/dev/null
 "$maestro_fix_script" --help >/dev/null
 "$release_script" --help >/dev/null

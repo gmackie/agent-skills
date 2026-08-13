@@ -23,6 +23,7 @@ tool_metadata_file="$root/tools/skill-bootstrap/tool.json"
 tool_script_file="$root/tools/skill-bootstrap/bootstrap-skills.sh"
 agent_metadata_file="$root/agents/react-frontend/agent-metadata.json"
 agent_definition_file="$root/agents/react-frontend/agent.json"
+skill_selection_verifier="$root/tests/verify-skill-selection.sh"
 
 test -f "$metadata_file"
 test -f "$second_metadata_file"
@@ -44,6 +45,7 @@ test -f "$tool_metadata_file"
 test -f "$tool_script_file"
 test -f "$agent_metadata_file"
 test -f "$agent_definition_file"
+test -f "$skill_selection_verifier"
 
 jq -e '
   .id == "expo-build-validation" and
@@ -62,13 +64,13 @@ jq -e '
 grep -q '^name: expo-build-validation$' "$validation_skill_file"
 grep -q '^name: expo-build-submit$' "$submit_skill_file"
 
-if rg -q '^(allowed-tools|metadata):' "$validation_skill_file"; then
-  echo "expo-build-validation SKILL.md still contains legacy frontmatter" >&2
+if rg -q '^allowed-tools:' "$validation_skill_file"; then
+  echo "expo-build-validation SKILL.md still contains legacy allowed-tools frontmatter" >&2
   exit 1
 fi
 
-if rg -q '^(allowed-tools|metadata):' "$submit_skill_file"; then
-  echo "expo-build-submit SKILL.md still contains legacy frontmatter" >&2
+if rg -q '^allowed-tools:' "$submit_skill_file"; then
+  echo "expo-build-submit SKILL.md still contains legacy allowed-tools frontmatter" >&2
   exit 1
 fi
 
@@ -115,6 +117,9 @@ nix eval --impure --extra-experimental-features "nix-command flakes" --expr "
   let flake = builtins.getFlake \"$flake_ref\";
   in flake.skillMetadata.expo-build-validation.id
 " >/dev/null
+
+chmod +x "$skill_selection_verifier"
+"$skill_selection_verifier"
 
 nix eval --impure --extra-experimental-features "nix-command flakes" --expr "
   let flake = builtins.getFlake \"$flake_ref\";

@@ -3,6 +3,9 @@ name: stripe-payments-integration
 description: Integrate Stripe payments into Next.js and Expo applications with subscriptions, one-time payments, webhooks, and customer management. Use for SaaS billing and e-commerce.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "billing,payments,stripe"
+  groups: "nextjs-saas"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: fullstack

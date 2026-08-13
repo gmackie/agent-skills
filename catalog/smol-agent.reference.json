@@ -11,11 +11,69 @@
     }
   ],
   "groups": {
+    "core-quality": [
+      "agent-skills:unslop",
+      "agent-skills:recall",
+      "agent-skills:principle-encode-lessons-in-structure",
+      "agent-skills:principle-guard-the-context-window",
+      "agent-skills:principle-boundary-discipline",
+      "agent-skills:figure-it-out"
+    ],
+    "verification": [
+      "agent-skills:create-verification-skill",
+      "agent-skills:maintain-verification-skill",
+      "agent-skills:principle-sequence-verifiable-units",
+      "agent-skills:show-me-your-work",
+      "agent-skills:blast-radius",
+      "agent-skills:principle-prove-it-works",
+      "agent-skills:tdd"
+    ],
+    "architecture": [
+      "agent-skills:wayfinder",
+      "agent-skills:domain-modeling",
+      "agent-skills:codebase-design",
+      "agent-skills:improve-codebase-architecture",
+      "agent-skills:principle-type-system-discipline",
+      "agent-skills:principle-subtract-before-you-add",
+      "agent-skills:principle-foundational-thinking",
+      "agent-skills:principle-minimize-reader-load"
+    ],
+    "diagnosis-review": [
+      "agent-skills:code-review",
+      "agent-skills:diagnosing-bugs",
+      "agent-skills:principle-fix-root-causes"
+    ],
+    "prototyping": [
+      "agent-skills:prototype"
+    ],
+    "research": [
+      "agent-skills:research"
+    ],
+    "agent-authoring": [
+      "agent-skills:writing-for-agents"
+    ],
+    "human-ops": [
+      "agent-skills:wizard"
+    ],
+    "typescript-evidence": [
+      "agent-skills:install-anti-slop",
+      "agent-skills:typescript-best-practices"
+    ],
+    "matt-workflow": [
+      "agent-skills:setup-matt-pocock-skills",
+      "agent-skills:grilling",
+      "agent-skills:grill-with-docs"
+    ],
+    "plans": [
+      "agent-skills:html-plans",
+      "agent-skills:read-plans"
+    ],
     "workflow-meta": [
       "agent-skills:agent-skills-catalog-maintenance",
       "agent-skills:llm-session-retrospective",
       "agent-skills:local-agent-context-discovery",
-      "agent-skills:x402-smol-agent-workflow"
+      "agent-skills:x402-smol-agent-workflow",
+      "agent-skills:handoff"
     ],
     "mobile-qa": [
       "agent-skills:maestro-qa-report",
@@ -62,6 +120,38 @@
     ],
     "naming": [
       "agent-skills:brand-domain-naming"
+    ],
+    "execution-principles": [
+      "agent-skills:principle-build-the-lever",
+      "agent-skills:principle-never-block-on-the-human",
+      "agent-skills:principle-laziness-protocol"
+    ],
+    "operations-reliability": [
+      "agent-skills:principle-make-operations-idempotent"
+    ],
+    "engineering-docs": [
+      "agent-skills:technical-writing"
+    ],
+    "cursor-evidence": [
+      "agent-skills:how",
+      "agent-skills:why"
+    ],
+    "cursor-design": [
+      "agent-skills:architect",
+      "agent-skills:arena",
+      "agent-skills:interrogate"
+    ],
+    "cursor-setup": [
+      "agent-skills:setup-pstack"
+    ],
+    "issue-workflow": [
+      "agent-skills:to-spec",
+      "agent-skills:to-tickets",
+      "agent-skills:triage"
+    ],
+    "repo-hygiene": [
+      "agent-skills:resolving-merge-conflicts",
+      "agent-skills:setup-pre-commit"
     ]
   },
   "agentDefinitions": {

@@ -1,6 +1,6 @@
 # Skill Metadata Contract
 
-Snapshot date: 2026-03-26
+Snapshot date: 2026-08-13
 
 This repo now has four parallel contracts:
 
@@ -10,6 +10,26 @@ This repo now has four parallel contracts:
 - `agent-metadata.json`: machine-facing metadata for agent definitions
 
 `SKILL.md` remains the standards-facing artifact for Agent Skills and `npx skills`.
+
+Portable discovery tags also live in `SKILL.md` using the Agent Skills
+specification's string-to-string `metadata` map:
+
+```yaml
+metadata:
+  tags: "typescript,verification"
+  groups: "typescript-evidence"
+  invocation: "model"
+  source: "https://github.com/example/skills@<commit>:skills/example"
+```
+
+Keep these comma-separated values synchronized with `skill.json`. The YAML
+copy travels through generic Agent Skills clients; `skill.json` remains the
+richer local automation contract.
+
+`invocation` is `model` when an agent may select the skill automatically and
+`user` when a user or higher-level workflow must select it. This replaces
+vendor-specific frontmatter such as `disable-model-invocation` in portable
+copies.
 
 `skill.json` and `tool.json` exist so we do not need to scrape prose to answer operational questions like:
 
@@ -29,10 +49,21 @@ Each metadata-backed skill can define `skills/<id>/skill.json` with this shape:
   "id": "expo-build-validation",
   "kind": "skill",
   "version": 1,
+  "tags": ["mobile", "deployment"],
+  "groupIds": ["mobile-qa"],
   "runtimePackages": ["jq"],
   "supportedAgents": ["codex", "claude-code", "kiro-cli"],
   "helperTools": [],
   "mcpServers": [],
+  "provenance": {
+    "sourceId": "example-upstream",
+    "sourceRepository": "https://github.com/example/skills",
+    "sourceRevision": "0123456789abcdef0123456789abcdef01234567",
+    "sourcePath": "skills/example",
+    "sourceTree": "fedcba9876543210fedcba9876543210fedcba98",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored"
+  },
   "outputs": {
     "skillPath": "skills/expo-build-validation",
     "skillFile": "skills/expo-build-validation/SKILL.md"
@@ -72,10 +103,15 @@ Each agent can define `agents/<id>/agent-metadata.json` with this shape:
 - `id`: canonical identifier. Must match the skill directory name.
 - `kind`: currently `skill`. Reserve room for future `agent` and `tool` metadata.
 - `version`: schema version for this metadata contract, not the skill's product version.
+- `tags`: stable capabilities and project facts used for automatic matching.
+- `groupIds`: named selection groups that contain the skill.
 - `runtimePackages`: package names expected to resolve from `pkgs` in Nix.
 - `supportedAgents`: agent runtimes this skill is meant to support.
 - `helperTools`: repo-owned helper tools or wrappers a skill expects.
 - `mcpServers`: MCP server identifiers the skill expects to be available.
+- `provenance`: optional source repository, pinned revision, source path, exact
+  Git tree hash, import date, and import mode for a vendored or adapted
+  third-party skill.
 - `outputs.skillPath`: repo-relative directory for the skill.
 - `outputs.skillFile`: repo-relative `SKILL.md` path.
 - `helperTools`: tool ids from `tool.json` metadata that should be installed alongside the skill.
@@ -131,12 +167,19 @@ This keeps the standards boundary clean:
 
 That lets public and private repos share the same operational contract without overloading the skill prose.
 
+Project selection is defined separately in
+`catalog/installable-skills.json` and resolved against optional
+`.agent-skills.json` project policy. See
+[`project-skill-selection.md`](project-skill-selection.md).
+
 ## Current Scope
 
-The first metadata-backed skills are:
-
-- `expo-build-validation`
-- `expo-build-submit`
+All skills listed in `catalog/installable-skills.json` have both `SKILL.md`
+metadata and a matching `skill.json`. The catalog currently includes 82
+installable skills: 32 local skills plus 50 pinned upstream imports from Cursor
+pstack, Matt Pocock's skills, and dmmulroy's anti-slop repository. Use
+`catalog/upstream-sources.json` for exact source paths, commit pins, source
+tree hashes, and runtime support notes.
 
 The first metadata-backed tool is:
 
@@ -146,7 +189,9 @@ The first metadata-backed agent is:
 
 - `react-frontend`
 
-That is enough to prove the shape before scaling it to more skills or the future Maestro QA suite.
+This metadata layer is the source contract for the CLI resolver and a future
+T3 Code plugin. The plugin may propose project tags and edit overrides, but it
+must not maintain a separate copy of groups or selection rules.
 
 ## Verification
 

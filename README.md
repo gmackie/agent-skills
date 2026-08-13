@@ -16,6 +16,15 @@ skills/<skill-name>/SKILL.md
 
 `npx skills add . --list` currently detects the skills in this repo successfully.
 
+The repo also carries pinned, attributed copies of selected upstream skills.
+Their repository URLs, revisions, source paths, and import metadata live in
+[`catalog/upstream-sources.json`](catalog/upstream-sources.json); license
+notices are collected in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+The current upstream seed set vendors the top 50 skills selected from Cursor
+pstack, Matt Pocock's skills, and dmmulroy anti-slop.
+See [`docs/ranked-upstream-seed.md`](docs/ranked-upstream-seed.md) for the fit
+ordering and selection notes.
+
 The `agents/` directory is auxiliary. It contains example agent definitions, but the primary maintained artifact here should be reusable skills.
 
 ## Local Usage
@@ -39,11 +48,23 @@ Install everything from this repo:
 npx skills add . --skill '*'
 ```
 
+Resolve the skill set for a tagged project:
+
+```bash
+./scripts/resolve-skill-selection.sh --policy /path/to/project/.agent-skills.json
+```
+
+See [`docs/project-skill-selection.md`](docs/project-skill-selection.md) for
+group activation, overrides, and the future T3 Code plugin boundary.
+
 ## Repo Conventions
 
 - Keep installable skills under `skills/<skill-name>/SKILL.md`.
 - Add machine-readable metadata at `skills/<skill-name>/skill.json` when a skill has declarative dependency or bootstrap needs.
-- Prefer minimal frontmatter: `name` and `description`.
+- Add `tags` and `groupIds` to metadata-backed skills that participate in project matching.
+- Record vendored skill provenance in both `skill.json` and `catalog/upstream-sources.json`.
+- Prefer minimal frontmatter: `name`, `description`, and the portable `metadata`
+  strings needed for tags, groups, invocation, and optional provenance.
 - Move large supporting material into `references/`.
 - Put reusable automation in `scripts/`.
 - Treat `docs/` as repo guidance, not skill payload.
@@ -72,15 +93,15 @@ The split is:
 
 Related generated catalog surfaces:
 
-- [catalog/installable-skills.json](/Volumes/dev/agent-skills/catalog/installable-skills.json)
-- [catalog/smol-agent.reference.json](/Volumes/dev/agent-skills/catalog/smol-agent.reference.json)
+- [catalog/installable-skills.json](catalog/installable-skills.json)
+- [catalog/smol-agent.reference.json](catalog/smol-agent.reference.json)
 
 See:
 
-- [docs/skill-metadata-contract.md](/Volumes/dev/agent-skills/docs/skill-metadata-contract.md)
-- [docs/nix-consumption-example.md](/Volumes/dev/agent-skills/docs/nix-consumption-example.md)
-- [flake.nix](/Volumes/dev/agent-skills/flake.nix)
-- [home-manager-module.nix](/Volumes/dev/agent-skills/nix/home-manager-module.nix)
+- [docs/skill-metadata-contract.md](docs/skill-metadata-contract.md)
+- [docs/nix-consumption-example.md](docs/nix-consumption-example.md)
+- [flake.nix](flake.nix)
+- [home-manager-module.nix](nix/home-manager-module.nix)
 
 ## Current Focus
 
@@ -95,20 +116,20 @@ The next area to build out is mobile development and QA:
 
 See:
 
-- [docs/mobile-skills-roadmap.md](/Volumes/dev/agent-skills/docs/mobile-skills-roadmap.md)
-- [docs/installed-global-skills.md](/Volumes/dev/agent-skills/docs/installed-global-skills.md)
+- [docs/mobile-skills-roadmap.md](docs/mobile-skills-roadmap.md)
+- [docs/installed-global-skills.md](docs/installed-global-skills.md)
 
 ## Existing Skills
 
 The canonical installable skill inventory lives in:
 
-- [catalog/installable-skills.json](/Volumes/dev/agent-skills/catalog/installable-skills.json)
+- [catalog/installable-skills.json](catalog/installable-skills.json)
 
 That file is the source of truth for which skills are meant to be installable through `npx skills`. Repo docs and verification should point to it instead of duplicating skill lists by hand.
 
 `smol-agent` can consume the same schema through the generated reference config at:
 
-- [catalog/smol-agent.reference.json](/Volumes/dev/agent-skills/catalog/smol-agent.reference.json)
+- [catalog/smol-agent.reference.json](catalog/smol-agent.reference.json)
 
 ## Notes
 
@@ -116,20 +137,20 @@ Some existing skills still reflect an older Kiro-style authoring format. They ar
 
 See the reference-model docs:
 
-- [docs/reference-repo-model.md](/Volumes/dev/agent-skills/docs/reference-repo-model.md)
-- [docs/runtime-integration-model.md](/Volumes/dev/agent-skills/docs/runtime-integration-model.md)
+- [docs/reference-repo-model.md](docs/reference-repo-model.md)
+- [docs/runtime-integration-model.md](docs/runtime-integration-model.md)
 
 ## Next Steps
 
 The highest-value additions from here are:
 
-- Next.js / Cloudflare / vinext workflow coverage
+- source-refresh automation for the 50 pinned upstream imports
 - a generated merged catalog across public and private repos
 - more public workflow skills harvested from real `smol-agent`, x402, and adjacent repo work
 
 See:
 
-- [docs/cloudflare-next-skill-opportunities.md](/Volumes/dev/agent-skills/docs/cloudflare-next-skill-opportunities.md)
-- [docs/skill-source-inventory.md](/Volumes/dev/agent-skills/docs/skill-source-inventory.md)
-- [docs/reference-repo-model.md](/Volumes/dev/agent-skills/docs/reference-repo-model.md)
-- [docs/runtime-integration-model.md](/Volumes/dev/agent-skills/docs/runtime-integration-model.md)
+- [docs/cloudflare-next-skill-opportunities.md](docs/cloudflare-next-skill-opportunities.md)
+- [docs/skill-source-inventory.md](docs/skill-source-inventory.md)
+- [docs/reference-repo-model.md](docs/reference-repo-model.md)
+- [docs/runtime-integration-model.md](docs/runtime-integration-model.md)

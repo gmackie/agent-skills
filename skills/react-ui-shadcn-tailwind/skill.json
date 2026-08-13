@@ -1,0 +1,16 @@
+{
+  "id": "react-ui-shadcn-tailwind",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["design", "react", "ui", "webapp"],
+  "groupIds": ["react"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/react-ui-shadcn-tailwind",
+    "skillFile": "skills/react-ui-shadcn-tailwind/SKILL.md"
+  }
+}

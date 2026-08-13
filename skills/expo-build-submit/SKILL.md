@@ -1,6 +1,10 @@
 ---
 name: expo-build-submit
 description: Use when an Expo app is already validated and you need to build or upload it with EAS Build and EAS Submit. Handles profile selection, credential assumptions, TestFlight or Play upload flow, and submission sequencing after technical readiness and QA are already complete.
+metadata:
+  tags: "expo,mobile,release"
+  groups: "expo"
+  invocation: "model"
 ---
 
 # Expo Build Submit

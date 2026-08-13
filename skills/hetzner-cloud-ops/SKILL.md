@@ -1,6 +1,10 @@
 ---
 name: hetzner-cloud-ops
 description: Use when provisioning, reviewing, or hardening infrastructure that runs on Hetzner Cloud. Inventories hcloud, Terraform, cloud-init, and service bootstrap signals in the repo, then writes an operations plan for server lifecycle, networking, bootstrap, and drift instead of treating Hetzner as an opaque VPS host.
+metadata:
+  tags: "hetzner,infrastructure,operations"
+  groups: "infrastructure"
+  invocation: "model"
 ---
 
 # Hetzner Cloud Ops

@@ -1,6 +1,10 @@
 ---
 name: posthog-product-instrumentation
 description: Use when a web app or product surface needs PostHog instrumentation reviewed or added with discipline. Inventories SDK setup, provider wiring, event capture calls, identify/group usage, and feature-flag boundaries, then produces a concrete instrumentation plan instead of ad hoc analytics sprawl.
+metadata:
+  tags: "analytics,observability,posthog"
+  groups: "observability"
+  invocation: "model"
 ---
 
 # PostHog Product Instrumentation

@@ -1,6 +1,10 @@
 ---
 name: vinext-cloudflare-hardening
 description: Use when a vinext project already builds or runs, but the Cloudflare deployment surface still needs hardening. Reviews Wrangler config, assets and image bindings, cache strategy, environment boundaries, and production-risk gaps, then writes a concrete hardening plan before deploy work.
+metadata:
+  tags: "cloudflare,deployment,vinext"
+  groups: "nextjs-saas"
+  invocation: "model"
 ---
 
 # vinext Cloudflare Hardening

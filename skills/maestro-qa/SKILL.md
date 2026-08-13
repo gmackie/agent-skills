@@ -1,6 +1,10 @@
 ---
 name: maestro-qa
 description: Use when a React Native or Expo app needs local mobile QA with Maestro plus targeted fixes. Starts with a report-only Maestro pass, isolates one verified failure at a time, maps it back to app or flow code, applies the smallest fix, and reruns the narrowest failing flow before broadening back out.
+metadata:
+  tags: "maestro,mobile,qa"
+  groups: "mobile-qa"
+  invocation: "model"
 ---
 
 # Maestro QA

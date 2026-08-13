@@ -1,6 +1,10 @@
 ---
 name: html-plans
 description: Author plans (implementation plans, migration plans, design docs, PRD-style plans) as rich, themed, self-contained HTML documents with mermaid diagrams rendered to inline SVG, and publish them with `npx postplan upload`. Use whenever creating or updating any plan — plans are never markdown files. Write the plan as a single HTML file, upload it with postplan, and share the returned URL. To read a published plan, see the read-plans skill.
+metadata:
+  tags: "documentation,planning"
+  groups: "plans"
+  invocation: "model"
 ---
 
 # HTML Plans

@@ -1,6 +1,10 @@
 ---
 name: read-plans
 description: Fetch, parse, and act on plans published with postplan (postplan.dev). Use when given a postplan URL, when asked to review, execute, resume, or update "the plan", or to list published plans. Plans are HTML documents authored per the html-plans skill; this skill covers reading them back — resolving raw URLs, extracting phases/tasks/statuses/diagram sources, and re-publishing updates.
+metadata:
+  tags: "documentation,planning"
+  groups: "plans"
+  invocation: "model"
 ---
 
 # Read Plans

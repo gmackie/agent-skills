@@ -1,6 +1,10 @@
 ---
 name: local-agent-context-discovery
 description: Use when an agent should discover relevant local context on its own before asking for pasted files or paths. Scans the current repo, nearby working repos, and local Claude or Codex directories for plans, docs, reviews, TODOs, and skill artifacts so later workflows can start from real project evidence instead of user-supplied excerpts.
+metadata:
+  tags: "context,continuity,discovery"
+  groups: "workflow-meta"
+  invocation: "model"
 ---
 
 # Local Agent Context Discovery

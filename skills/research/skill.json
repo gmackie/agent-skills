@@ -1,0 +1,36 @@
+{
+  "id": "research",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "documentation",
+    "research",
+    "sources"
+  ],
+  "groupIds": [
+    "research"
+  ],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "mattpocock-skills",
+    "sourceRepository": "https://github.com/mattpocock/skills",
+    "sourceRevision": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+    "sourcePath": "skills/engineering/research",
+    "sourceTree": "972a34cd8128b7952b7eb279b06715862db906a7",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/research",
+    "skillFile": "skills/research/SKILL.md"
+  }
+}

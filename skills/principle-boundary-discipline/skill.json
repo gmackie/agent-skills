@@ -1,0 +1,36 @@
+{
+  "id": "principle-boundary-discipline",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "execution",
+    "safety",
+    "scope"
+  ],
+  "groupIds": [
+    "core-quality"
+  ],
+  "invocation": "user",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "cursor-pstack",
+    "sourceRepository": "https://github.com/cursor/plugins",
+    "sourceRevision": "195d9359bdc2890f83745df69927528ad4538406",
+    "sourcePath": "pstack/skills/principle-boundary-discipline",
+    "sourceTree": "022c087a63e8410dc99ad2d3415fb5bc1f9e0cc1",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/principle-boundary-discipline",
+    "skillFile": "skills/principle-boundary-discipline/SKILL.md"
+  }
+}

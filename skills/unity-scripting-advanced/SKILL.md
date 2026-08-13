@@ -3,6 +3,9 @@ name: unity-scripting-advanced
 description: Advanced Unity C# scripting patterns, component architecture, and AI-assisted development with unity-mcp. Use for complex gameplay systems, performance optimization, and maintainable code.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "architecture,game-development,unity"
+  groups: "unity"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: gamedev

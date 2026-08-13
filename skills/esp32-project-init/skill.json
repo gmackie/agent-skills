@@ -1,0 +1,16 @@
+{
+  "id": "esp32-project-init",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["embedded", "esp32", "project-init"],
+  "groupIds": ["esp32"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/esp32-project-init",
+    "skillFile": "skills/esp32-project-init/SKILL.md"
+  }
+}

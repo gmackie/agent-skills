@@ -1,0 +1,16 @@
+{
+  "id": "react-debugging-advanced",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["debugging", "react", "webapp"],
+  "groupIds": ["react"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/react-debugging-advanced",
+    "skillFile": "skills/react-debugging-advanced/SKILL.md"
+  }
+}

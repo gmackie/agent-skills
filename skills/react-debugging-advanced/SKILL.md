@@ -3,6 +3,9 @@ name: react-debugging-advanced
 description: Advanced React debugging techniques using browser DevTools, React DevTools, performance profiling, and error boundaries. Use for troubleshooting complex React applications and performance issues.
 allowed-tools: fs_read fs_write execute_bash
 metadata:
+  tags: "debugging,react,webapp"
+  groups: "react"
+  invocation: "model"
   author: kiro-cli
   version: "1.0"
   category: frontend

@@ -1,0 +1,16 @@
+{
+  "id": "unity-scripting-advanced",
+  "kind": "skill",
+  "version": 1,
+  "tags": ["architecture", "game-development", "unity"],
+  "groupIds": ["unity"],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": ["codex", "claude-code", "cursor", "grok"],
+  "helperTools": [],
+  "mcpServers": [],
+  "outputs": {
+    "skillPath": "skills/unity-scripting-advanced",
+    "skillFile": "skills/unity-scripting-advanced/SKILL.md"
+  }
+}

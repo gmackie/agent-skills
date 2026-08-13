@@ -1,6 +1,10 @@
 ---
 name: agent-skills-catalog-maintenance
 description: Use when adding, migrating, or reorganizing skills, tools, or agent definitions in an `agent-skills` style repo and you need to keep the catalog surface coherent. Maintains a merged view of metadata-backed skills, checks for missing metadata, and updates repo-facing catalog snapshots without treating ad hoc notes as the source of truth.
+metadata:
+  tags: "catalog,skills,workflow"
+  groups: "workflow-meta"
+  invocation: "model"
 ---
 
 # Agent Skills Catalog Maintenance

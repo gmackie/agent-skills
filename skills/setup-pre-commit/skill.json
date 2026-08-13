@@ -1,0 +1,43 @@
+{
+  "id": "setup-pre-commit",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "git",
+    "javascript",
+    "quality",
+    "tooling"
+  ],
+  "groupIds": [
+    "repo-hygiene"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [
+
+  ],
+  "mcpServers": [
+
+  ],
+  "provenance": {
+    "sourceId": "mattpocock-skills",
+    "sourceRepository": "https://github.com/mattpocock/skills",
+    "sourceRevision": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+    "sourcePath": "skills/misc/setup-pre-commit",
+    "sourceTree": "dcc584ff84c4f040ea12742fcb46b7c3ad7070bd",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/setup-pre-commit",
+    "skillFile": "skills/setup-pre-commit/SKILL.md"
+  }
+}

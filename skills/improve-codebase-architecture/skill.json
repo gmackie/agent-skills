@@ -1,0 +1,36 @@
+{
+  "id": "improve-codebase-architecture",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "architecture",
+    "refactoring",
+    "review"
+  ],
+  "groupIds": [
+    "architecture"
+  ],
+  "invocation": "user",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "mattpocock-skills",
+    "sourceRepository": "https://github.com/mattpocock/skills",
+    "sourceRevision": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+    "sourcePath": "skills/engineering/improve-codebase-architecture",
+    "sourceTree": "6a971d1f5b109ac817e18c0f0419c2a32d60f26a",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/improve-codebase-architecture",
+    "skillFile": "skills/improve-codebase-architecture/SKILL.md"
+  }
+}

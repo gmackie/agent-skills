@@ -1,0 +1,42 @@
+{
+  "id": "to-tickets",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "issue-tracker",
+    "planning",
+    "tickets"
+  ],
+  "groupIds": [
+    "issue-workflow"
+  ],
+  "invocation": "user",
+  "runtimePackages": [
+
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [
+
+  ],
+  "mcpServers": [
+
+  ],
+  "provenance": {
+    "sourceId": "mattpocock-skills",
+    "sourceRepository": "https://github.com/mattpocock/skills",
+    "sourceRevision": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+    "sourcePath": "skills/engineering/to-tickets",
+    "sourceTree": "80c1bedbdaa72a4abd524055013accb4fe0ea8c4",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/to-tickets",
+    "skillFile": "skills/to-tickets/SKILL.md"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "triage",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "issues",
+    "pull-requests",
+    "triage"
+  ],
+  "groupIds": [
+    "issue-workflow"
+  ],
+  "invocation": "user",
+  "runtimePackages": [
+
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [
+
+  ],
+  "mcpServers": [
+
+  ],
+  "provenance": {
+    "sourceId": "mattpocock-skills",
+    "sourceRepository": "https://github.com/mattpocock/skills",
+    "sourceRevision": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+    "sourcePath": "skills/engineering/triage",
+    "sourceTree": "b20940845332f540e3f17b0cb32d45fd8c2298bf",
+    "importedAt": "2026-08-13",
+    "importMode": "vendored-with-frontmatter-metadata"
+  },
+  "outputs": {
+    "skillPath": "skills/triage",
+    "skillFile": "skills/triage/SKILL.md"
+  }
+}
