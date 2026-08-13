@@ -18,9 +18,9 @@ Two modes:
 1. **Explain** (default). Explore the codebase and produce a clear explanation
 2. **Critique.** Explain first, then spawn multiple models to independently identify architectural issues
 
-## Explain Mode
+## Explain mode
 
-### Step 1. Understand the Question and Assess Complexity
+### Step 1. Understand the question and assess complexity
 
 Parse what the user is asking about:
 
@@ -65,7 +65,7 @@ Each explorer returns structured findings: components found, flow traced, files 
 
 Then proceed to Step 3.
 
-### Step 2b. Direct Explain (simple questions)
+### Step 2b. Direct explain (simple questions)
 
 Spawn a single Task subagent that explores and explains in one pass:
 
@@ -91,7 +91,7 @@ The explainer gets all explorers' findings and writes the human-facing explanati
 
 Present the explainer's output to the user. You may lightly edit for clarity or add context from the conversation, but don't substantially rewrite. The explainer's communication is the product.
 
-### Output Format
+### Output format
 
 Follow this structure, adapted to the question. Not every section is needed for every question.
 
@@ -105,15 +105,15 @@ Follow this structure, adapted to the question. Not every section is needed for 
 
 **Gotchas.** Non-obvious or surprising things that would trip someone up. Historical context that explains why something looks weird. Known sharp edges.
 
-## Critique Mode
+## Critique mode
 
 Triggered when the user asks for architectural issues, problems, or improvements, not just understanding.
 
-### Step 1. Explain First
+### Step 1. Explain first
 
 Run the full explain flow above (Steps 1-4). You must understand the architecture before critiquing it.
 
-### Step 2. Spawn Critics
+### Step 2. Spawn critics
 
 After the explanation is complete, spawn one architectural critic per model in your configured how-critics list (defaults `claude-fable-5-thinking-max`, `gpt-5.6-sol-max`, `grok-4.5-fast-xhigh`, `claude-opus-5-thinking-xhigh`), all in a single message.
 
@@ -127,7 +127,7 @@ Read `references/critic-prompt.md` for the prompt template. Each critic gets:
 2. The relevant file paths (so they can read the actual code)
 3. The architectural critique rubric from `references/critique-rubric.md`
 
-### Step 3. Lead Judgment
+### Step 3. Lead judgment
 
 Same framework as the interrogate skill. You're a pragmatic lead, not an aggregator.
 

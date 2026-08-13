@@ -33,7 +33,7 @@
     "sourcePath": "pstack/skills/principle-build-the-lever",
     "sourceTree": "ab52bdaccf67ef351d62ba6a08e37257a5aab0cb",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-build-the-lever",

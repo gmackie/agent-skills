@@ -31,7 +31,7 @@
     "sourcePath": "pstack/skills/arena",
     "sourceTree": "0c8b7f3154f0dc968d44d0e1936cad156e597405",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/arena",

@@ -27,7 +27,7 @@
     "sourcePath": "skills/productivity/writing-for-agents",
     "sourceTree": "bd9c9c4762db0a9a094fd419316ebd4b0444d06e",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/writing-for-agents",

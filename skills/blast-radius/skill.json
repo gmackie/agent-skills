@@ -27,7 +27,7 @@
     "sourcePath": "pstack/skills/blast-radius",
     "sourceTree": "b7e78173d1cee739737fa2371017a211ebe3fc8c",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/blast-radius",

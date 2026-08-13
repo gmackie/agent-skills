@@ -30,7 +30,7 @@
     "sourcePath": "skills/install-anti-slop",
     "sourceTree": "e65d6f71315c5ad8e954696826454532a85bdf7c",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/install-anti-slop",

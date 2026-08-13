@@ -19,7 +19,7 @@ Don't reinvent a playbook you already have. A focused single-unit task that matc
 
 Open a todolist whose first item is to read the Principles section of the **poteto-mode** skill. Then add the phases below as todos.
 
-## Phase A: Frame
+## Phase A: frame
 
 Ground first, then commit. Don't start the run until you can state:
 
@@ -29,7 +29,7 @@ Ground first, then commit. Don't start the run until you can state:
 
 Present the framing and tradeoffs before committing to a long run. Reversible work proceeds (the **never-block-on-the-human** principle skill), but a multi-hour run earns one checkpoint.
 
-## Phase B: Design the workflow
+## Phase B: design the workflow
 
 Decompose into atomic, independently-landable units. Sequence riskiest-unknown-first so option value stays high. Scaffold and verification come before features (the **foundational-thinking** principle skill).
 
@@ -40,7 +40,7 @@ Decompose into atomic, independently-landable units. Sequence riskiest-unknown-f
 
 Then put the design into motion. Add its steps to the todolist as concrete items, after the Phase C entry and before Phase D. Run each under the Phase C loop discipline, and weave the Phase D log through them, a row as each step lands, rather than saving the whole trail for the end.
 
-## Phase C: Run the loop
+## Phase C: run the loop
 
 Each unit is an experiment: state the hypothesis, make the smallest change, measure against the predicate on the real artifact, keep it if it advanced, revert it if it didn't.
 Apply the **sequence-verifiable-units** principle skill, verifying each unit before starting the next instead of batching checks at the end.
@@ -49,11 +49,11 @@ Apply the **sequence-verifiable-units** principle skill, verifying each unit bef
 - Pair delegated work with a judge and audit the delegates' artifacts yourself before trusting them. If a worker games the gate, reset and harden the contract. If the gate itself is wrong, fix the gate in its own change rather than routing around it.
 - A verdict is VERIFIED, NOT VERIFIED, or INCONCLUSIVE. Inconclusive is not a pass. Don't hide a negative.
 
-## Phase D: Keep the audit trail
+## Phase D: keep the audit trail
 
 Log the run via the **show-me-your-work** skill, one canonical TSV with a row per decision and per unit, evidence as links. figure-it-out's work is usually ambitious enough to commit the trail so the reviewer can read it in the PR; commit it when confidence has to be shown. Prefer evidence produced by committed scripts so a reviewer can re-run it. The trail plus the diff is what lets the human come back and trust the work.
 
-## Phase E: Verify and hand back
+## Phase E: verify and hand back
 
 Check the whole against the Phase A predicate on the real product, not just the harness. Encode any recurring correction as a gate, a lint rule, a check, or a script, so the win can't silently regress (the **encode-lessons-in-structure** principle skill).
 

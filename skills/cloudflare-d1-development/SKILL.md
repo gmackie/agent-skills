@@ -22,7 +22,7 @@ This skill focuses on:
 
 It complements, but does not replace, broader binding review from [cloudflare-workers-bindings-local-dev](../cloudflare-workers-bindings-local-dev/SKILL.md).
 
-## Default Workflow
+## Default workflow
 
 ### 1. Inventory the D1 surface
 
@@ -90,7 +90,7 @@ Default output location:
 docs/cloudflare/YYYY-MM-DD-d1-development.md
 ```
 
-## Output Contract
+## Output contract
 
 Minimum sections:
 
@@ -101,7 +101,7 @@ Minimum sections:
 - code and config drift
 - next steps
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -110,7 +110,7 @@ Minimum sections:
 | validate dev workflow | review local vs remote mode, migrations, and seeds |
 | compare app code with config | inspect D1 usage in source files |
 
-## Common Mistakes
+## Common mistakes
 
 - assuming D1 config is correct because a binding exists somewhere
 - skipping local migration and seed discipline

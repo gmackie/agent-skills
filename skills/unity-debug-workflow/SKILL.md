@@ -154,7 +154,7 @@ public class DebugTools : MonoBehaviour
 
 ## Examples
 
-### AI-Assisted Debugging Session
+### AI-assisted debugging session
 ```
 1. Ask AI: "Check Unity console for errors"
 2. AI uses unity-mcp to read console logs
@@ -163,7 +163,7 @@ public class DebugTools : MonoBehaviour
 5. Ask AI: "Analyze the profiler data for performance bottlenecks"
 ```
 
-### Performance Debugging
+### Performance debugging
 ```csharp
 // AI can generate this monitoring script
 public class PerformanceDebugger : MonoBehaviour

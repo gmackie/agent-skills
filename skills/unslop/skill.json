@@ -28,7 +28,7 @@
     "sourcePath": "pstack/skills/unslop",
     "sourceTree": "6161508c5c7959b156ff0e4e10b510863b51f9cc",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/unslop",

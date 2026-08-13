@@ -24,7 +24,7 @@ Open a todolist with one entry per phase before launching anything. The arena ru
 5. Graft
 6. Verify
 
-## Phase A: Frame
+## Phase A: frame
 
 The N candidates will receive the same prompt, so the prompt is the contract. Get it right before spawning anything.
 
@@ -33,7 +33,7 @@ The N candidates will receive the same prompt, so the prompt is the contract. Ge
 3. Pick the runners. Use `arena runners` from `~/.cursor/rules/pstack-models.mdc` when present. Otherwise default to one each on `claude-fable-5-thinking-max`, `gpt-5.6-sol-max`, `grok-4.5-fast-xhigh`, `claude-opus-5-thinking-xhigh`. Spawn more when the arena covers multiple design directions. Same model N times when the work is generation-bound rather than judgment-sensitive.
 4. Assign output paths. Each candidate writes to its own location (a git worktree where possible, otherwise `/tmp/arena-<slug>/candidate-<n>/`). N candidates writing to the same path is shared mutable state and fails the the **separate-before-serializing-shared-state** principle skill test.
 
-## Phase B: Fan out
+## Phase B: fan out
 
 Spawn all N subagents in one message with `run_in_background: true`, each with the task, the path to the shared grounding, its own output path, and instructions to produce both the artifact and a short rationale.
 
@@ -41,11 +41,11 @@ The rationale is mandatory. Without it, the parent cannot tell whether a candida
 
 If a candidate fails to produce output, proceed with N-1 and note the dropout in the synthesis record.
 
-## Phase C: Cross-judge
+## Phase C: cross-judge
 
 After all Phase B candidates complete, choose one model from the `arena cross-judge pool` in `~/.cursor/rules/pstack-models.mdc` when present. Otherwise use `claude-fable-5-thinking-max`, `gpt-5.6-sol-max`, `grok-4.5-fast-xhigh`, `claude-opus-5-thinking-xhigh`. Prefer a different model family from the parent's. Spawn one readonly judge subagent on that model. It sees the rubric and the candidates by path label, scores each criterion, and recommends a base with rationale. It runs in parallel with the parent's reading in Phase D, not with the candidates themselves. Spawning while candidates are still writing means the judge sees partial or empty outputs and reports them as dropouts.
 
-## Phase D: Pick a base
+## Phase D: pick a base
 
 Read every candidate end to end before picking. Skimming N candidates surfaces only the candidate whose surface looks most familiar.
 
@@ -55,7 +55,7 @@ Pick the base on which candidate a future maintainer can extend most easily with
 
 Record the pick and the reason in a short synthesis note alongside the base artifact, including the cross-judge's verdict.
 
-## Phase E: Graft
+## Phase E: graft
 
 Walk each losing candidate once more and identify what is worth porting into the base. The signal is usually one or two things per candidate, not most of it.
 
@@ -65,7 +65,7 @@ Record what was grafted, from which candidate, and what was rejected and why. Th
 
 When N candidates converge on the same shape, that is a strong agreement signal. Note the convergence in the record and ship the consensus shape. No graft is needed. When N candidates wildly diverge, Phase A was under-specified. Reframe and re-run rather than averaging the divergence.
 
-## Phase F: Verify
+## Phase F: verify
 
 The synthesized artifact has to hold up under the same scrutiny as any other output, per the **prove-it-works** principle skill. The arena does not earn you a pass.
 

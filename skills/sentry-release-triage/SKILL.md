@@ -7,7 +7,7 @@ metadata:
   invocation: "model"
 ---
 
-# Sentry Release Triage
+# Sentry release triage
 
 ## Overview
 
@@ -22,7 +22,7 @@ This skill focuses on:
 
 It is not a general logging or incident-response skill.
 
-## Default Workflow
+## Default workflow
 
 ### 1. Inventory the Sentry surface
 
@@ -59,7 +59,7 @@ Explicitly check:
 - whether source maps are generated and uploaded before errors happen in that release
 - whether client, server, or edge/runtime coverage is obviously partial
 
-Do not treat “Sentry installed” as equivalent to “Sentry usable.”
+Do not treat "Sentry installed" as equivalent to "Sentry usable."
 
 ### 4. Review app integration drift
 
@@ -85,7 +85,7 @@ Default output location:
 docs/observability/YYYY-MM-DD-sentry-release-triage.md
 ```
 
-## Output Contract
+## Output contract
 
 Minimum sections:
 
@@ -96,7 +96,7 @@ Minimum sections:
 - blocking gaps
 - next steps
 
-## Common Mistakes
+## Common mistakes
 
 - assuming source maps work because the SDK is installed
 - collapsing all environments into one noisy Sentry project shape

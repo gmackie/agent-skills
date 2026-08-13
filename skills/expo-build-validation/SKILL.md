@@ -15,7 +15,7 @@ Validate the build surface before you spend time on upload or review work.
 
 This skill is for technical readiness, not Maestro QA and not store-policy review. Use it to find configuration drift, missing identifiers, bad asset setup, broken EAS profiles, or versioning mistakes before builds or submissions fail later.
 
-## Default Workflow
+## Default workflow
 
 ### 1. Confirm the project shape
 
@@ -81,7 +81,7 @@ Then route to the right next skill:
 - iOS review risk: `app-store-review`
 - upload execution: `expo-build-submit`
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -90,7 +90,7 @@ Then route to the right next skill:
 | check release profiles | review build and submit profiles in `eas.json` |
 | decide next step | route into QA, review, or submit skill |
 
-## Common Mistakes
+## Common mistakes
 
 - treating build success as proof of product readiness
 - validating only local dev config and ignoring release profiles

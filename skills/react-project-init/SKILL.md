@@ -121,7 +121,7 @@ npm run dev
 
 ## Examples
 
-### Quick Start
+### Quick start
 ```bash
 npm create vite@latest my-react-app -- --template react-ts
 cd my-react-app

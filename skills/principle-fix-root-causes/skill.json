@@ -33,7 +33,7 @@
     "sourcePath": "pstack/skills/principle-fix-root-causes",
     "sourceTree": "476bdf66ce21dc9b2d4c4679815dc647b3f540b3",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-fix-root-causes",

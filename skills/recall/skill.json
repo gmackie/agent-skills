@@ -25,7 +25,7 @@
     "sourcePath": "pstack/skills/recall",
     "sourceTree": "b1a0bf2803b93af37e68cc267e00325c20f0f5c2",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/recall",

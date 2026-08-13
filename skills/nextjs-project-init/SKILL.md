@@ -185,7 +185,7 @@ npm run dev
 
 ## Examples
 
-### Quick SaaS Setup
+### Quick SaaS setup
 ```bash
 npx create-next-app@latest my-saas --typescript --tailwind --app
 cd my-saas

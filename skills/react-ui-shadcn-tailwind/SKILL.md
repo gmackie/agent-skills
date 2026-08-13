@@ -469,7 +469,7 @@ export function SettingsSheet() {
 
 ## Examples
 
-### Quick UI Generation Commands
+### Quick UI generation commands
 ```
 "Create a user registration form with validation"
 "Generate a data table for products with search and filters"
@@ -478,7 +478,7 @@ export function SettingsSheet() {
 "Generate a responsive navigation with mobile menu"
 ```
 
-### Custom Component Patterns
+### Custom component patterns
 ```typescript
 // Reusable card with loading state
 export function LoadingCard({ title, children, isLoading }: {

@@ -33,7 +33,7 @@
     "sourcePath": "pstack/skills/principle-type-system-discipline",
     "sourceTree": "7b04ed645018056af8396b93e2f31cd2efbcd358",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-type-system-discipline",

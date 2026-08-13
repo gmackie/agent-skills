@@ -15,7 +15,7 @@ Use Maestro to verify mobile behavior, fix verified issues, and rerun the smalle
 
 This skill extends [maestro-qa-report](../maestro-qa-report/SKILL.md). Start with the report-only pass to prove failures and collect artifacts. Then move through a strict fix loop: one verified issue, one scoped change, one targeted rerun.
 
-## Default Workflow
+## Default workflow
 
 ### 1. Start with a report-only run
 
@@ -87,7 +87,7 @@ Report:
 - artifact and report paths
 - remaining risk before release or handoff
 
-## Fix Loop Rules
+## Fix loop rules
 
 | Rule | Why |
 | --- | --- |
@@ -97,7 +97,7 @@ Report:
 | preserve report artifacts | keeps evidence for later review |
 | separate app bugs from flow bugs | prevents false confidence |
 
-## Helper Usage
+## Helper usage
 
 Use the bundled helper to keep the run shape consistent:
 
@@ -117,7 +117,7 @@ skills/maestro-qa/scripts/run-maestro-qa.sh \
   --dry-run
 ```
 
-## Common Mistakes
+## Common mistakes
 
 - editing code before proving the Maestro failure
 - fixing multiple failures in one pass

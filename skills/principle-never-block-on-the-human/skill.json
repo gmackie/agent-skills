@@ -33,7 +33,7 @@
     "sourcePath": "pstack/skills/principle-never-block-on-the-human",
     "sourceTree": "2940c8641e3e7729ce8d66f5dcca995e1dd6f495",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-never-block-on-the-human",

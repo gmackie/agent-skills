@@ -33,7 +33,7 @@
     "sourcePath": "pstack/skills/principle-subtract-before-you-add",
     "sourceTree": "dcd8d09a19fc6c4795d5a4799c50db4108ae59ab",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-subtract-before-you-add",

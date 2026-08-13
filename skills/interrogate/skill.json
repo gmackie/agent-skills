@@ -31,7 +31,7 @@
     "sourcePath": "pstack/skills/interrogate",
     "sourceTree": "87d4b9a8583780ebff0d34240a0ce18c4ec737f6",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/interrogate",

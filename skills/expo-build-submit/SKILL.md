@@ -15,7 +15,7 @@ Use this skill only after the app is already ready to ship.
 
 It is for build and upload mechanics, not broad validation, not Maestro QA, and not App Store policy review. If readiness is still unclear, use `expo-build-validation` or `react-native-expo-release-readiness` first.
 
-## Default Workflow
+## Default workflow
 
 ### 1. Confirm submission intent
 
@@ -65,7 +65,7 @@ After submission, record:
 
 Use [references/submission-sequence.md](references/submission-sequence.md) to keep the flow clear.
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -74,7 +74,7 @@ Use [references/submission-sequence.md](references/submission-sequence.md) to ke
 | upload to Play | `eas submit --platform android --profile <profile>` |
 | inspect build state | `eas build:list` |
 
-## Common Mistakes
+## Common mistakes
 
 - treating `eas submit` as a substitute for readiness validation
 - uploading to TestFlight before QA or App Store review prep is done

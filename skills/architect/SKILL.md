@@ -23,7 +23,7 @@ Open a todolist with one entry per phase before starting. Autonomous mode withou
 4. Implement
 5. Scrap
 
-## Phase A: Ground the problem
+## Phase A: ground the problem
 
 Build a real mental model of every system the new code touches. Run the **how** skill over the relevant subsystems. Critique mode if existing structure is the constraint or the design must push back on it.
 
@@ -31,7 +31,7 @@ Naming a file isn't grounding. Produce the traced model `how` prescribes. If the
 
 Skip Phase A only when the work is genuinely greenfield with no surrounding system to integrate.
 
-## Phase B: Sketch
+## Phase B: sketch
 
 Run the **arena** skill with the design-sketch task and the Phase A grounding artifacts. Pass `references/runner-prompt.md` as each runner's prompt. Each candidate produces a design package shaped per `references/rationale-template.md`: the caller's usage written first, then the type sketch, function signatures, module map, and prose rationale derived from it.
 
@@ -45,7 +45,7 @@ Compare viable candidates on interface depth. Prefer the design that hides more 
 
 Arena returns one synthesized design package. The synthesis decision populates the rationale's "Synthesis decision" section.
 
-## Phase C: Agree (opt-in)
+## Phase C: agree (opt-in)
 
 Default: proceed directly to implementation with the synthesized design. No human checkpoint.
 
@@ -55,13 +55,13 @@ The synthesis can ship as its own commit either way. That's the "scaffold first"
 
 If the human pushes back on the shape (in a checkpoint or after the fact), treat that as Phase A evidence. Re-ground and re-run Phase B before writing more code.
 
-## Phase D: Implement against the sketch
+## Phase D: implement against the sketch
 
 Replace `not implemented` bodies with code, pseudocode with logic. The synthesized sketch is the contract.
 
 Deviations from the sketch are signal worth surfacing, not friction to absorb silently. If a function needs a parameter the sketch didn't anticipate, ask whether the sketch was wrong, the requirement was missed, or the implementation is overreaching. Surface it; don't bolt it on.
 
-## Phase E: Scrap when the architecture is wrong
+## Phase E: scrap when the architecture is wrong
 
 If implementation keeps producing friction the sketch can't absorb, throw the sketch out. Don't bolt fixes onto a wrong design, per the **redesign-from-first-principles** and **fix-root-causes** principle skills.
 

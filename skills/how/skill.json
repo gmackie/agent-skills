@@ -30,7 +30,7 @@
     "sourcePath": "pstack/skills/how",
     "sourceTree": "4d693b4f8753139178dd2bda4412a97c9cb74807",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/how",

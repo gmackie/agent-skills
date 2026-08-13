@@ -20,7 +20,7 @@ Prioritize the shortest path to a convincing end-to-end story:
 - how it gets paid or gated
 - what the demo path looks like
 
-## Default Workflow
+## Default workflow
 
 ### 1. Map the repo before editing
 
@@ -64,7 +64,7 @@ Every major change should make at least one of these clearer:
 - agent behavior
 - proof of success
 
-## Quick Reference
+## Quick reference
 
 | Need | Default action |
 | --- | --- |
@@ -73,7 +73,7 @@ Every major change should make at least one of these clearer:
 | repeated pattern | consider a public skill |
 | challenge-specific glue | keep local |
 
-## Common Mistakes
+## Common mistakes
 
 - optimizing internals before the demo path works
 - extracting public skills too early

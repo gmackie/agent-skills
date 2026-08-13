@@ -33,7 +33,7 @@
     "sourcePath": "skills/engineering/resolving-merge-conflicts",
     "sourceTree": "6aa1ed0b40fac0ebea5c0cf6f2addf82c99b6323",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/resolving-merge-conflicts",

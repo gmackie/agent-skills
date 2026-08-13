@@ -33,7 +33,7 @@
     "sourcePath": "pstack/skills/technical-writing",
     "sourceTree": "08b040cf2ec3e053b51d08ea0a56138483b87697",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/technical-writing",

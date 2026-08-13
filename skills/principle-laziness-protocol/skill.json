@@ -33,7 +33,7 @@
     "sourcePath": "pstack/skills/principle-laziness-protocol",
     "sourceTree": "b3f5ad47409de89611d80802e3fc3e9ea2702aaf",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-laziness-protocol",

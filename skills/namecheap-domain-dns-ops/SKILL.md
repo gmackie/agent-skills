@@ -7,7 +7,7 @@ metadata:
   invocation: "model"
 ---
 
-# Namecheap Domain DNS Ops
+# Namecheap domain DNS ops
 
 ## Overview
 
@@ -20,7 +20,7 @@ This skill focuses on:
 - repo-visible domain and verification needs
 - cutover and drift risks
 
-## Default Workflow
+## Default workflow
 
 ### 1. Inventory the domain surface
 
@@ -44,7 +44,7 @@ Before planning record work, verify:
 - whether the domain uses Namecheap BasicDNS, FreeDNS, or PremiumDNS
 - or whether the domain is delegated to custom nameservers and DNS must be changed elsewhere
 
-Do not assume “registered at Namecheap” means “DNS managed at Namecheap.”
+Do not assume "registered at Namecheap" means "DNS managed at Namecheap."
 
 ### 3. Review record and cutover intent
 
@@ -71,7 +71,7 @@ Default output location:
 docs/infrastructure/YYYY-MM-DD-namecheap-dns-ops.md
 ```
 
-## Output Contract
+## Output contract
 
 Minimum sections:
 
@@ -81,7 +81,7 @@ Minimum sections:
 - record and cutover review
 - next steps
 
-## Common Mistakes
+## Common mistakes
 
 - editing Namecheap host records when the domain uses custom nameservers
 - planning CNAME usage at the apex without checking the provider model

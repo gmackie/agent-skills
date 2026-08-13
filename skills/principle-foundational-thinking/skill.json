@@ -33,7 +33,7 @@
     "sourcePath": "pstack/skills/principle-foundational-thinking",
     "sourceTree": "75d8010f2ebe173b9ad72035f1790a5e5005d198",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-foundational-thinking",

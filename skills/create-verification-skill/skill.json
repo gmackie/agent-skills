@@ -25,7 +25,7 @@
     "sourcePath": "pstack/skills/create-verification-skill",
     "sourceTree": "38a3e016bb42ba7ba6f66315e04ef64242937660",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/create-verification-skill",

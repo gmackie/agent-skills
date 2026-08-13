@@ -27,7 +27,7 @@
     "sourcePath": "pstack/skills/figure-it-out",
     "sourceTree": "ab4f59a6cf0bed04794b713e40b605963e975071",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/figure-it-out",

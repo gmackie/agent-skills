@@ -31,7 +31,7 @@
     "sourcePath": "pstack/skills/why",
     "sourceTree": "1f38fce6a9450a6b67504046f91e637a0cc84695",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/why",

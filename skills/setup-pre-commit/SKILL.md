@@ -9,9 +9,9 @@ metadata:
   source: "https://github.com/mattpocock/skills@84fdeffd12f2ee307994d1eb6feb48173b6e0502:skills/misc/setup-pre-commit"
 ---
 
-# Setup Pre-Commit Hooks
+# Setup pre-commit hooks
 
-## What This Sets Up
+## What this sets up
 
 - **Husky** pre-commit hook
 - **lint-staged** running Prettier on all staged files
@@ -88,7 +88,7 @@ Only create if no Prettier config exists. Use these defaults:
 
 Stage all changed/created files and commit with message: `Add pre-commit hooks (husky + lint-staged + prettier)`
 
-This will run through the new pre-commit hooks — a good smoke test that everything works.
+This runs the new pre-commit hooks and serves as a smoke test.
 
 ## Notes
 

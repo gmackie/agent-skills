@@ -1,13 +1,13 @@
 ---
 name: react-native-expo-release-readiness
-description: Use when preparing a React Native or Expo app for internal release, TestFlight, Play internal testing, or store submission. Discovers the project’s release surface, sequences Maestro QA, Expo validation, versioning, environment, OTA, and review-note checks, then hands off to narrower skills for fixes, App Store review, and submission.
+description: Use when preparing a React Native or Expo app for internal release, TestFlight, Play internal testing, or store submission. Discovers the project's release surface, sequences Maestro QA, Expo validation, versioning, environment, OTA, and review-note checks, then hands off to narrower skills for fixes, App Store review, and submission.
 metadata:
   tags: "expo,mobile,release"
   groups: "mobile-qa"
   invocation: "model"
 ---
 
-# React Native Expo Release Readiness
+# React Native Expo release readiness
 
 ## Overview
 
@@ -21,7 +21,7 @@ This is not the place to do every deep check inline. Its job is to map the relea
 - [expo-build-submit](../expo-build-submit/SKILL.md)
 - `app-store-review` when iOS policy review matters
 
-## Default Workflow
+## Default workflow
 
 ### 1. Discover the release surface
 
@@ -94,7 +94,7 @@ Keep these separate:
 - policy or review readiness
 - submission execution
 
-## Output Contract
+## Output contract
 
 Write a concise readiness summary using [references/readiness-template.md](references/readiness-template.md).
 
@@ -112,7 +112,7 @@ Default write location:
 docs/release-readiness/YYYY-MM-DD-<target>.md
 ```
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -122,7 +122,7 @@ docs/release-readiness/YYYY-MM-DD-<target>.md
 | review iOS submission risk | use `app-store-review` |
 | upload once ready | use `expo-build-submit` |
 
-## Common Mistakes
+## Common mistakes
 
 - treating TestFlight upload as the same thing as App Review readiness
 - skipping Maestro or manual QA because the build succeeds

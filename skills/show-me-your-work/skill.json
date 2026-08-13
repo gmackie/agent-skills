@@ -25,7 +25,7 @@
     "sourcePath": "pstack/skills/show-me-your-work",
     "sourceTree": "bc5101de50dfb902248e7983751947706f6cdf49",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/show-me-your-work",

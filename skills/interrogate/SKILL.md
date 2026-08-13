@@ -15,7 +15,7 @@ Spawn one reviewer per configured model to adversarially review code changes. Ea
 
 The deliverable is a synthesized verdict. Do NOT auto-apply changes.
 
-## Step 1, Determine Scope
+## Step 1, Determine scope
 
 Identify what to review from context:
 
@@ -25,7 +25,7 @@ Identify what to review from context:
 
 Package the diff (or file contents) plus any surrounding context files the reviewers need to understand the code.
 
-## Step 2, State the Intent
+## Step 2, State the intent
 
 Before spawning reviewers, state the intent explicitly. What is this code trying to accomplish? Derive this from:
 
@@ -36,7 +36,7 @@ Before spawning reviewers, state the intent explicitly. What is this code trying
 
 Write one clear paragraph. Reviewers challenge whether the work achieves the intent well, not whether the intent itself is correct. If you're unsure about the intent, ask the user before proceeding.
 
-## Step 3, Spawn Reviewers
+## Step 3, Spawn reviewers
 
 Launch all reviewers in a single message using the Task tool. Use the `interrogate reviewers` list from `~/.cursor/rules/pstack-models.mdc` when present, one reviewer per entry, extending or shrinking the Reviewer A/B/C/D labels below to the configured entry count; otherwise use the table defaults.
 
@@ -74,7 +74,7 @@ As results come back, build a unified picture:
 4. **Deduplicate**. Different models may describe the same issue differently. Merge these and note which models raised it.
 5. **Note disagreements**. If one model flags something and another explicitly says the opposite, that's useful context for the verdict.
 
-## Step 5, Lead Judgment
+## Step 5, Lead judgment
 
 You are the lead reviewer, a pragmatic senior engineer, not a neutral aggregator.
 
@@ -92,7 +92,7 @@ For each finding, include:
 - The category (act on / consider / noted / dismissed)
 - A one-line rationale for the categorization
 
-## Output Format
+## Output format
 
 Present the verdict in this structure:
 
@@ -102,7 +102,7 @@ Present the verdict in this structure:
 ### Reviewers
 - Reviewer [label]: [model name], [N findings] (one bullet per reviewer)
 
-### Act On
+### Act on
 [Findings that should be addressed. For each: description, which models raised it, why it matters.]
 
 ### Consider
@@ -114,5 +114,5 @@ Present the verdict in this structure:
 ### Dismissed
 [Rejected findings with brief rationale. This shows the user what was filtered out and why, so they can override your judgment if they disagree.]
 
-### Agreement Map
+### Agreement map
 [Where did models agree, where did they diverge, and what does the pattern of agreement/disagreement tell us?]

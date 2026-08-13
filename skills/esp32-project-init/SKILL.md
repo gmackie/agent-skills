@@ -83,7 +83,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ## Examples
 
-### Basic Hello World
+### Basic hello world
 ```bash
 . ~/esp/esp-idf/export.sh
 idf.py create-project hello_esp32
@@ -93,7 +93,7 @@ idf.py build
 idf.py -p /dev/cu.usbserial-0001 flash monitor
 ```
 
-### From WiFi Example
+### From WiFi example
 ```bash
 cp -r $IDF_PATH/examples/wifi/getting_started/station my_wifi_project
 cd my_wifi_project

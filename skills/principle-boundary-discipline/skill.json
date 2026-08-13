@@ -27,7 +27,7 @@
     "sourcePath": "pstack/skills/principle-boundary-discipline",
     "sourceTree": "022c087a63e8410dc99ad2d3415fb5bc1f9e0cc1",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-boundary-discipline",

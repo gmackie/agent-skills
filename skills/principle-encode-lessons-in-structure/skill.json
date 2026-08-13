@@ -27,7 +27,7 @@
     "sourcePath": "pstack/skills/principle-encode-lessons-in-structure",
     "sourceTree": "22f227027a83520ba9122bd8624a07ec9702f3ae",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-encode-lessons-in-structure",

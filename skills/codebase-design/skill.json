@@ -27,7 +27,7 @@
     "sourcePath": "skills/engineering/codebase-design",
     "sourceTree": "20b7cd1dd1fe5b0bd37ba72649f3a29375574b5b",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/codebase-design",

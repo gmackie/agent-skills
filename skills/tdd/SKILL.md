@@ -25,7 +25,7 @@ Do not force a test when it would be impractical. If the available test would re
 6. **Rerun the regression test.** Confirm the test now passes.
 7. **Run nearby validation.** Run relevant adjacent tests, type checks, lint, or scenario checks when the change has broader risk.
 
-## If a Failing Test Is Impractical
+## If a failing test is impractical
 
 Do not silently skip the regression step. Before fixing, explicitly explain why a failing test is impossible or not worth the cost, then choose the closest executable regression check available. Examples include a targeted script, manual reproduction command, browser automation, snapshot comparison, log assertion, or focused integration check.
 
@@ -40,7 +40,7 @@ Prefer no new test over a bad test. A bad test is one that mostly tests mocks, e
 - If the bug is flaky, make the test deterministic where possible and document the signal being locked down.
 - If the bug exposes a broader class of failures, first land the focused regression path, then consider additional sibling coverage.
 
-## Final Response
+## Final response
 
 Report the evidence, not just the outcome:
 

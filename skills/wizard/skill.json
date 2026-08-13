@@ -27,7 +27,7 @@
     "sourcePath": "skills/engineering/wizard",
     "sourceTree": "359db2fb13dc168346632556185252cab9dbec77",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/wizard",

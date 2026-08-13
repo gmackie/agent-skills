@@ -25,7 +25,7 @@
     "sourcePath": "pstack/skills/maintain-verification-skill",
     "sourceTree": "b6ce4dcdc378492f9acd55a4e56ae111204b4f11",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/maintain-verification-skill",

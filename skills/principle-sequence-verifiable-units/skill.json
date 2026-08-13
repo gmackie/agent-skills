@@ -27,7 +27,7 @@
     "sourcePath": "pstack/skills/principle-sequence-verifiable-units",
     "sourceTree": "a8d7d3d438b73f86b483a074f426ca64a7777cf1",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-sequence-verifiable-units",

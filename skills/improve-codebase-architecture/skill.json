@@ -27,7 +27,7 @@
     "sourcePath": "skills/engineering/improve-codebase-architecture",
     "sourceTree": "6a971d1f5b109ac817e18c0f0419c2a32d60f26a",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/improve-codebase-architecture",

@@ -27,7 +27,7 @@
     "sourcePath": "skills/engineering/research",
     "sourceTree": "972a34cd8128b7952b7eb279b06715862db906a7",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/research",

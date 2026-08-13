@@ -27,7 +27,7 @@
     "sourcePath": "skills/productivity/grilling",
     "sourceTree": "fd99bcbb818f7ef766b83656fb5fac0b58e223ad",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/grilling",

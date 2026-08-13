@@ -27,7 +27,7 @@
     "sourcePath": "pstack/skills/principle-prove-it-works",
     "sourceTree": "809a6925dac5be32419d4b08a459f92466db11a7",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-prove-it-works",

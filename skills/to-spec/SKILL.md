@@ -1,6 +1,6 @@
 ---
 name: to-spec
-description: Turn the current conversation into a spec and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.
+description: Turn the current conversation into a spec and publish it to the project issue tracker. Do not interview the user; synthesize what you've already discussed.
 license: MIT
 metadata:
   tags: "issue-tracker,planning,specification"
@@ -9,9 +9,9 @@ metadata:
   source: "https://github.com/mattpocock/skills@84fdeffd12f2ee307994d1eb6feb48173b6e0502:skills/engineering/to-spec"
 ---
 
-This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user — just synthesize what you already know.
+This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user. Synthesize what you already know.
 
-The issue tracker and triage label vocabulary should have been provided to you — run `/setup-matt-pocock-skills` if not.
+The issue tracker and triage label vocabulary should have been provided to you. Run `/setup-matt-pocock-skills` if not.
 
 ## Process
 
@@ -25,7 +25,7 @@ Check with the user that these seams match their expectations.
 
 <spec-template>
 
-## Problem Statement
+## Problem statement
 
 The problem that the user is facing, from the user's perspective.
 
@@ -33,7 +33,7 @@ The problem that the user is facing, from the user's perspective.
 
 The solution to the problem, from the user's perspective.
 
-## User Stories
+## User stories
 
 A LONG, numbered list of user stories. Each user story should be in the format of:
 
@@ -45,7 +45,7 @@ A LONG, numbered list of user stories. Each user story should be in the format o
 
 This list of user stories should be extremely extensive and cover all aspects of the feature.
 
-## Implementation Decisions
+## Implementation decisions
 
 A list of implementation decisions that were made. This can include:
 
@@ -59,9 +59,9 @@ A list of implementation decisions that were made. This can include:
 
 Do NOT include specific file paths or code snippets. They may end up being outdated very quickly.
 
-Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim to the decision-rich parts — not a working demo, just the important bits.
+Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim it to the decision-rich parts. Include the important bits, not a working demo.
 
-## Testing Decisions
+## Testing decisions
 
 A list of testing decisions that were made. Include:
 
@@ -69,11 +69,11 @@ A list of testing decisions that were made. Include:
 - Which modules will be tested
 - Prior art for the tests (i.e. similar types of tests in the codebase)
 
-## Out of Scope
+## Out of scope
 
 A description of the things that are out of scope for this spec.
 
-## Further Notes
+## Further notes
 
 Any further notes about the feature.
 

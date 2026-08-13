@@ -22,7 +22,7 @@ This skill focuses on one narrow problem:
 
 It should usually run before deeper app-specific implementation work.
 
-## Default Workflow
+## Default workflow
 
 ### 1. Inventory the Worker surface
 
@@ -93,7 +93,7 @@ Default output location:
 docs/cloudflare/YYYY-MM-DD-bindings-local-dev.md
 ```
 
-## Output Contract
+## Output contract
 
 Minimum sections:
 
@@ -104,7 +104,7 @@ Minimum sections:
 - missing or inconsistent declarations
 - next implementation steps
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -113,7 +113,7 @@ Minimum sections:
 | decide local vs remote resources | review binding support and team workflow |
 | fix app/runtime drift | compare code usage with declared bindings |
 
-## Common Mistakes
+## Common mistakes
 
 - assuming bindings inherit automatically across Wrangler environments
 - using remote bindings by default without a reason
