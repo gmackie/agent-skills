@@ -25,6 +25,54 @@
       "license": "MIT",
       "licenseFile": "third-party/dmmulroy-anti-slop/LICENSE",
       "author": "Dillon Mulroy"
+    },
+    "expo-skills": {
+      "repository": "https://github.com/expo/skills",
+      "revision": "50f59f837ddb7595d8c6683c693207e265d58c43",
+      "subdirectory": "plugins/expo/skills",
+      "license": "MIT",
+      "licenseFile": "third-party/expo-skills/LICENSE",
+      "author": "Expo"
+    },
+    "anthropic-skills": {
+      "repository": "https://github.com/anthropics/skills",
+      "revision": "3b3fad96af16a10759d930941b4520ba0c40edae",
+      "subdirectory": "skills",
+      "license": "Apache-2.0",
+      "licenseFile": "third-party/anthropic-webapp-testing/LICENSE.txt",
+      "author": "Anthropic"
+    },
+    "cloudflare-skills": {
+      "repository": "https://github.com/cloudflare/skills",
+      "revision": "f96bff754e428838818017f75817f0f9428acd48",
+      "subdirectory": "skills",
+      "license": "Apache-2.0",
+      "licenseFile": "third-party/cloudflare-skills/LICENSE",
+      "author": "Cloudflare"
+    },
+    "microsoft-playwright-cli": {
+      "repository": "https://github.com/microsoft/playwright-cli",
+      "revision": "60cb176373cf4400405122703e6de26cd58c7a1c",
+      "subdirectory": "skills",
+      "license": "Apache-2.0",
+      "licenseFile": "third-party/microsoft-playwright-cli/LICENSE",
+      "author": "Microsoft"
+    },
+    "supabase-agent-skills": {
+      "repository": "https://github.com/supabase/agent-skills",
+      "revision": "8331f910845103c08d51f6ca1d86ebb7d1f745e3",
+      "subdirectory": "skills",
+      "license": "MIT",
+      "licenseFile": "third-party/supabase-agent-skills/LICENSE",
+      "author": "Supabase"
+    },
+    "turso-agent-skills": {
+      "repository": "https://github.com/tursodatabase/agent-skills",
+      "revision": "34ced52fd1bd32e802622126e299cfa886d68441",
+      "subdirectory": "skills",
+      "license": "MIT",
+      "licenseFile": "third-party/turso-agent-skills/LICENSE",
+      "author": "Turso"
     }
   },
   "imports": [
@@ -771,6 +819,446 @@
         "repo-hygiene"
       ],
       "sourceTree": "dcc584ff84c4f040ea12742fcb46b7c3ad7070bd"
+    },
+    {
+      "skillId": "eas-app-stores",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/eas-app-stores",
+      "tags": [
+        "deployment",
+        "eas",
+        "expo",
+        "mobile"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "2a6578759d15dec7765309eff13823e9d1201556"
+    },
+    {
+      "skillId": "eas-hosting",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/eas-hosting",
+      "tags": [
+        "deployment",
+        "eas",
+        "expo",
+        "mobile"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "8553db3f986848eb7ff34a23cecb9225246b6b6e"
+    },
+    {
+      "skillId": "eas-observe",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/eas-observe",
+      "tags": [
+        "deployment",
+        "eas",
+        "expo",
+        "mobile"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "4de6163b60f14e870841e614bb0bfde5efff4261"
+    },
+    {
+      "skillId": "eas-simulator",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/eas-simulator",
+      "tags": [
+        "deployment",
+        "eas",
+        "expo",
+        "mobile"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "5eaf39884b88cb349c664e8431093e87267b2f37"
+    },
+    {
+      "skillId": "eas-update-insights",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/eas-update-insights",
+      "tags": [
+        "deployment",
+        "eas",
+        "expo",
+        "mobile"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "27b19b8d5265b0989f98588631ebbb6c52d3112d"
+    },
+    {
+      "skillId": "eas-workflows",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/eas-workflows",
+      "tags": [
+        "deployment",
+        "eas",
+        "expo",
+        "mobile"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "4681577d41527b8450ed01b8065186314a6a1156"
+    },
+    {
+      "skillId": "expo-animation",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-animation",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "691736256bab4e6ce054153e4f2c10482d86b2e0"
+    },
+    {
+      "skillId": "expo-app-clip",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-app-clip",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "f1080197bba0ac993b31264c6ec566ae80e06407"
+    },
+    {
+      "skillId": "expo-brownfield",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-brownfield",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "c1e37830ecf756f2782f1ea850744738b67e1a48"
+    },
+    {
+      "skillId": "expo-data-fetching",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-data-fetching",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "6b2db27e71b992a194e4b83e009d518f4f6f658b"
+    },
+    {
+      "skillId": "expo-design-system",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-design-system",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "c7eb0c58d42a10961bd9297b375c812aeaf62e01"
+    },
+    {
+      "skillId": "expo-dev-client",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-dev-client",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "176c1c857f175cde8e8210d4ffd776e8eaa912a3"
+    },
+    {
+      "skillId": "expo-dom",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-dom",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "2b9fed71db484fef6cecaa9112ce046b2937585a"
+    },
+    {
+      "skillId": "expo-examples",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-examples",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "d67f12cb94edbdec3a9879357644fe980954edd0"
+    },
+    {
+      "skillId": "expo-module",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-module",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "feada0039890909266374f181971fd28d5bbfc45"
+    },
+    {
+      "skillId": "expo-native-ui",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-native-ui",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "f650b3aaf8d03c5a683ef311bcaa457c7f44b483"
+    },
+    {
+      "skillId": "expo-overview",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-overview",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "37d6aed73dd9edf5705742d681c93139a2091e34"
+    },
+    {
+      "skillId": "expo-project-structure",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-project-structure",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "c63556ba37f73f1e2a09283357451297fda0b928"
+    },
+    {
+      "skillId": "expo-router",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-router",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "73ffdc019fda95db002543eea5760bcf45a4b450"
+    },
+    {
+      "skillId": "expo-skill-feedback",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-skill-feedback",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "12ed75862ebc20a412de59c2b54cdee05b88299a"
+    },
+    {
+      "skillId": "expo-tailwind-setup",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-tailwind-setup",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "9b77805d79b92983bdae0bc7f42b6eceff4a24c7"
+    },
+    {
+      "skillId": "expo-ui",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-ui",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "f33320b4c9f176fa296ad53868724c57a2a7ae81"
+    },
+    {
+      "skillId": "expo-upgrade",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-upgrade",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "6e7ca2e04fea0124489f23c31fd7812510c6409d"
+    },
+    {
+      "skillId": "expo-web-to-native",
+      "sourceId": "expo-skills",
+      "sourcePath": "plugins/expo/skills/expo-web-to-native",
+      "tags": [
+        "expo",
+        "mobile",
+        "react-native"
+      ],
+      "groupIds": [
+        "expo"
+      ],
+      "sourceTree": "0050ce4bd1272afeade221f6412999be230f000e"
+    },
+    {
+      "skillId": "webapp-testing",
+      "sourceId": "anthropic-skills",
+      "sourcePath": "skills/webapp-testing",
+      "tags": [
+        "browser",
+        "playwright",
+        "testing"
+      ],
+      "groupIds": [
+        "playwright"
+      ],
+      "sourceTree": "5ffb7dc66b9fd4c25c3e400a4c00da99a349b714"
+    },
+    {
+      "skillId": "cloudflare",
+      "sourceId": "cloudflare-skills",
+      "sourcePath": "skills/cloudflare",
+      "tags": [
+        "cloudflare",
+        "infrastructure"
+      ],
+      "groupIds": [
+        "cloudflare"
+      ],
+      "sourceTree": "a92bec38b7b5ff5e634b509c7ff3c289d9d61290"
+    },
+    {
+      "skillId": "durable-objects",
+      "sourceId": "cloudflare-skills",
+      "sourcePath": "skills/durable-objects",
+      "tags": [
+        "cloudflare",
+        "database",
+        "sqlite"
+      ],
+      "groupIds": [
+        "cloudflare",
+        "database"
+      ],
+      "sourceTree": "72810f48414f2e68d0aa65a8895f749c959dea91"
+    },
+    {
+      "skillId": "workers-best-practices",
+      "sourceId": "cloudflare-skills",
+      "sourcePath": "skills/workers-best-practices",
+      "tags": [
+        "cloudflare",
+        "deployment",
+        "typescript"
+      ],
+      "groupIds": [
+        "cloudflare"
+      ],
+      "sourceTree": "7dd384e79c76d3e388dfe53e12e93642679ff1fd"
+    },
+    {
+      "skillId": "playwright-cli",
+      "sourceId": "microsoft-playwright-cli",
+      "sourcePath": "skills/playwright-cli",
+      "tags": [
+        "browser",
+        "playwright",
+        "testing"
+      ],
+      "groupIds": [
+        "playwright"
+      ],
+      "sourceTree": "ef9a12fdadfb2ad4b67d512a10e840979f162c3a"
+    },
+    {
+      "skillId": "supabase-postgres-best-practices",
+      "sourceId": "supabase-agent-skills",
+      "sourcePath": "skills/supabase-postgres-best-practices",
+      "tags": [
+        "database",
+        "postgres",
+        "sql"
+      ],
+      "groupIds": [
+        "database"
+      ],
+      "sourceTree": "27bde25111c4cd5e6f803fc9db5fbffe27bb26cf"
+    },
+    {
+      "skillId": "turso-db",
+      "sourceId": "turso-agent-skills",
+      "sourcePath": "skills/turso-db",
+      "tags": [
+        "database",
+        "sqlite",
+        "turso"
+      ],
+      "groupIds": [
+        "database"
+      ],
+      "sourceTree": "9e5ac8c71b94b2e56c8061af78151a743467b4f4"
     }
   ]
 }

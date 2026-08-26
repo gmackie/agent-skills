@@ -56,7 +56,15 @@
     "types": "The work uses static types to encode constraints and prevent invalid states.",
     "workflow": "The work defines repeatable agent or developer workflows.",
     "writing": "The work creates or edits prose intended for humans or agents.",
-    "orchestration": "The work benefits from fan-out, multiple passes, or delegated agents."
+    "orchestration": "The work benefits from fan-out, multiple passes, or delegated agents.",
+    "cloudflare": "The project uses Cloudflare developer platform primitives.",
+    "database": "The project stores or queries relational data.",
+    "eas": "The project uses Expo Application Services.",
+    "playwright": "The project uses Playwright browser automation or end-to-end tests.",
+    "postgres": "The project uses PostgreSQL.",
+    "react-native": "The project uses React Native.",
+    "sqlite": "The project uses SQLite or a compatible embedded database.",
+    "turso": "The project uses Turso or libSQL-compatible storage."
   },
   "groups": [
     {
@@ -281,7 +289,31 @@
       },
       "skillIds": [
         "expo-build-validation",
-        "expo-build-submit"
+        "expo-build-submit",
+        "eas-app-stores",
+        "eas-hosting",
+        "eas-observe",
+        "eas-simulator",
+        "eas-update-insights",
+        "eas-workflows",
+        "expo-animation",
+        "expo-app-clip",
+        "expo-brownfield",
+        "expo-data-fetching",
+        "expo-design-system",
+        "expo-dev-client",
+        "expo-dom",
+        "expo-examples",
+        "expo-module",
+        "expo-native-ui",
+        "expo-overview",
+        "expo-project-structure",
+        "expo-router",
+        "expo-skill-feedback",
+        "expo-tailwind-setup",
+        "expo-ui",
+        "expo-upgrade",
+        "expo-web-to-native"
       ]
     },
     {
@@ -322,7 +354,40 @@
       },
       "skillIds": [
         "cloudflare-workers-bindings-local-dev",
-        "cloudflare-d1-development"
+        "cloudflare-d1-development",
+        "cloudflare",
+        "durable-objects",
+        "workers-best-practices"
+      ]
+    },
+    {
+      "name": "playwright",
+      "label": "Playwright",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "playwright"
+        ]
+      },
+      "skillIds": [
+        "playwright-cli",
+        "webapp-testing"
+      ]
+    },
+    {
+      "name": "database",
+      "label": "Postgres and SQLite",
+      "activation": {
+        "mode": "any-tag",
+        "tags": [
+          "database",
+          "postgres",
+          "sqlite"
+        ]
+      },
+      "skillIds": [
+        "supabase-postgres-best-practices",
+        "turso-db"
       ]
     },
     {

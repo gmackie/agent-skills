@@ -1,0 +1,37 @@
+{
+  "id": "durable-objects",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "cloudflare",
+    "database",
+    "sqlite"
+  ],
+  "groupIds": [
+    "cloudflare",
+    "database"
+  ],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "cloudflare-skills",
+    "sourceRepository": "https://github.com/cloudflare/skills",
+    "sourceRevision": "f96bff754e428838818017f75817f0f9428acd48",
+    "sourcePath": "skills/durable-objects",
+    "sourceTree": "72810f48414f2e68d0aa65a8895f749c959dea91",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/durable-objects",
+    "skillFile": "skills/durable-objects/SKILL.md"
+  }
+}

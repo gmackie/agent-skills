@@ -20,8 +20,10 @@ The repo also carries pinned, attributed copies of selected upstream skills.
 Their repository URLs, revisions, source paths, and import metadata live in
 [`catalog/upstream-sources.json`](catalog/upstream-sources.json); license
 notices are collected in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
-The current upstream seed set vendors the top 50 skills selected from Cursor
-pstack, Matt Pocock's skills, and dmmulroy anti-slop.
+The catalog vendors the top 50 engineering skills selected from Cursor pstack,
+Matt Pocock's skills, and dmmulroy anti-slop, plus pinned first-party Expo,
+Anthropic Playwright, Cloudflare, Microsoft Playwright, Supabase Postgres, and
+Turso SQLite-compatible skills.
 See [`docs/ranked-upstream-seed.md`](docs/ranked-upstream-seed.md) for the fit
 ordering and selection notes.
 
@@ -105,9 +107,9 @@ See:
 
 ## Current Focus
 
-The next area to build out is mobile development and QA:
+The catalog now includes broad mobile development and QA coverage:
 
-- React Native / Expo release readiness
+- The official Expo framework and EAS suite plus local release-readiness workflows
 - Maestro-driven mobile QA
 - App Store review preparation
 - Better tracking of globally installed skills managed outside the repo
@@ -144,7 +146,7 @@ See the reference-model docs:
 
 The highest-value additions from here are:
 
-- source-refresh automation for the 50 pinned upstream imports
+- source-refresh automation for all 81 pinned upstream imports
 - a generated merged catalog across public and private repos
 - more public workflow skills harvested from real `smol-agent`, x402, and adjacent repo work
 

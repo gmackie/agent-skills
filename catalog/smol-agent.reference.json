@@ -82,7 +82,31 @@
     ],
     "expo": [
       "agent-skills:expo-build-validation",
-      "agent-skills:expo-build-submit"
+      "agent-skills:expo-build-submit",
+      "agent-skills:eas-app-stores",
+      "agent-skills:eas-hosting",
+      "agent-skills:eas-observe",
+      "agent-skills:eas-simulator",
+      "agent-skills:eas-update-insights",
+      "agent-skills:eas-workflows",
+      "agent-skills:expo-animation",
+      "agent-skills:expo-app-clip",
+      "agent-skills:expo-brownfield",
+      "agent-skills:expo-data-fetching",
+      "agent-skills:expo-design-system",
+      "agent-skills:expo-dev-client",
+      "agent-skills:expo-dom",
+      "agent-skills:expo-examples",
+      "agent-skills:expo-module",
+      "agent-skills:expo-native-ui",
+      "agent-skills:expo-overview",
+      "agent-skills:expo-project-structure",
+      "agent-skills:expo-router",
+      "agent-skills:expo-skill-feedback",
+      "agent-skills:expo-tailwind-setup",
+      "agent-skills:expo-ui",
+      "agent-skills:expo-upgrade",
+      "agent-skills:expo-web-to-native"
     ],
     "react": [
       "agent-skills:react-project-init",
@@ -99,7 +123,18 @@
     ],
     "cloudflare": [
       "agent-skills:cloudflare-workers-bindings-local-dev",
-      "agent-skills:cloudflare-d1-development"
+      "agent-skills:cloudflare-d1-development",
+      "agent-skills:cloudflare",
+      "agent-skills:durable-objects",
+      "agent-skills:workers-best-practices"
+    ],
+    "playwright": [
+      "agent-skills:playwright-cli",
+      "agent-skills:webapp-testing"
+    ],
+    "database": [
+      "agent-skills:supabase-postgres-best-practices",
+      "agent-skills:turso-db"
     ],
     "observability": [
       "agent-skills:sentry-release-triage",
