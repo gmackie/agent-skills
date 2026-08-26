@@ -19,8 +19,8 @@ jq -e '
   .sources["mattpocock-skills"].revision == "84fdeffd12f2ee307994d1eb6feb48173b6e0502" and
   .sources["dmmulroy-anti-slop"].repository == "https://github.com/dmmulroy/anti-slop" and
   .sources["dmmulroy-anti-slop"].revision == "9b80d9a5c317d3af94d88a577bdbde4d9a45f7be" and
-  (.imports | length) == 50 and
-  ([.imports[].skillId] | unique | length) == 50
+  (.imports | length) == 81 and
+  ([.imports[].skillId] | unique | length) == 81
 ' "$sources" >/dev/null
 
 expected_imports=(
@@ -83,8 +83,8 @@ if [[ "${#expected_imports[@]}" -ne 50 ]]; then
 fi
 
 actual_import_count="$(jq '.imports | length' "$sources")"
-if [[ "$actual_import_count" -ne 50 ]]; then
-  echo "expected 50 upstream imports, got $actual_import_count" >&2
+if [[ "$actual_import_count" -ne 81 ]]; then
+  echo "expected 81 upstream imports, got $actual_import_count" >&2
   exit 1
 fi
 

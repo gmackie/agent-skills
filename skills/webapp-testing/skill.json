@@ -1,0 +1,38 @@
+{
+  "id": "webapp-testing",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "browser",
+    "playwright",
+    "testing"
+  ],
+  "groupIds": [
+    "playwright"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "python3"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "anthropic-skills",
+    "sourceRepository": "https://github.com/anthropics/skills",
+    "sourceRevision": "3b3fad96af16a10759d930941b4520ba0c40edae",
+    "sourcePath": "skills/webapp-testing",
+    "sourceTree": "5ffb7dc66b9fd4c25c3e400a4c00da99a349b714",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/webapp-testing",
+    "skillFile": "skills/webapp-testing/SKILL.md"
+  }
+}

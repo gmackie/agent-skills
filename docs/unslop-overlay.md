@@ -1,6 +1,6 @@
 # Unslop overlay
 
-Every installable `SKILL.md` passes the local `unslop` style check. The check covers all 82 skills, including the 50 pinned upstream imports.
+Every installable `SKILL.md` passes the local `unslop` style check. The check covers all 113 skills, including 81 pinned upstream imports.
 
 Upstream imports keep their original repository, revision, path, and tree hash. Local prose edits are recorded with the import mode `vendored-with-frontmatter-metadata-and-unslop-overlay`, so the catalog does not imply that the checked-in body is byte-for-byte upstream text.
 

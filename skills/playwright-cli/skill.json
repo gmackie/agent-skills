@@ -1,0 +1,38 @@
+{
+  "id": "playwright-cli",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "browser",
+    "playwright",
+    "testing"
+  ],
+  "groupIds": [
+    "playwright"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "microsoft-playwright-cli",
+    "sourceRepository": "https://github.com/microsoft/playwright-cli",
+    "sourceRevision": "60cb176373cf4400405122703e6de26cd58c7a1c",
+    "sourcePath": "skills/playwright-cli",
+    "sourceTree": "ef9a12fdadfb2ad4b67d512a10e840979f162c3a",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/playwright-cli",
+    "skillFile": "skills/playwright-cli/SKILL.md"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "cloudflare",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "groupIds": [
+    "cloudflare"
+  ],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "cloudflare-skills",
+    "sourceRepository": "https://github.com/cloudflare/skills",
+    "sourceRevision": "f96bff754e428838818017f75817f0f9428acd48",
+    "sourcePath": "skills/cloudflare",
+    "sourceTree": "a92bec38b7b5ff5e634b509c7ff3c289d9d61290",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/cloudflare",
+    "skillFile": "skills/cloudflare/SKILL.md"
+  }
+}

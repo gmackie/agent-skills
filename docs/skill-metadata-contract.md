@@ -175,9 +175,10 @@ Project selection is defined separately in
 ## Current Scope
 
 All skills listed in `catalog/installable-skills.json` have both `SKILL.md`
-metadata and a matching `skill.json`. The catalog currently includes 82
-installable skills: 32 local skills plus 50 pinned upstream imports from Cursor
-pstack, Matt Pocock's skills, and dmmulroy's anti-slop repository. Use
+metadata and a matching `skill.json`. The catalog currently includes 113
+installable skills: 32 local skills plus 81 pinned upstream imports. The imports
+combine the original 50-skill engineering seed with first-party Expo,
+Anthropic, Cloudflare, Microsoft Playwright, Supabase, and Turso sources. Use
 `catalog/upstream-sources.json` for exact source paths, commit pins, source
 tree hashes, and runtime support notes.
 

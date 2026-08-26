@@ -1,0 +1,39 @@
+{
+  "id": "eas-update-insights",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "deployment",
+    "eas",
+    "expo",
+    "mobile"
+  ],
+  "groupIds": [
+    "expo"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "expo-skills",
+    "sourceRepository": "https://github.com/expo/skills",
+    "sourceRevision": "50f59f837ddb7595d8c6683c693207e265d58c43",
+    "sourcePath": "plugins/expo/skills/eas-update-insights",
+    "sourceTree": "27b19b8d5265b0989f98588631ebbb6c52d3112d",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/eas-update-insights",
+    "skillFile": "skills/eas-update-insights/SKILL.md"
+  }
+}

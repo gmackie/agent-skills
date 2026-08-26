@@ -1,0 +1,38 @@
+{
+  "id": "expo-brownfield",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "expo",
+    "mobile",
+    "react-native"
+  ],
+  "groupIds": [
+    "expo"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "expo-skills",
+    "sourceRepository": "https://github.com/expo/skills",
+    "sourceRevision": "50f59f837ddb7595d8c6683c693207e265d58c43",
+    "sourcePath": "plugins/expo/skills/expo-brownfield",
+    "sourceTree": "c1e37830ecf756f2782f1ea850744738b67e1a48",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/expo-brownfield",
+    "skillFile": "skills/expo-brownfield/SKILL.md"
+  }
+}
