@@ -15,6 +15,10 @@ Break a plan, spec, or conversation into **tickets**. Each ticket is a tracer-bu
 
 The issue tracker and triage label vocabulary should have been provided to you. Run `/setup-matt-pocock-skills` if not.
 
+## Kanbanger projects
+
+When the shared instructions or repository configure Kanbanger, use the `kanbanger-workflow` skill and Kanbanger CLI. Resolve the owning project/team, reuse matching issues, and publish new issues with explicit project membership. Keep implementation status current and link every ForgeGraph PR back to its issue. Production issues close only after verified production delivery. Use existing session authorization for issue creation and updates; do not repeat an approval already given. Preserve other projects' configured tracker.
+
 ## Process
 
 ### 1. Gather context
