@@ -13,6 +13,10 @@ This skill takes the current conversation context and codebase understanding and
 
 The issue tracker and triage label vocabulary should have been provided to you. Run `/setup-matt-pocock-skills` if not.
 
+## Kanbanger projects
+
+When the shared instructions or repository configure Kanbanger, use the `kanbanger-workflow` skill and Kanbanger CLI. Resolve the owning project/team, reuse matching issues, and publish new issues with explicit project membership. Keep implementation status current and link every ForgeGraph PR back to its issue. Production issues close only after verified production delivery. Use existing session authorization for issue creation and updates; do not repeat an approval already given. Preserve other projects' configured tracker.
+
 ## Process
 
 1. Explore the repo to understand the current state of the codebase, if you haven't already. Use the project's domain glossary vocabulary throughout the spec, and respect any ADRs in the area you're touching.

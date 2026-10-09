@@ -19,6 +19,10 @@ Scaffold the per-repo configuration that the engineering skills assume:
 
 This is a prompt-driven skill, not a deterministic script. Explore, present what you found, confirm with the user, then write.
 
+## Kanbanger projects
+
+When the shared instructions or repository configure Kanbanger, use the `kanbanger-workflow` skill and Kanbanger CLI. Resolve the owning project/team, reuse matching issues, and publish new issues with explicit project membership. Keep implementation status current and link every ForgeGraph PR back to its issue. Production issues close only after verified production delivery. Use existing session authorization for issue creation and updates; do not repeat an approval already given. Preserve other projects' configured tracker.
+
 ## Process
 
 ### 1. Explore
