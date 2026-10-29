@@ -14,6 +14,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - name: Install catalog validation tools
+        run: |
+          if [ "$(id -u)" -eq 0 ]; then
+            apt-get update
+            apt-get install --yes jq ripgrep
+          else
+            sudo apt-get update
+            sudo apt-get install --yes jq ripgrep
+          fi
       - name: Validate catalog and complete workflow collections
         run: |
           python3 tests/verify-workflow-stacks.py
