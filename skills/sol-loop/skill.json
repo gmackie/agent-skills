@@ -1,0 +1,35 @@
+{
+  "id": "sol-loop",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "tstack",
+    "workflow"
+  ],
+  "groupIds": [
+    "tstack"
+  ],
+  "invocation": "user",
+  "runtimePackages": [
+    "gh"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "theo-tstack",
+    "sourceRepository": "https://github.com/t3dotgg/tstack",
+    "sourceRevision": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+    "sourcePath": "skills/sol-loop",
+    "sourceTree": "9d2b1c1b00bf54e1b4e6e6243aec6d39037ce624",
+    "importedAt": "2026-10-29",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/sol-loop",
+    "skillFile": "skills/sol-loop/SKILL.md"
+  }
+}

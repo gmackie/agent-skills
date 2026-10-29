@@ -1,0 +1,36 @@
+{
+  "id": "babysit-pr",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "tstack",
+    "workflow"
+  ],
+  "groupIds": [
+    "tstack"
+  ],
+  "invocation": "user",
+  "runtimePackages": [
+    "gh",
+    "python3"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "theo-tstack",
+    "sourceRepository": "https://github.com/t3dotgg/tstack",
+    "sourceRevision": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+    "sourcePath": "skills/babysit-pr",
+    "sourceTree": "7b4e3e4e0f8b53a1fd049d6a27d5f998395ace52",
+    "importedAt": "2026-10-29",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/babysit-pr",
+    "skillFile": "skills/babysit-pr/SKILL.md"
+  }
+}

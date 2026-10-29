@@ -1,0 +1,35 @@
+{
+  "id": "council",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "tstack",
+    "workflow"
+  ],
+  "groupIds": [
+    "tstack"
+  ],
+  "invocation": "user",
+  "runtimePackages": [
+    "gh"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "theo-tstack",
+    "sourceRepository": "https://github.com/t3dotgg/tstack",
+    "sourceRevision": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+    "sourcePath": "skills/council",
+    "sourceTree": "ed352dce7c3f58076bdd0723927a308e284c3031",
+    "importedAt": "2026-10-29",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/council",
+    "skillFile": "skills/council/SKILL.md"
+  }
+}

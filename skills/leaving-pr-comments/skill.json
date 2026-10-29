@@ -1,0 +1,35 @@
+{
+  "id": "leaving-pr-comments",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "tstack",
+    "workflow"
+  ],
+  "groupIds": [
+    "tstack"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "gh"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "theo-tstack",
+    "sourceRepository": "https://github.com/t3dotgg/tstack",
+    "sourceRevision": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+    "sourcePath": "skills/leaving-pr-comments",
+    "sourceTree": "3905d758fb70b4e660038456f86ac02343a3dedf",
+    "importedAt": "2026-10-29",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/leaving-pr-comments",
+    "skillFile": "skills/leaving-pr-comments/SKILL.md"
+  }
+}

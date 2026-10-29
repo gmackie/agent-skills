@@ -1,19 +1,20 @@
 ---
 name: principle-foundational-thinking
-description: "Apply before writing logic: choosing core types and data structures, sequencing scaffold-vs-feature work, asking what concurrent actors share. Get the data structures right so downstream code becomes obvious."
+description: >
+  Apply before writing logic: choosing core types and data structures, sequencing scaffold-vs-feature work, asking what concurrent actors share. Get the data structures right so downstream code becomes obvious.
 license: MIT
 metadata:
-  tags: "architecture,data-modeling,design"
+  tags: "architecture,data-modeling,design,pstack"
   groups: "architecture"
   invocation: "user"
-  source: "https://github.com/cursor/plugins@195d9359bdc2890f83745df69927528ad4538406:pstack/skills/principle-foundational-thinking"
+  source: "https://github.com/cursor/plugins@1ba91fc25c0977741dd0e267849e6234b037ed0a:pstack/skills/principle-foundational-thinking"
 ---
 
 # Foundational Thinking
 
-**Structural decisions** protect option value. **Code-level decisions** protect simplicity. Over-engineering is often a premature decision that closes doors. The right foundational data structure keeps doors open.
+**Structural decisions** protect option value. **Code-level decisions** protect simplicity.
 
-**Data structures first.** Get the data shape right before writing logic. The right shape makes downstream code obvious. Define core types early, trace every access pattern, and choose structures that match the dominant paths. A data-structure change late is a rewrite. Early, it is often a one-line diff.
+**Data structures first.** Get the data shape right before writing logic. Define core types early, trace every access pattern, and choose structures that match the dominant paths.
 
 At code level, DRY the structure, not every line. Types and data models should converge. Three similar statements still beat a premature abstraction. Prefer explicit over clever. Test behavior and edge cases, not line counts.
 
@@ -23,4 +24,4 @@ At code level, DRY the structure, not every line. Types and data models should c
 
 Each increment should land a coherent abstraction or deepen one that exists. Do not spread a new capability across callers as special-case coordination.
 
-Subtraction comes before scaffolding: remove dead weight first, then lay foundations.
+Subtraction comes before scaffolding. Remove dead code first, then lay foundations.

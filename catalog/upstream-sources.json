@@ -4,11 +4,13 @@
   "sources": {
     "cursor-pstack": {
       "repository": "https://github.com/cursor/plugins",
-      "revision": "195d9359bdc2890f83745df69927528ad4538406",
+      "revision": "1ba91fc25c0977741dd0e267849e6234b037ed0a",
       "subdirectory": "pstack",
       "license": "MIT",
       "licenseFile": "third-party/cursor-pstack/LICENSE",
-      "author": "Lauren Tan"
+      "author": "Lauren Tan",
+      "skillCount": 58,
+      "importedAt": "2026-10-29"
     },
     "mattpocock-skills": {
       "repository": "https://github.com/mattpocock/skills",
@@ -73,194 +75,19 @@
       "license": "MIT",
       "licenseFile": "third-party/turso-agent-skills/LICENSE",
       "author": "Turso"
+    },
+    "theo-tstack": {
+      "repository": "https://github.com/t3dotgg/tstack",
+      "revision": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+      "subdirectory": ".",
+      "license": "MIT",
+      "licenseFile": "third-party/theo-tstack/LICENSE",
+      "author": "Theo Browne",
+      "skillCount": 9,
+      "importedAt": "2026-10-29"
     }
   },
   "imports": [
-    {
-      "skillId": "unslop",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/unslop",
-      "tags": [
-        "anti-slop",
-        "cross-agent",
-        "quality",
-        "writing"
-      ],
-      "groupIds": [
-        "core-quality"
-      ],
-      "sourceTree": "6161508c5c7959b156ff0e4e10b510863b51f9cc"
-    },
-    {
-      "skillId": "create-verification-skill",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/create-verification-skill",
-      "tags": [
-        "automation",
-        "cursor",
-        "testing",
-        "verification"
-      ],
-      "groupIds": [
-        "verification"
-      ],
-      "supportedAgents": [
-        "cursor"
-      ],
-      "sourceTree": "38a3e016bb42ba7ba6f66315e04ef64242937660"
-    },
-    {
-      "skillId": "maintain-verification-skill",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/maintain-verification-skill",
-      "tags": [
-        "cursor",
-        "maintenance",
-        "testing",
-        "verification"
-      ],
-      "groupIds": [
-        "verification"
-      ],
-      "supportedAgents": [
-        "cursor"
-      ],
-      "sourceTree": "b6ce4dcdc378492f9acd55a4e56ae111204b4f11"
-    },
-    {
-      "skillId": "recall",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/recall",
-      "tags": [
-        "continuity",
-        "cursor",
-        "handoff",
-        "memory"
-      ],
-      "groupIds": [
-        "core-quality"
-      ],
-      "supportedAgents": [
-        "cursor"
-      ],
-      "sourceTree": "b1a0bf2803b93af37e68cc267e00325c20f0f5c2"
-    },
-    {
-      "skillId": "principle-encode-lessons-in-structure",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-encode-lessons-in-structure",
-      "tags": [
-        "automation",
-        "guardrails",
-        "quality"
-      ],
-      "groupIds": [
-        "core-quality"
-      ],
-      "sourceTree": "22f227027a83520ba9122bd8624a07ec9702f3ae"
-    },
-    {
-      "skillId": "principle-sequence-verifiable-units",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-sequence-verifiable-units",
-      "tags": [
-        "execution",
-        "planning",
-        "verification"
-      ],
-      "groupIds": [
-        "verification"
-      ],
-      "sourceTree": "a8d7d3d438b73f86b483a074f426ca64a7777cf1"
-    },
-    {
-      "skillId": "principle-guard-the-context-window",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-guard-the-context-window",
-      "tags": [
-        "context",
-        "continuity",
-        "orchestration"
-      ],
-      "groupIds": [
-        "core-quality"
-      ],
-      "sourceTree": "160097c93ba42dd955907f5c02ac38a5975f1518"
-    },
-    {
-      "skillId": "show-me-your-work",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/show-me-your-work",
-      "tags": [
-        "cursor",
-        "evidence",
-        "reporting",
-        "verification"
-      ],
-      "groupIds": [
-        "verification"
-      ],
-      "supportedAgents": [
-        "cursor"
-      ],
-      "sourceTree": "bc5101de50dfb902248e7983751947706f6cdf49"
-    },
-    {
-      "skillId": "blast-radius",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/blast-radius",
-      "tags": [
-        "review",
-        "risk",
-        "safety"
-      ],
-      "groupIds": [
-        "verification"
-      ],
-      "sourceTree": "b7e78173d1cee739737fa2371017a211ebe3fc8c"
-    },
-    {
-      "skillId": "principle-prove-it-works",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-prove-it-works",
-      "tags": [
-        "deployment",
-        "testing",
-        "verification"
-      ],
-      "groupIds": [
-        "verification"
-      ],
-      "sourceTree": "809a6925dac5be32419d4b08a459f92466db11a7"
-    },
-    {
-      "skillId": "principle-boundary-discipline",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-boundary-discipline",
-      "tags": [
-        "execution",
-        "safety",
-        "scope"
-      ],
-      "groupIds": [
-        "core-quality"
-      ],
-      "sourceTree": "022c087a63e8410dc99ad2d3415fb5bc1f9e0cc1"
-    },
-    {
-      "skillId": "figure-it-out",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/figure-it-out",
-      "tags": [
-        "autonomy",
-        "execution",
-        "investigation"
-      ],
-      "groupIds": [
-        "core-quality"
-      ],
-      "sourceTree": "ab4f59a6cf0bed04794b713e40b605963e975071"
-    },
     {
       "skillId": "setup-matt-pocock-skills",
       "sourceId": "mattpocock-skills",
@@ -446,280 +273,6 @@
         "nodejs"
       ],
       "sourceTree": "e65d6f71315c5ad8e954696826454532a85bdf7c"
-    },
-    {
-      "skillId": "principle-type-system-discipline",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-type-system-discipline",
-      "tags": [
-        "architecture",
-        "safety",
-        "types"
-      ],
-      "groupIds": [
-        "architecture"
-      ],
-      "sourceTree": "7b04ed645018056af8396b93e2f31cd2efbcd358"
-    },
-    {
-      "skillId": "principle-fix-root-causes",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-fix-root-causes",
-      "tags": [
-        "debugging",
-        "reliability",
-        "root-cause"
-      ],
-      "groupIds": [
-        "diagnosis-review"
-      ],
-      "sourceTree": "476bdf66ce21dc9b2d4c4679815dc647b3f540b3"
-    },
-    {
-      "skillId": "principle-build-the-lever",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-build-the-lever",
-      "tags": [
-        "automation",
-        "execution",
-        "verification"
-      ],
-      "groupIds": [
-        "execution-principles"
-      ],
-      "sourceTree": "ab52bdaccf67ef351d62ba6a08e37257a5aab0cb"
-    },
-    {
-      "skillId": "principle-never-block-on-the-human",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-never-block-on-the-human",
-      "tags": [
-        "autonomy",
-        "execution",
-        "human-in-loop"
-      ],
-      "groupIds": [
-        "execution-principles"
-      ],
-      "sourceTree": "2940c8641e3e7729ce8d66f5dcca995e1dd6f495"
-    },
-    {
-      "skillId": "principle-subtract-before-you-add",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-subtract-before-you-add",
-      "tags": [
-        "refactoring",
-        "scope",
-        "simplicity"
-      ],
-      "groupIds": [
-        "architecture"
-      ],
-      "sourceTree": "dcd8d09a19fc6c4795d5a4799c50db4108ae59ab"
-    },
-    {
-      "skillId": "principle-laziness-protocol",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-laziness-protocol",
-      "tags": [
-        "refactoring",
-        "scope",
-        "simplicity"
-      ],
-      "groupIds": [
-        "execution-principles"
-      ],
-      "sourceTree": "b3f5ad47409de89611d80802e3fc3e9ea2702aaf"
-    },
-    {
-      "skillId": "principle-foundational-thinking",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-foundational-thinking",
-      "tags": [
-        "architecture",
-        "data-modeling",
-        "design"
-      ],
-      "groupIds": [
-        "architecture"
-      ],
-      "sourceTree": "75d8010f2ebe173b9ad72035f1790a5e5005d198"
-    },
-    {
-      "skillId": "principle-make-operations-idempotent",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-make-operations-idempotent",
-      "tags": [
-        "operations",
-        "reliability",
-        "retries"
-      ],
-      "groupIds": [
-        "operations-reliability"
-      ],
-      "sourceTree": "c69d590d8da3af63e34954aa21254e1ec9a2996c"
-    },
-    {
-      "skillId": "principle-minimize-reader-load",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/principle-minimize-reader-load",
-      "tags": [
-        "architecture",
-        "maintainability",
-        "simplicity"
-      ],
-      "groupIds": [
-        "architecture"
-      ],
-      "sourceTree": "11ec7245004020e7fc5e0097cc012cdb715d3c3b"
-    },
-    {
-      "skillId": "typescript-best-practices",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/typescript-best-practices",
-      "tags": [
-        "quality",
-        "review",
-        "typescript"
-      ],
-      "groupIds": [
-        "typescript-evidence"
-      ],
-      "sourceTree": "43f0f8516508b20f51ee9d0014dcdce9becd6545"
-    },
-    {
-      "skillId": "tdd",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/tdd",
-      "tags": [
-        "tdd",
-        "testing",
-        "verification"
-      ],
-      "groupIds": [
-        "verification"
-      ],
-      "sourceTree": "3a761ae539f19c61c7ae73eddbec54951d44e752"
-    },
-    {
-      "skillId": "technical-writing",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/technical-writing",
-      "tags": [
-        "documentation",
-        "quality",
-        "writing"
-      ],
-      "groupIds": [
-        "engineering-docs"
-      ],
-      "sourceTree": "08b040cf2ec3e053b51d08ea0a56138483b87697"
-    },
-    {
-      "skillId": "how",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/how",
-      "tags": [
-        "architecture",
-        "code-understanding",
-        "cursor"
-      ],
-      "groupIds": [
-        "cursor-evidence"
-      ],
-      "sourceTree": "4d693b4f8753139178dd2bda4412a97c9cb74807",
-      "supportedAgents": [
-        "cursor"
-      ]
-    },
-    {
-      "skillId": "why",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/why",
-      "tags": [
-        "evidence",
-        "history",
-        "research",
-        "cursor"
-      ],
-      "groupIds": [
-        "cursor-evidence"
-      ],
-      "sourceTree": "1f38fce6a9450a6b67504046f91e637a0cc84695",
-      "supportedAgents": [
-        "cursor"
-      ]
-    },
-    {
-      "skillId": "architect",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/architect",
-      "tags": [
-        "architecture",
-        "design",
-        "orchestration",
-        "cursor"
-      ],
-      "groupIds": [
-        "cursor-design"
-      ],
-      "sourceTree": "c4da9baefbed18cdf112a7dac8bef6789c5f6a57",
-      "supportedAgents": [
-        "cursor"
-      ]
-    },
-    {
-      "skillId": "arena",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/arena",
-      "tags": [
-        "comparison",
-        "design",
-        "orchestration",
-        "cursor"
-      ],
-      "groupIds": [
-        "cursor-design"
-      ],
-      "sourceTree": "0c8b7f3154f0dc968d44d0e1936cad156e597405",
-      "supportedAgents": [
-        "cursor"
-      ]
-    },
-    {
-      "skillId": "interrogate",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/interrogate",
-      "tags": [
-        "adversarial-review",
-        "multi-model",
-        "review",
-        "cursor"
-      ],
-      "groupIds": [
-        "cursor-design"
-      ],
-      "sourceTree": "87d4b9a8583780ebff0d34240a0ce18c4ec737f6",
-      "supportedAgents": [
-        "cursor"
-      ]
-    },
-    {
-      "skillId": "setup-pstack",
-      "sourceId": "cursor-pstack",
-      "sourcePath": "pstack/skills/setup-pstack",
-      "tags": [
-        "configuration",
-        "cursor",
-        "models"
-      ],
-      "groupIds": [
-        "cursor-setup"
-      ],
-      "sourceTree": "8fd669f0bab6c8807e06696d80220943f8c16226",
-      "supportedAgents": [
-        "cursor"
-      ]
     },
     {
       "skillId": "grill-with-docs",
@@ -1259,6 +812,1246 @@
         "database"
       ],
       "sourceTree": "9e5ac8c71b94b2e56c8061af78151a743467b4f4"
+    },
+    {
+      "skillId": "babysit-pr",
+      "sourceId": "theo-tstack",
+      "sourcePath": "skills/babysit-pr",
+      "sourceTree": "7b4e3e4e0f8b53a1fd049d6a27d5f998395ace52",
+      "tags": [
+        "tstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "tstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code"
+      ]
+    },
+    {
+      "skillId": "council",
+      "sourceId": "theo-tstack",
+      "sourcePath": "skills/council",
+      "sourceTree": "ed352dce7c3f58076bdd0723927a308e284c3031",
+      "tags": [
+        "tstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "tstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code"
+      ]
+    },
+    {
+      "skillId": "file-pr",
+      "sourceId": "theo-tstack",
+      "sourcePath": "skills/file-pr",
+      "sourceTree": "04b5dff2274053132e131912257c82c4d8141dd0",
+      "tags": [
+        "tstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "tstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code"
+      ]
+    },
+    {
+      "skillId": "full-send",
+      "sourceId": "theo-tstack",
+      "sourcePath": "skills/full-send",
+      "sourceTree": "de21961fbb3f6892ab4ea1fb2b58e0f95debec87",
+      "tags": [
+        "tstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "tstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code"
+      ]
+    },
+    {
+      "skillId": "full-stop",
+      "sourceId": "theo-tstack",
+      "sourcePath": "skills/full-stop",
+      "sourceTree": "16f14dba1ab91a1f7fbcce387b6b96cdd15fc4f5",
+      "tags": [
+        "tstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "tstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code"
+      ]
+    },
+    {
+      "skillId": "leaving-pr-comments",
+      "sourceId": "theo-tstack",
+      "sourcePath": "skills/leaving-pr-comments",
+      "sourceTree": "3905d758fb70b4e660038456f86ac02343a3dedf",
+      "tags": [
+        "tstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "tstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code"
+      ]
+    },
+    {
+      "skillId": "modernize",
+      "sourceId": "theo-tstack",
+      "sourcePath": "skills/modernize",
+      "sourceTree": "149f54a0835d2da770b564eb8624f1e3618a33a7",
+      "tags": [
+        "tstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "tstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code"
+      ]
+    },
+    {
+      "skillId": "sol-loop",
+      "sourceId": "theo-tstack",
+      "sourcePath": "skills/sol-loop",
+      "sourceTree": "9d2b1c1b00bf54e1b4e6e6243aec6d39037ce624",
+      "tags": [
+        "tstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "tstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code"
+      ]
+    },
+    {
+      "skillId": "takeover",
+      "sourceId": "theo-tstack",
+      "sourcePath": "skills/takeover",
+      "sourceTree": "54cfa8d25b9a356cc826daa964979e8cdce377ad",
+      "tags": [
+        "tstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "tstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code"
+      ]
+    },
+    {
+      "skillId": "architect",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/architect",
+      "sourceTree": "29891f4b7ff7e4824d0742b15cf920bd428e12e8",
+      "tags": [
+        "architecture",
+        "cursor",
+        "design",
+        "orchestration",
+        "pstack"
+      ],
+      "groupIds": [
+        "cursor-design"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "arena",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/arena",
+      "sourceTree": "276eb958ee333a81105a66ef3f417b72ddf88126",
+      "tags": [
+        "comparison",
+        "cursor",
+        "design",
+        "orchestration",
+        "pstack"
+      ],
+      "groupIds": [
+        "cursor-design"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "automate-me",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/automate-me",
+      "sourceTree": "7d67c5679fbfc6b18cb582f1915be5a98f8e0d5f",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "benchmark-checklist",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/benchmark-checklist",
+      "sourceTree": "7c402481a0934533cb49cdce811b362cf99ef641",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "blast-radius",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/blast-radius",
+      "sourceTree": "9437b18aef01b61d24b57d0fd3de24386398b643",
+      "tags": [
+        "pstack",
+        "review",
+        "risk",
+        "safety"
+      ],
+      "groupIds": [
+        "verification"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "bro",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/bro",
+      "sourceTree": "53c3b2c5dc11fe0ee4156468da27505df9239dc6",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "correct",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/correct",
+      "sourceTree": "5ebee6f7fe9cd7f97b1c698dbbf4f19ed8c4c5f4",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "create-formal-verification-skill",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/create-formal-verification-skill",
+      "sourceTree": "091f2a26d46f7bed511d0532a1329532a45899e0",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "create-verification-skill",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/create-verification-skill",
+      "sourceTree": "5aa2dae2726d09d219397fbbedc1e9500a239d28",
+      "tags": [
+        "automation",
+        "cursor",
+        "pstack",
+        "testing",
+        "verification"
+      ],
+      "groupIds": [
+        "verification"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "figure-it-out",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/figure-it-out",
+      "sourceTree": "7ba3256093e27828e829cf8f0ac63f476b32bf1e",
+      "tags": [
+        "autonomy",
+        "execution",
+        "investigation",
+        "pstack"
+      ],
+      "groupIds": [
+        "core-quality"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "how",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/how",
+      "sourceTree": "3fd1c05ec675e7225d51e19e8ec80b92217adfbf",
+      "tags": [
+        "architecture",
+        "code-understanding",
+        "cursor",
+        "pstack"
+      ],
+      "groupIds": [
+        "cursor-evidence"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "in-your-own-words",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/in-your-own-words",
+      "sourceTree": "e5ff93020dd4ed33b80d9df9a235d1945c676a0d",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "interrogate",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/interrogate",
+      "sourceTree": "3a49e73a4ffd56f682288dd145be9345bfec7434",
+      "tags": [
+        "adversarial-review",
+        "cursor",
+        "multi-model",
+        "pstack",
+        "review"
+      ],
+      "groupIds": [
+        "cursor-design"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "ketchup",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/ketchup",
+      "sourceTree": "01c36585506764e9b40b2bfb165a9943b403b158",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "ketchup-video",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/ketchup-video",
+      "sourceTree": "73f013af52a35306c4bb5b484dae72bf1c8f9edd",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "maintain-formal-verification-skill",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/maintain-formal-verification-skill",
+      "sourceTree": "0b843c90b8b04a639dbd86fec9795610374715f2",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "maintain-verification-skill",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/maintain-verification-skill",
+      "sourceTree": "b6ce4dcdc378492f9acd55a4e56ae111204b4f11",
+      "tags": [
+        "cursor",
+        "maintenance",
+        "pstack",
+        "testing",
+        "verification"
+      ],
+      "groupIds": [
+        "verification"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "make-bot-ui",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/make-bot-ui",
+      "sourceTree": "1645159d827f9adea7a9270082368eb1599927b8",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "no-comments",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/no-comments",
+      "sourceTree": "3a09487f06a3fcf9e313d397a29f5d2efde9283f",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "poteto-help",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/poteto-help",
+      "sourceTree": "f0670fe669e944b4a42f027bd440aa21d50e46f8",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "poteto-mode",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/poteto-mode",
+      "sourceTree": "432d3d07ede504b492a3711443f5a0a602a8b811",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "principle-attack-the-premise",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-attack-the-premise",
+      "sourceTree": "0b0de55b1f1e7a989a10dd8680f01a67ef378ebc",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-boundary-discipline",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-boundary-discipline",
+      "sourceTree": "743b098e6874a93b11e9f4d5843c79a243580ae2",
+      "tags": [
+        "execution",
+        "pstack",
+        "safety",
+        "scope"
+      ],
+      "groupIds": [
+        "core-quality"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-build-the-lever",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-build-the-lever",
+      "sourceTree": "dd1ee184f4f4d585e42a006f0a1837afdbb3d627",
+      "tags": [
+        "automation",
+        "execution",
+        "pstack",
+        "verification"
+      ],
+      "groupIds": [
+        "execution-principles"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-encode-lessons-in-structure",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-encode-lessons-in-structure",
+      "sourceTree": "1e42cd4db78cc95d0297dc0264c1a74439c90be9",
+      "tags": [
+        "automation",
+        "guardrails",
+        "pstack",
+        "quality"
+      ],
+      "groupIds": [
+        "core-quality"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-exhaust-the-design-space",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-exhaust-the-design-space",
+      "sourceTree": "3d93455dc2b3c0d9954e20384ed8569138bd1eb0",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-experience-first",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-experience-first",
+      "sourceTree": "2dbcf0d0d4473ca3a93d17e2167b587cfec7f6da",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-explain-the-number",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-explain-the-number",
+      "sourceTree": "7d97b8efd90780774b38ccb9dad1aa232bd51ff9",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-fix-root-causes",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-fix-root-causes",
+      "sourceTree": "f1075eead43f95cd9896381345ff28f0da7e1aea",
+      "tags": [
+        "debugging",
+        "pstack",
+        "reliability",
+        "root-cause"
+      ],
+      "groupIds": [
+        "diagnosis-review"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-foundational-thinking",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-foundational-thinking",
+      "sourceTree": "5880f6577956b14ee4ee89cb72c03fd8bd82a5ac",
+      "tags": [
+        "architecture",
+        "data-modeling",
+        "design",
+        "pstack"
+      ],
+      "groupIds": [
+        "architecture"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-guard-the-context-window",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-guard-the-context-window",
+      "sourceTree": "bf09c18e975ded9dc137631c6529db941dda24a2",
+      "tags": [
+        "context",
+        "continuity",
+        "orchestration",
+        "pstack"
+      ],
+      "groupIds": [
+        "core-quality"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-laziness-protocol",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-laziness-protocol",
+      "sourceTree": "cb8aa817489838fe615d0dfe321d263e8a3f1faa",
+      "tags": [
+        "pstack",
+        "refactoring",
+        "scope",
+        "simplicity"
+      ],
+      "groupIds": [
+        "execution-principles"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-make-operations-idempotent",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-make-operations-idempotent",
+      "sourceTree": "5111ac1acc6584dad178af96174140ee5b29bca4",
+      "tags": [
+        "operations",
+        "pstack",
+        "reliability",
+        "retries"
+      ],
+      "groupIds": [
+        "operations-reliability"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-migrate-callers-then-delete-legacy-apis",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-migrate-callers-then-delete-legacy-apis",
+      "sourceTree": "cf45195158110569ac6a97d0e8dbed04531373ed",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-minimize-reader-load",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-minimize-reader-load",
+      "sourceTree": "f64929f93ffd334f36699b83f53ee7155c4a2063",
+      "tags": [
+        "architecture",
+        "maintainability",
+        "pstack",
+        "simplicity"
+      ],
+      "groupIds": [
+        "architecture"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-model-the-domain",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-model-the-domain",
+      "sourceTree": "6ea2f64ebf635cb2eb8391197e40f32e5f841557",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-never-block-on-the-human",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-never-block-on-the-human",
+      "sourceTree": "d2578043c77706411c48c5b7cfe03dc3d45e3b15",
+      "tags": [
+        "autonomy",
+        "execution",
+        "human-in-loop",
+        "pstack"
+      ],
+      "groupIds": [
+        "execution-principles"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-outcome-oriented-execution",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-outcome-oriented-execution",
+      "sourceTree": "8d87411f36c74111e5e54a804dda727e2c034914",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-prove-it-works",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-prove-it-works",
+      "sourceTree": "41e2142b6479db1dfdb9c2a3b856a895af61089d",
+      "tags": [
+        "deployment",
+        "pstack",
+        "testing",
+        "verification"
+      ],
+      "groupIds": [
+        "verification"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-redesign-from-first-principles",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-redesign-from-first-principles",
+      "sourceTree": "20822072ed14c75eed7f527f734c5d347c43845e",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-separate-before-serializing-shared-state",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-separate-before-serializing-shared-state",
+      "sourceTree": "89505c32f2d472da415e7696a6893ad28e108c5f",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-sequence-verifiable-units",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-sequence-verifiable-units",
+      "sourceTree": "c1b345dcea21e3d58e7012f8e6547974d295fb3a",
+      "tags": [
+        "execution",
+        "planning",
+        "pstack",
+        "verification"
+      ],
+      "groupIds": [
+        "verification"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-subtract-before-you-add",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-subtract-before-you-add",
+      "sourceTree": "760f5b131e920c0e9914a0ef8cb4b875918af31a",
+      "tags": [
+        "pstack",
+        "refactoring",
+        "scope",
+        "simplicity"
+      ],
+      "groupIds": [
+        "architecture"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-test-behavior-not-implementation",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-test-behavior-not-implementation",
+      "sourceTree": "7fa3d5dba8496dcd08278a99903a2dfb58a2e179",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "principle-type-system-discipline",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/principle-type-system-discipline",
+      "sourceTree": "32850aaddd70478a6dacb153bbcef8532bf7d626",
+      "tags": [
+        "architecture",
+        "pstack",
+        "safety",
+        "types"
+      ],
+      "groupIds": [
+        "architecture"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "recall",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/recall",
+      "sourceTree": "4dd0f8b495008fc106b2314401f91bc9cf96ed7f",
+      "tags": [
+        "continuity",
+        "cursor",
+        "handoff",
+        "memory",
+        "pstack"
+      ],
+      "groupIds": [
+        "core-quality"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "reflect",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/reflect",
+      "sourceTree": "fbc98c056509e9ee3dfceebbc0acfa4591491cc2",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "setup-pstack",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/setup-pstack",
+      "sourceTree": "800811ddcb1d1d1831bfd853cfad14429a3d6842",
+      "tags": [
+        "configuration",
+        "cursor",
+        "models",
+        "pstack"
+      ],
+      "groupIds": [
+        "cursor-setup"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "sharpen",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/sharpen",
+      "sourceTree": "726fcb216692c5a2ad78b5c2ae19c2e6ac66cb67",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "show-me-your-work",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/show-me-your-work",
+      "sourceTree": "118c0642360ab53de52b3f8dd044102567dbcaa9",
+      "tags": [
+        "cursor",
+        "evidence",
+        "pstack",
+        "reporting",
+        "verification"
+      ],
+      "groupIds": [
+        "verification"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "statechart",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/statechart",
+      "sourceTree": "a79a48c6970be3b63d6efefb0a306b7c87de88d0",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "swarm",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/swarm",
+      "sourceTree": "4a1abb26cce3450f9b14056109f974edaeff4ec1",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "tdd",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/tdd",
+      "sourceTree": "1064da72ceca07bf7f36bddebada585bb59da7bc",
+      "tags": [
+        "pstack",
+        "tdd",
+        "testing",
+        "verification"
+      ],
+      "groupIds": [
+        "verification"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "teach",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/teach",
+      "sourceTree": "3ee517292dae0476dc516f9f3805c08fb943c6ff",
+      "tags": [
+        "pstack",
+        "workflow"
+      ],
+      "groupIds": [
+        "pstack"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
+    },
+    {
+      "skillId": "technical-writing",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/technical-writing",
+      "sourceTree": "f35560fd015d95ae92eb3c7414d3a48065299dfa",
+      "tags": [
+        "documentation",
+        "pstack",
+        "quality",
+        "writing"
+      ],
+      "groupIds": [
+        "engineering-docs"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "typescript-best-practices",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/typescript-best-practices",
+      "sourceTree": "1ccca3c7c0d358c0cd5edd313cd03a31fc75ee5f",
+      "tags": [
+        "pstack",
+        "quality",
+        "review",
+        "typescript"
+      ],
+      "groupIds": [
+        "typescript-evidence"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "unslop",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/unslop",
+      "sourceTree": "4e572dd70e5557f490e3991c52ea58f0dcee8936",
+      "tags": [
+        "anti-slop",
+        "cross-agent",
+        "pstack",
+        "quality",
+        "writing"
+      ],
+      "groupIds": [
+        "core-quality"
+      ],
+      "supportedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "grok"
+      ]
+    },
+    {
+      "skillId": "why",
+      "sourceId": "cursor-pstack",
+      "sourcePath": "pstack/skills/why",
+      "sourceTree": "ba549f92c3a8dc1506b21674e8794eb980019bf3",
+      "tags": [
+        "cursor",
+        "evidence",
+        "history",
+        "pstack",
+        "research"
+      ],
+      "groupIds": [
+        "cursor-evidence"
+      ],
+      "supportedAgents": [
+        "cursor"
+      ]
     }
   ]
 }

@@ -5,7 +5,8 @@
   "tags": [
     "context",
     "continuity",
-    "orchestration"
+    "orchestration",
+    "pstack"
   ],
   "groupIds": [
     "core-quality"
@@ -23,10 +24,10 @@
   "provenance": {
     "sourceId": "cursor-pstack",
     "sourceRepository": "https://github.com/cursor/plugins",
-    "sourceRevision": "195d9359bdc2890f83745df69927528ad4538406",
+    "sourceRevision": "1ba91fc25c0977741dd0e267849e6234b037ed0a",
     "sourcePath": "pstack/skills/principle-guard-the-context-window",
-    "sourceTree": "160097c93ba42dd955907f5c02ac38a5975f1518",
-    "importedAt": "2026-08-13",
+    "sourceTree": "bf09c18e975ded9dc137631c6529db941dda24a2",
+    "importedAt": "2026-10-29",
     "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {

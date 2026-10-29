@@ -187,6 +187,47 @@
     "repo-hygiene": [
       "agent-skills:resolving-merge-conflicts",
       "agent-skills:setup-pre-commit"
+    ],
+    "tstack": [
+      "agent-skills:babysit-pr",
+      "agent-skills:council",
+      "agent-skills:file-pr",
+      "agent-skills:full-send",
+      "agent-skills:full-stop",
+      "agent-skills:leaving-pr-comments",
+      "agent-skills:modernize",
+      "agent-skills:sol-loop",
+      "agent-skills:takeover"
+    ],
+    "pstack": [
+      "agent-skills:automate-me",
+      "agent-skills:benchmark-checklist",
+      "agent-skills:bro",
+      "agent-skills:correct",
+      "agent-skills:create-formal-verification-skill",
+      "agent-skills:in-your-own-words",
+      "agent-skills:ketchup",
+      "agent-skills:ketchup-video",
+      "agent-skills:maintain-formal-verification-skill",
+      "agent-skills:make-bot-ui",
+      "agent-skills:no-comments",
+      "agent-skills:poteto-help",
+      "agent-skills:poteto-mode",
+      "agent-skills:principle-attack-the-premise",
+      "agent-skills:principle-exhaust-the-design-space",
+      "agent-skills:principle-experience-first",
+      "agent-skills:principle-explain-the-number",
+      "agent-skills:principle-migrate-callers-then-delete-legacy-apis",
+      "agent-skills:principle-model-the-domain",
+      "agent-skills:principle-outcome-oriented-execution",
+      "agent-skills:principle-redesign-from-first-principles",
+      "agent-skills:principle-separate-before-serializing-shared-state",
+      "agent-skills:principle-test-behavior-not-implementation",
+      "agent-skills:reflect",
+      "agent-skills:sharpen",
+      "agent-skills:statechart",
+      "agent-skills:swarm",
+      "agent-skills:teach"
     ]
   },
   "agentDefinitions": {

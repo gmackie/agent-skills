@@ -1,0 +1,32 @@
+{
+  "id": "bro",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "pstack",
+    "workflow"
+  ],
+  "groupIds": [
+    "pstack"
+  ],
+  "invocation": "user",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "cursor"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "cursor-pstack",
+    "sourceRepository": "https://github.com/cursor/plugins",
+    "sourceRevision": "1ba91fc25c0977741dd0e267849e6234b037ed0a",
+    "sourcePath": "pstack/skills/bro",
+    "sourceTree": "53c3b2c5dc11fe0ee4156468da27505df9239dc6",
+    "importedAt": "2026-10-29",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/bro",
+    "skillFile": "skills/bro/SKILL.md"
+  }
+}

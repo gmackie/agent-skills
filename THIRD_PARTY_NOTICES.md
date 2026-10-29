@@ -6,7 +6,8 @@ upstream MIT or Apache-2.0 license notices under `third-party/`.
 
 | Source | Pinned revision | License notice |
 | --- | --- | --- |
-| [Cursor pstack](https://github.com/cursor/plugins/tree/195d9359bdc2890f83745df69927528ad4538406/pstack) by Lauren Tan | `195d9359bdc2890f83745df69927528ad4538406` | [`third-party/cursor-pstack/LICENSE`](third-party/cursor-pstack/LICENSE) |
+| [Theo Browne tstack](https://github.com/t3dotgg/tstack/tree/1085050f3baed1ac724caa4a8166145fb2ac88af) | `1085050f3baed1ac724caa4a8166145fb2ac88af` | [`third-party/theo-tstack/LICENSE`](third-party/theo-tstack/LICENSE) |
+| [Cursor pstack](https://github.com/cursor/plugins/tree/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack) by Lauren Tan | `1ba91fc25c0977741dd0e267849e6234b037ed0a` | [`third-party/cursor-pstack/LICENSE`](third-party/cursor-pstack/LICENSE) |
 | [Matt Pocock skills](https://github.com/mattpocock/skills/tree/84fdeffd12f2ee307994d1eb6feb48173b6e0502) | `84fdeffd12f2ee307994d1eb6feb48173b6e0502` | [`third-party/mattpocock-skills/LICENSE`](third-party/mattpocock-skills/LICENSE) |
 | [Dillon Mulroy anti-slop](https://github.com/dmmulroy/anti-slop/tree/9b80d9a5c317d3af94d88a577bdbde4d9a45f7be) | `9b80d9a5c317d3af94d88a577bdbde4d9a45f7be` | [`third-party/dmmulroy-anti-slop/LICENSE`](third-party/dmmulroy-anti-slop/LICENSE) |
 | [Expo skills](https://github.com/expo/skills/tree/50f59f837ddb7595d8c6683c693207e265d58c43) | `50f59f837ddb7595d8c6683c693207e265d58c43` | [`third-party/expo-skills/LICENSE`](third-party/expo-skills/LICENSE) |

@@ -13,15 +13,16 @@ imported_count=0
 for metadata in skills/*/skill.json; do
   source_id="$(jq -r '.provenance.sourceId // empty' "$metadata")"
   case "$source_id" in
-    cursor-pstack|mattpocock-skills|dmmulroy-anti-slop|expo-skills|anthropic-skills|cloudflare-skills|microsoft-playwright-cli|supabase-agent-skills|turso-agent-skills)
+    theo-tstack|cursor-pstack|mattpocock-skills|dmmulroy-anti-slop|expo-skills|anthropic-skills|cloudflare-skills|microsoft-playwright-cli|supabase-agent-skills|turso-agent-skills)
       jq -e --arg mode "$overlay_mode" '.provenance.importMode == $mode' "$metadata" >/dev/null
       imported_count=$((imported_count + 1))
       ;;
   esac
 done
 
-if [[ "$imported_count" -ne 81 ]]; then
-  printf 'Expected 81 upstream imports with the unslop overlay, found %s.\n' "$imported_count" >&2
+expected_count="$(jq '.imports | length' catalog/upstream-sources.json)"
+if [[ "$imported_count" -ne "$expected_count" ]]; then
+  printf 'Expected %s upstream imports with the unslop overlay, found %s.\n' "$expected_count" "$imported_count" >&2
   exit 1
 fi
 
