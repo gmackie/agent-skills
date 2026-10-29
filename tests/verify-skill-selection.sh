@@ -14,13 +14,15 @@ test -x "$resolver"
 jq -e '
   .version == 1 and
   .sources["cursor-pstack"].repository == "https://github.com/cursor/plugins" and
-  .sources["cursor-pstack"].revision == "195d9359bdc2890f83745df69927528ad4538406" and
+  .sources["cursor-pstack"].revision == "1ba91fc25c0977741dd0e267849e6234b037ed0a" and
+  .sources["theo-tstack"].repository == "https://github.com/t3dotgg/tstack" and
+  .sources["theo-tstack"].revision == "1085050f3baed1ac724caa4a8166145fb2ac88af" and
   .sources["mattpocock-skills"].repository == "https://github.com/mattpocock/skills" and
   .sources["mattpocock-skills"].revision == "84fdeffd12f2ee307994d1eb6feb48173b6e0502" and
   .sources["dmmulroy-anti-slop"].repository == "https://github.com/dmmulroy/anti-slop" and
   .sources["dmmulroy-anti-slop"].revision == "9b80d9a5c317d3af94d88a577bdbde4d9a45f7be" and
-  (.imports | length) == 50 and
-  ([.imports[].skillId] | unique | length) == 50
+  (.imports | length) == 118 and
+  ([.imports[].skillId] | unique | length) == 118
 ' "$sources" >/dev/null
 
 expected_imports=(
@@ -83,8 +85,8 @@ if [[ "${#expected_imports[@]}" -ne 50 ]]; then
 fi
 
 actual_import_count="$(jq '.imports | length' "$sources")"
-if [[ "$actual_import_count" -ne 50 ]]; then
-  echo "expected 50 upstream imports, got $actual_import_count" >&2
+if [[ "$actual_import_count" -ne 118 ]]; then
+  echo "expected 118 upstream imports, got $actual_import_count" >&2
   exit 1
 fi
 

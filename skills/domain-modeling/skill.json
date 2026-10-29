@@ -27,7 +27,7 @@
     "sourcePath": "skills/engineering/domain-modeling",
     "sourceTree": "959e63161ff78b4b1cd553b2c0e09e0c68418e5f",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/domain-modeling",

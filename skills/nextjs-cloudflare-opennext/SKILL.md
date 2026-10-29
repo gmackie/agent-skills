@@ -22,7 +22,7 @@ This is an adoption and hardening skill, not a one-shot migration script. Its jo
 
 If the user actually wants to leave Next.js and move to vinext, use [migrate-to-vinext](../migrate-to-vinext/SKILL.md) instead.
 
-## Default Workflow
+## Default workflow
 
 ### 1. Confirm the skill applies
 
@@ -99,7 +99,7 @@ Default output location:
 docs/cloudflare/YYYY-MM-DD-opennext-adoption.md
 ```
 
-## Output Contract
+## Output contract
 
 Minimum sections:
 
@@ -112,7 +112,7 @@ Minimum sections:
 
 The output should help the next agent start implementation without rediscovering the repo.
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -121,7 +121,7 @@ The output should help the next agent start implementation without rediscovering
 | leave Next.js for a Vite-based path | use `migrate-to-vinext` |
 | validate bindings and dev setup | review Wrangler config and binding access |
 
-## Common Mistakes
+## Common mistakes
 
 - treating OpenNext adoption as only an `npm install` step
 - skipping Wrangler config and binding review

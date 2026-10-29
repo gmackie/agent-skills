@@ -34,7 +34,7 @@
     "sourcePath": "skills/misc/setup-pre-commit",
     "sourceTree": "dcc584ff84c4f040ea12742fcb46b7c3ad7070bd",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/setup-pre-commit",

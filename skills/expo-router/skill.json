@@ -1,0 +1,38 @@
+{
+  "id": "expo-router",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "expo",
+    "mobile",
+    "react-native"
+  ],
+  "groupIds": [
+    "expo"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "expo-skills",
+    "sourceRepository": "https://github.com/expo/skills",
+    "sourceRevision": "50f59f837ddb7595d8c6683c693207e265d58c43",
+    "sourcePath": "plugins/expo/skills/expo-router",
+    "sourceTree": "73ffdc019fda95db002543eea5760bcf45a4b450",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/expo-router",
+    "skillFile": "skills/expo-router/SKILL.md"
+  }
+}

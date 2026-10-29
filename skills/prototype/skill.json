@@ -27,7 +27,7 @@
     "sourcePath": "skills/engineering/prototype",
     "sourceTree": "57569dda16077a016b8fb82494dbf9f6430d7cc4",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/prototype",

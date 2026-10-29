@@ -33,7 +33,7 @@
     "sourcePath": "skills/engineering/triage",
     "sourceTree": "b20940845332f540e3f17b0cb32d45fd8c2298bf",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/triage",

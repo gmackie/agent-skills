@@ -121,7 +121,7 @@ Hierarchy:
 
 ## Examples
 
-### 2D Platformer Setup
+### 2D platformer setup
 ```
 1. Create 2D project
 2. Install: Input System, Cinemachine, 2D Pixel Perfect
@@ -130,7 +130,7 @@ Hierarchy:
 5. Set up Cinemachine virtual camera
 ```
 
-### 3D Mobile Game Setup
+### 3D mobile game setup
 ```
 1. Create 3D URP project
 2. Install: Input System, TextMeshPro

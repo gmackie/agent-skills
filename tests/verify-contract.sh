@@ -120,6 +120,7 @@ nix eval --impure --extra-experimental-features "nix-command flakes" --expr "
 
 chmod +x "$skill_selection_verifier"
 "$skill_selection_verifier"
+"$root/tests/verify-official-stack-skills.sh"
 
 nix eval --impure --extra-experimental-features "nix-command flakes" --expr "
   let flake = builtins.getFlake \"$flake_ref\";

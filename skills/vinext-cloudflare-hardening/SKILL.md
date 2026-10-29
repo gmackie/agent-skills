@@ -23,7 +23,7 @@ This skill focuses on:
 
 If the repo is still on Next.js, use [migrate-to-vinext](../migrate-to-vinext/SKILL.md) first.
 
-## Default Workflow
+## Default workflow
 
 ### 1. Confirm the skill applies
 
@@ -90,7 +90,7 @@ Default output location:
 docs/cloudflare/YYYY-MM-DD-vinext-hardening.md
 ```
 
-## Output Contract
+## Output contract
 
 Minimum sections:
 
@@ -101,7 +101,7 @@ Minimum sections:
 - drift and risk findings
 - next steps
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -110,7 +110,7 @@ Minimum sections:
 | review static assets and images | inspect Wrangler and app expectations |
 | review cache behavior | check cache handlers and related bindings |
 
-## Common Mistakes
+## Common mistakes
 
 - treating vinext migration completion as production hardening
 - forgetting assets or image-related bindings

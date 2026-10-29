@@ -1,19 +1,20 @@
 ---
 name: principle-boundary-discipline
-description: "Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions."
+description: >
+  Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions.
 license: MIT
 metadata:
-  tags: "execution,safety,scope"
+  tags: "execution,pstack,safety,scope"
   groups: "core-quality"
   invocation: "user"
-  source: "https://github.com/cursor/plugins@195d9359bdc2890f83745df69927528ad4538406:pstack/skills/principle-boundary-discipline"
+  source: "https://github.com/cursor/plugins@1ba91fc25c0977741dd0e267849e6234b037ed0a:pstack/skills/principle-boundary-discipline"
 ---
 
 # Boundary Discipline
 
-Place validation, type narrowing, and error handling at system boundaries. Trust internal code unconditionally. Business logic lives in pure functions; the shell is thin and mechanical.
+Place validation, type narrowing, and error handling at system boundaries. Trust internal code unconditionally. Business logic lives in pure functions. The shell is thin and mechanical.
 
-**Why:** Scattered validation is noisy, redundant, and gives a false sense of safety. Validate data once at the boundary. Keep logic out of framework wiring so it can be tested without the framework.
+**Why:** Scattered validation is noisy, redundant, and gives a false sense of safety. Keep logic out of framework wiring so it can be tested without the framework.
 
 **The pattern:**
 - **At boundaries** (CLI args, config files, external APIs, network protocols): validate, return errors, handle defensively.

@@ -33,7 +33,7 @@
     "sourcePath": "skills/engineering/to-spec",
     "sourceTree": "dc32a36159f99c854cb470f371106cd38513a15f",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/to-spec",

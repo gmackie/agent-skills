@@ -9,11 +9,11 @@ metadata:
 
 # Migrate Next.js to vinext
 
-vinext reimplements the Next.js API surface on Vite. Existing `app/`, `pages/`, and `next.config.js` work as-is — migration is a package swap, config generation, and ESM conversion. No changes to application code required.
+vinext reimplements the Next.js API surface on Vite. Existing `app/`, `pages/`, and `next.config.js` work as-is; migration is a package swap, config generation, and ESM conversion. No changes to application code required.
 
-## FIRST: Verify Next.js Project
+## First: verify the Next.js project
 
-Confirm `next` is in `dependencies` or `devDependencies` in `package.json`. If not found, STOP — this skill does not apply.
+Confirm `next` is in `dependencies` or `devDependencies` in `package.json`. If not found, STOP: this skill does not apply.
 
 Detect the package manager from the lockfile:
 
@@ -26,24 +26,24 @@ Detect the package manager from the lockfile:
 
 Detect the router: if an `app/` directory exists at root or under `src/`, it's App Router. If only `pages/` exists, it's Pages Router. Both can coexist.
 
-## Quick Reference
+## Quick reference
 
 | Command | Purpose |
 |---------|---------|
 | `vinext check` | Scan project for compatibility issues, produce scored report |
-| `vinext init` | Automated migration — installs deps, generates config, converts to ESM |
+| `vinext init` | Automated migration: installs deps, generates config, converts to ESM |
 | `vinext dev` | Development server with HMR |
 | `vinext build` | Production build (multi-environment for App Router) |
 | `vinext start` | Local production server |
 | `vinext deploy` | Build and deploy to Cloudflare Workers |
 
-## Phase 1: Check Compatibility
+## Phase 1: Check compatibility
 
 Run `vinext check` (install vinext first if needed via `npx vinext check`). Review the scored report. If critical incompatibilities exist, inform the user before proceeding.
 
 See [references/compatibility.md](references/compatibility.md) for supported/unsupported features and ecosystem library status.
 
-## Phase 2: Automated Migration (Recommended)
+## Phase 2: Automated migration (recommended)
 
 Run `vinext init`. This command:
 
@@ -54,11 +54,11 @@ Run `vinext init`. This command:
 5. Adds `dev:vinext` and `build:vinext` scripts to package.json
 6. Generates a minimal `vite.config.ts`
 
-This is non-destructive — the existing Next.js setup continues to work alongside vinext. Use the `dev:vinext` script to test before fully switching over.
+This is non-destructive; the existing Next.js setup continues to work alongside vinext. Use the `dev:vinext` script to test before fully switching over.
 
 If `vinext init` succeeds, skip to Phase 4 (Verify). If it fails or the user prefers manual control, continue to Phase 3.
 
-## Phase 3: Manual Migration
+## Phase 3: Manual migration
 
 Use this as a fallback when `vinext init` doesn't work or the user wants full control.
 
@@ -114,9 +114,9 @@ export default defineConfig({ plugins: [vinext()] });
 
 vinext auto-registers `@vitejs/plugin-rsc` for App Router when the `rsc` option is not explicitly `false`. No manual RSC plugin config needed for local development.
 
-## Phase 4: Cloudflare Deployment (Optional)
+## Phase 4: Cloudflare deployment (optional)
 
-If the user wants to deploy to Cloudflare Workers, the simplest path is `vinext deploy` — it auto-generates `wrangler.jsonc`, worker entry, and Vite config if missing, installs `@cloudflare/vite-plugin` and `wrangler`, then builds and deploys.
+If the user wants to deploy to Cloudflare Workers, the simplest path is `vinext deploy`. It auto-generates `wrangler.jsonc`, a worker entry, and Vite config if missing; installs `@cloudflare/vite-plugin` and `wrangler`; then builds and deploys.
 
 For manual setup or custom worker entries, see [references/config-examples.md](references/config-examples.md).
 
@@ -125,11 +125,11 @@ For manual setup or custom worker entries, see [references/config-examples.md](r
 1. Run `vinext dev` to start the development server
 2. Confirm the server starts without errors
 3. Navigate key routes and check functionality
-4. Report the result to the user — if errors occur, share full output
+4. Report the result to the user; if errors occur, share full output
 
 See [references/troubleshooting.md](references/troubleshooting.md) for common migration errors.
 
-## Known Limitations
+## Known limitations
 
 | Feature | Status |
 |---------|--------|
@@ -143,7 +143,7 @@ See [references/troubleshooting.md](references/troubleshooting.md) for common mi
 
 ## Anti-patterns
 
-- **Do not modify `app/`, `pages/`, or application code.** vinext shims all `next/*` imports — no import rewrites needed.
+- **Do not modify `app/`, `pages/`, or application code.** vinext shims all `next/*` imports, so no import rewrites are needed.
 - **Do not rewrite `next/*` imports** to `vinext/*` in application code. Imports like `next/image`, `next/link`, `next/server` resolve automatically.
 - **Do not copy webpack/Turbopack config** into Vite config. Use Vite-native plugins instead.
 - **Do not skip the compatibility check.** Run `vinext check` before migration to surface issues early.

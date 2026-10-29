@@ -1,0 +1,3 @@
+# Non-deploying, distributable skill catalog.
+app: gmackie-agent-skills
+server: https://forgegraf.com

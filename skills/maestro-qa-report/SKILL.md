@@ -15,7 +15,7 @@ Run Maestro as a report-only QA pass.
 
 This skill is for verifying behavior and documenting failures, not fixing them. Use it before a fix-capable QA skill, before release-readiness work, or when the user wants reproducible mobile QA evidence from a local simulator or emulator run.
 
-## Default Workflow
+## Default workflow
 
 ### 1. Confirm the test surface
 
@@ -97,7 +97,7 @@ Do not:
 
 Escalate with a clean report instead.
 
-## Severity Rules
+## Severity rules
 
 | Severity | Meaning |
 | --- | --- |
@@ -108,7 +108,7 @@ Escalate with a clean report instead.
 
 When uncertain, prefer `major` over `blocker` unless the app is unusable for the target flow.
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -118,7 +118,7 @@ When uncertain, prefer `major` over `blocker` unless the app is unusable for the
 | debug environment issues | add `--debug-output-dir` |
 | write the final summary | use the report template |
 
-## Common Mistakes
+## Common mistakes
 
 - running against Expo Go when the issue depends on a real dev or preview build
 - treating missing simulator setup as an app bug

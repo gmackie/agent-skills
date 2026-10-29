@@ -1,0 +1,36 @@
+{
+  "id": "turso-db",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "database",
+    "sqlite",
+    "turso"
+  ],
+  "groupIds": [
+    "database"
+  ],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "turso-agent-skills",
+    "sourceRepository": "https://github.com/tursodatabase/agent-skills",
+    "sourceRevision": "34ced52fd1bd32e802622126e299cfa886d68441",
+    "sourcePath": "skills/turso-db",
+    "sourceTree": "9e5ac8c71b94b2e56c8061af78151a743467b4f4",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/turso-db",
+    "skillFile": "skills/turso-db/SKILL.md"
+  }
+}

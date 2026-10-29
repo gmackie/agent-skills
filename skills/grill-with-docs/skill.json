@@ -33,7 +33,7 @@
     "sourcePath": "skills/engineering/grill-with-docs",
     "sourceTree": "5fdcdeedf2d0c73b3ecb1da0a464dd885590f8d6",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/grill-with-docs",

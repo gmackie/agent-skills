@@ -27,7 +27,7 @@
     "sourcePath": "skills/engineering/setup-matt-pocock-skills",
     "sourceTree": "abf20c04a4aa8a37ff20aa7286f28857150f8b8d",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/setup-matt-pocock-skills",

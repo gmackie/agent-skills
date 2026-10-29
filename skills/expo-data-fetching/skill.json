@@ -1,0 +1,38 @@
+{
+  "id": "expo-data-fetching",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "expo",
+    "mobile",
+    "react-native"
+  ],
+  "groupIds": [
+    "expo"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "expo-skills",
+    "sourceRepository": "https://github.com/expo/skills",
+    "sourceRevision": "50f59f837ddb7595d8c6683c693207e265d58c43",
+    "sourcePath": "plugins/expo/skills/expo-data-fetching",
+    "sourceTree": "6b2db27e71b992a194e4b83e009d518f4f6f658b",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/expo-data-fetching",
+    "skillFile": "skills/expo-data-fetching/SKILL.md"
+  }
+}

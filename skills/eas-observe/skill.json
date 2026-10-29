@@ -1,0 +1,39 @@
+{
+  "id": "eas-observe",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "deployment",
+    "eas",
+    "expo",
+    "mobile"
+  ],
+  "groupIds": [
+    "expo"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "expo-skills",
+    "sourceRepository": "https://github.com/expo/skills",
+    "sourceRevision": "50f59f837ddb7595d8c6683c693207e265d58c43",
+    "sourcePath": "plugins/expo/skills/eas-observe",
+    "sourceTree": "4de6163b60f14e870841e614bb0bfde5efff4261",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/eas-observe",
+    "skillFile": "skills/eas-observe/SKILL.md"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "expo-overview",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "expo",
+    "mobile",
+    "react-native"
+  ],
+  "groupIds": [
+    "expo"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "expo-skills",
+    "sourceRepository": "https://github.com/expo/skills",
+    "sourceRevision": "50f59f837ddb7595d8c6683c693207e265d58c43",
+    "sourcePath": "plugins/expo/skills/expo-overview",
+    "sourceTree": "37d6aed73dd9edf5705742d681c93139a2091e34",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/expo-overview",
+    "skillFile": "skills/expo-overview/SKILL.md"
+  }
+}

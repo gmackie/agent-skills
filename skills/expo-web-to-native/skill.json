@@ -1,0 +1,38 @@
+{
+  "id": "expo-web-to-native",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "expo",
+    "mobile",
+    "react-native"
+  ],
+  "groupIds": [
+    "expo"
+  ],
+  "invocation": "model",
+  "runtimePackages": [
+    "nodejs"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "expo-skills",
+    "sourceRepository": "https://github.com/expo/skills",
+    "sourceRevision": "50f59f837ddb7595d8c6683c693207e265d58c43",
+    "sourcePath": "plugins/expo/skills/expo-web-to-native",
+    "sourceTree": "0050ce4bd1272afeade221f6412999be230f000e",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/expo-web-to-native",
+    "skillFile": "skills/expo-web-to-native/SKILL.md"
+  }
+}

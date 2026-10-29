@@ -82,7 +82,31 @@
     ],
     "expo": [
       "agent-skills:expo-build-validation",
-      "agent-skills:expo-build-submit"
+      "agent-skills:expo-build-submit",
+      "agent-skills:eas-app-stores",
+      "agent-skills:eas-hosting",
+      "agent-skills:eas-observe",
+      "agent-skills:eas-simulator",
+      "agent-skills:eas-update-insights",
+      "agent-skills:eas-workflows",
+      "agent-skills:expo-animation",
+      "agent-skills:expo-app-clip",
+      "agent-skills:expo-brownfield",
+      "agent-skills:expo-data-fetching",
+      "agent-skills:expo-design-system",
+      "agent-skills:expo-dev-client",
+      "agent-skills:expo-dom",
+      "agent-skills:expo-examples",
+      "agent-skills:expo-module",
+      "agent-skills:expo-native-ui",
+      "agent-skills:expo-overview",
+      "agent-skills:expo-project-structure",
+      "agent-skills:expo-router",
+      "agent-skills:expo-skill-feedback",
+      "agent-skills:expo-tailwind-setup",
+      "agent-skills:expo-ui",
+      "agent-skills:expo-upgrade",
+      "agent-skills:expo-web-to-native"
     ],
     "react": [
       "agent-skills:react-project-init",
@@ -99,7 +123,18 @@
     ],
     "cloudflare": [
       "agent-skills:cloudflare-workers-bindings-local-dev",
-      "agent-skills:cloudflare-d1-development"
+      "agent-skills:cloudflare-d1-development",
+      "agent-skills:cloudflare",
+      "agent-skills:durable-objects",
+      "agent-skills:workers-best-practices"
+    ],
+    "playwright": [
+      "agent-skills:playwright-cli",
+      "agent-skills:webapp-testing"
+    ],
+    "database": [
+      "agent-skills:supabase-postgres-best-practices",
+      "agent-skills:turso-db"
     ],
     "observability": [
       "agent-skills:sentry-release-triage",
@@ -152,6 +187,47 @@
     "repo-hygiene": [
       "agent-skills:resolving-merge-conflicts",
       "agent-skills:setup-pre-commit"
+    ],
+    "tstack": [
+      "agent-skills:babysit-pr",
+      "agent-skills:council",
+      "agent-skills:file-pr",
+      "agent-skills:full-send",
+      "agent-skills:full-stop",
+      "agent-skills:leaving-pr-comments",
+      "agent-skills:modernize",
+      "agent-skills:sol-loop",
+      "agent-skills:takeover"
+    ],
+    "pstack": [
+      "agent-skills:automate-me",
+      "agent-skills:benchmark-checklist",
+      "agent-skills:bro",
+      "agent-skills:correct",
+      "agent-skills:create-formal-verification-skill",
+      "agent-skills:in-your-own-words",
+      "agent-skills:ketchup",
+      "agent-skills:ketchup-video",
+      "agent-skills:maintain-formal-verification-skill",
+      "agent-skills:make-bot-ui",
+      "agent-skills:no-comments",
+      "agent-skills:poteto-help",
+      "agent-skills:poteto-mode",
+      "agent-skills:principle-attack-the-premise",
+      "agent-skills:principle-exhaust-the-design-space",
+      "agent-skills:principle-experience-first",
+      "agent-skills:principle-explain-the-number",
+      "agent-skills:principle-migrate-callers-then-delete-legacy-apis",
+      "agent-skills:principle-model-the-domain",
+      "agent-skills:principle-outcome-oriented-execution",
+      "agent-skills:principle-redesign-from-first-principles",
+      "agent-skills:principle-separate-before-serializing-shared-state",
+      "agent-skills:principle-test-behavior-not-implementation",
+      "agent-skills:reflect",
+      "agent-skills:sharpen",
+      "agent-skills:statechart",
+      "agent-skills:swarm",
+      "agent-skills:teach"
     ]
   },
   "agentDefinitions": {

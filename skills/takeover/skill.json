@@ -1,0 +1,35 @@
+{
+  "id": "takeover",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "tstack",
+    "workflow"
+  ],
+  "groupIds": [
+    "tstack"
+  ],
+  "invocation": "user",
+  "runtimePackages": [
+    "gh"
+  ],
+  "supportedAgents": [
+    "codex",
+    "claude-code"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "theo-tstack",
+    "sourceRepository": "https://github.com/t3dotgg/tstack",
+    "sourceRevision": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+    "sourcePath": "skills/takeover",
+    "sourceTree": "54cfa8d25b9a356cc826daa964979e8cdce377ad",
+    "importedAt": "2026-10-29",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/takeover",
+    "skillFile": "skills/takeover/SKILL.md"
+  }
+}

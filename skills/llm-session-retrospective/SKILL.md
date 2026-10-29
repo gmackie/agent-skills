@@ -15,7 +15,7 @@ Turn recent agent work into reusable engineering knowledge.
 
 Default to discovery first. Search the current repo, nearby working repos, and local agent directories before asking the user to paste context. Write results into the current repo unless the user explicitly wants research harvested into `agent-skills`.
 
-## Default Behavior
+## Default behavior
 
 Infer the operating mode from the request:
 
@@ -27,7 +27,7 @@ Infer the operating mode from the request:
 
 If unclear, default to `propose`.
 
-## Discovery Workflow
+## Discovery workflow
 
 ### 1. Discover context automatically
 
@@ -89,7 +89,7 @@ If `docs/retrospectives/` does not exist, create it.
 
 Only write to `agent-skills` if the user explicitly asks for cross-project skill-harvesting.
 
-## Output Contract
+## Output contract
 
 Use the output template in [references/output-template.md](references/output-template.md).
 
@@ -109,7 +109,7 @@ For `scaffold` mode, include a `Starter Stubs` section with:
 - why it should exist
 - likely bundled resources
 
-## Public Skill Heuristics
+## Public skill heuristics
 
 Promote a pattern into a public skill when most of these are true:
 
@@ -125,7 +125,7 @@ Keep it private when:
 - it exposes sensitive legal, product, or customer context
 - it is tightly coupled to one team or monorepo template
 
-## Quick Reference
+## Quick reference
 
 ### What to search
 
@@ -148,7 +148,7 @@ Keep it private when:
 - current repo: `docs/retrospectives/`
 - `agent-skills` only if explicitly requested
 
-## Common Mistakes
+## Common mistakes
 
 - asking the user to paste transcripts before searching locally
 - writing a timeline instead of reusable conclusions

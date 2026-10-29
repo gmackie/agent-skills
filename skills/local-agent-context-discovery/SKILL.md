@@ -15,7 +15,7 @@ Discover likely-relevant local context before asking the user to paste it.
 
 Use this when the job depends on recent plans, design notes, reviews, skill files, or agent workspace artifacts that probably already exist on disk. This skill does not analyze the findings deeply. It builds the search surface for later skills and workflows.
 
-## Default Workflow
+## Default workflow
 
 ### 1. Search the highest-signal locations first
 
@@ -75,7 +75,7 @@ Ask the user to paste or point to files only when:
 - the relevant repo or directory is not present
 - the needed source is external to the machine
 
-## Output Contract
+## Output contract
 
 When using this skill in a larger workflow, report:
 
@@ -85,7 +85,7 @@ When using this skill in a larger workflow, report:
 
 If the user asks for a written artifact, keep it short and place it in the current repo unless directed otherwise.
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -94,7 +94,7 @@ If the user asks for a written artifact, keep it short and place it in the curre
 | reduce noise | read current-repo hits first |
 | avoid unnecessary asks | search locally before requesting pasted context |
 
-## Common Mistakes
+## Common mistakes
 
 - asking for pasted transcripts before checking the local machine
 - reading every discovered file instead of triaging

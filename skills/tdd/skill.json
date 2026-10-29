@@ -3,6 +3,7 @@
   "kind": "skill",
   "version": 1,
   "tags": [
+    "pstack",
     "tdd",
     "testing",
     "verification"
@@ -11,29 +12,23 @@
     "verification"
   ],
   "invocation": "user",
-  "runtimePackages": [
-
-  ],
+  "runtimePackages": [],
   "supportedAgents": [
     "codex",
     "claude-code",
     "cursor",
     "grok"
   ],
-  "helperTools": [
-
-  ],
-  "mcpServers": [
-
-  ],
+  "helperTools": [],
+  "mcpServers": [],
   "provenance": {
     "sourceId": "cursor-pstack",
     "sourceRepository": "https://github.com/cursor/plugins",
-    "sourceRevision": "195d9359bdc2890f83745df69927528ad4538406",
+    "sourceRevision": "1ba91fc25c0977741dd0e267849e6234b037ed0a",
     "sourcePath": "pstack/skills/tdd",
-    "sourceTree": "3a761ae539f19c61c7ae73eddbec54951d44e752",
-    "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "sourceTree": "1064da72ceca07bf7f36bddebada585bb59da7bc",
+    "importedAt": "2026-10-29",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/tdd",

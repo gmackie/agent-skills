@@ -16,7 +16,7 @@ metadata:
 
 ## Instructions
 
-### 1. Next.js Stripe Setup
+### 1. Next.js stripe setup
 
 **Install Stripe dependencies:**
 ```bash
@@ -202,7 +202,7 @@ export function SubscriptionCheckout() {
 }
 ```
 
-### 2. Stripe Webhooks
+### 2. Stripe webhooks
 
 **Webhook handler:**
 ```typescript
@@ -305,7 +305,7 @@ async function handleSubscriptionChange(subscription: Stripe.Subscription) {
 }
 ```
 
-### 3. Customer Portal
+### 3. Customer portal
 
 **Customer portal API:**
 ```typescript
@@ -385,7 +385,7 @@ export function CustomerPortalButton() {
 }
 ```
 
-### 4. Expo Stripe Integration
+### 4. Expo stripe integration
 
 **Install Stripe for Expo:**
 ```bash
@@ -470,7 +470,7 @@ export function PaymentScreen() {
 }
 ```
 
-### 5. Subscription Management
+### 5. Subscription management
 
 **Subscription status component:**
 ```typescript
@@ -534,7 +534,7 @@ export function SubscriptionStatus() {
 }
 ```
 
-### 6. Usage-based Billing
+### 6. Usage-based billing
 
 **Usage tracking API:**
 ```typescript

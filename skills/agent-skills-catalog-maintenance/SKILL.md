@@ -20,7 +20,7 @@ This skill is for catalog maintenance, not for inventing skill ideas from scratc
 - which agents they support
 - which helper tools they expect
 
-## Default Workflow
+## Default workflow
 
 ### 1. Discover metadata-backed entries
 
@@ -66,7 +66,7 @@ When the repo has materially changed:
 
 Do not create sprawling documentation just to mirror the metadata.
 
-## Output Contract
+## Output contract
 
 When asked to maintain the catalog, produce:
 
@@ -75,7 +75,7 @@ When asked to maintain the catalog, produce:
 - the path of the generated snapshot
 - any follow-up cleanup needed
 
-## Quick Reference
+## Quick reference
 
 | Need | Action |
 | --- | --- |
@@ -84,7 +84,7 @@ When asked to maintain the catalog, produce:
 | generate current inventory | run the catalog snapshot helper |
 | update repo surface | touch README or catalog docs only if stale |
 
-## Common Mistakes
+## Common mistakes
 
 - treating README text as the canonical catalog
 - letting copied skills exist without metadata

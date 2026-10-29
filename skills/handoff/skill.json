@@ -33,7 +33,7 @@
     "sourcePath": "skills/productivity/handoff",
     "sourceTree": "184d485ae68a2132893a94239b2b85d253e6152b",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/handoff",

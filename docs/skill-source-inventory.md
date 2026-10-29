@@ -14,16 +14,17 @@ This note tracks outside skill sources and related repos worth reviewing for pos
 
 The exact machine-readable inventory lives in
 [`catalog/upstream-sources.json`](../catalog/upstream-sources.json). The current
-curated import includes selected high-fit skills from:
+curated import includes complete workflow collections and selected skills from:
 
-- [Cursor pstack](https://github.com/cursor/plugins/tree/195d9359bdc2890f83745df69927528ad4538406/pstack)
+- [Theo Browne’s tstack](https://github.com/t3dotgg/tstack/tree/1085050f3baed1ac724caa4a8166145fb2ac88af)
+- [Cursor pstack](https://github.com/cursor/plugins/tree/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack)
 - [Matt Pocock's skills](https://github.com/mattpocock/skills/tree/84fdeffd12f2ee307994d1eb6feb48173b6e0502)
 - [Dillon Mulroy's anti-slop](https://github.com/dmmulroy/anti-slop/tree/9b80d9a5c317d3af94d88a577bdbde4d9a45f7be)
 
-These are vendored copies, not floating dependencies. The current curated
-seed set imports 50 of the 80 upstream skill folders available at the pinned
-revisions: 30 from Cursor pstack, 19 from Matt Pocock's skills, and 1 from
-dmmulroy anti-slop. Updating one requires a new pinned revision, a reviewed
+These are vendored copies at reviewed revisions. The original 50-skill seed
+is documented in the historical ranking. The current catalog includes all
+9 tstack and 58 pstack skills, alongside 19 Matt Pocock skills, 1 dmmulroy
+anti-slop skill, and 31 official platform skills. Updating one requires a new pinned revision, a reviewed
 diff, refreshed provenance, and catalog tests.
 
 Cursor pstack skills that depend on Cursor-shaped subagent orchestration,

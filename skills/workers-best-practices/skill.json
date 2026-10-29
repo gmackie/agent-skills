@@ -1,0 +1,36 @@
+{
+  "id": "workers-best-practices",
+  "kind": "skill",
+  "version": 1,
+  "tags": [
+    "cloudflare",
+    "deployment",
+    "typescript"
+  ],
+  "groupIds": [
+    "cloudflare"
+  ],
+  "invocation": "model",
+  "runtimePackages": [],
+  "supportedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "grok"
+  ],
+  "helperTools": [],
+  "mcpServers": [],
+  "provenance": {
+    "sourceId": "cloudflare-skills",
+    "sourceRepository": "https://github.com/cloudflare/skills",
+    "sourceRevision": "f96bff754e428838818017f75817f0f9428acd48",
+    "sourcePath": "skills/workers-best-practices",
+    "sourceTree": "7dd384e79c76d3e388dfe53e12e93642679ff1fd",
+    "importedAt": "2026-08-26",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
+  },
+  "outputs": {
+    "skillPath": "skills/workers-best-practices",
+    "skillFile": "skills/workers-best-practices/SKILL.md"
+  }
+}

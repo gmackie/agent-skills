@@ -5,7 +5,8 @@
   "tags": [
     "autonomy",
     "execution",
-    "investigation"
+    "investigation",
+    "pstack"
   ],
   "groupIds": [
     "core-quality"
@@ -23,11 +24,11 @@
   "provenance": {
     "sourceId": "cursor-pstack",
     "sourceRepository": "https://github.com/cursor/plugins",
-    "sourceRevision": "195d9359bdc2890f83745df69927528ad4538406",
+    "sourceRevision": "1ba91fc25c0977741dd0e267849e6234b037ed0a",
     "sourcePath": "pstack/skills/figure-it-out",
-    "sourceTree": "ab4f59a6cf0bed04794b713e40b605963e975071",
-    "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "sourceTree": "7ba3256093e27828e829cf8f0ac63f476b32bf1e",
+    "importedAt": "2026-10-29",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/figure-it-out",

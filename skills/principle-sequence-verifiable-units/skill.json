@@ -5,6 +5,7 @@
   "tags": [
     "execution",
     "planning",
+    "pstack",
     "verification"
   ],
   "groupIds": [
@@ -23,11 +24,11 @@
   "provenance": {
     "sourceId": "cursor-pstack",
     "sourceRepository": "https://github.com/cursor/plugins",
-    "sourceRevision": "195d9359bdc2890f83745df69927528ad4538406",
+    "sourceRevision": "1ba91fc25c0977741dd0e267849e6234b037ed0a",
     "sourcePath": "pstack/skills/principle-sequence-verifiable-units",
-    "sourceTree": "a8d7d3d438b73f86b483a074f426ca64a7777cf1",
-    "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "sourceTree": "c1b345dcea21e3d58e7012f8e6547974d295fb3a",
+    "importedAt": "2026-10-29",
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/principle-sequence-verifiable-units",

@@ -395,7 +395,7 @@ public class WeaponControllerEditor : Editor
 
 ## Examples
 
-### AI-Assisted Development Workflow
+### AI-assisted development workflow
 ```
 1. "Create a player controller with jump, dash, and wall-slide mechanics"
 2. "Generate a dialogue system with character portraits and typing effects"
@@ -404,7 +404,7 @@ public class WeaponControllerEditor : Editor
 5. "Implement a save system that persists player progress"
 ```
 
-### Performance Monitoring
+### Performance monitoring
 ```csharp
 public class PerformanceProfiler : MonoBehaviour
 {

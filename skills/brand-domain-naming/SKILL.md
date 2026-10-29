@@ -15,7 +15,7 @@ Turn product context into a naming recommendation that can survive culture fit, 
 
 Default to brand identity first, then name territories, then domain paths. A weak identity produces weak names. A weak name with an open domain is still weak. A strong name with no viable domain path is not ready.
 
-## Core Workflow
+## Core workflow
 
 ### 1. Start with a brand identity deep dive
 
@@ -193,7 +193,7 @@ Finish with:
 - rejected directions and why
 - next purchase or legal steps
 
-## Quick Reference
+## Quick reference
 
 ### TLD recommendation by product type
 
@@ -250,7 +250,7 @@ brand-domain-tool --json truecomps taxspring
 
 The tool checks `.com`, `.net`, `.ai`, and `.io` by default and prints either a markdown table or JSON.
 
-## Cross-Agent Install
+## Cross-agent install
 
 Keep one canonical copy of this skill in `~/.codex/skills/brand-domain-naming`.
 
@@ -272,7 +272,7 @@ For a homeowner-facing property tax appeal app:
 
 That usually favors names in the outcome, proof, or fairness territories and pushes the decision toward `.com`.
 
-## Rationalization Table
+## Rationalization table
 
 | Excuse | Reality |
 |---|---|
@@ -284,7 +284,7 @@ That usually favors names in the outcome, proof, or fairness territories and pus
 | "No live site means the domain is available." | Dormant domains are often still owned and expensive. |
 | "Trademark review can wait until after branding." | Early collision screening is cheap and avoids wasted attachment. |
 
-## Red Flags
+## Red flags
 
 Stop and re-evaluate if any of these happen:
 - using the current repo or product name as a creative anchor without permission
@@ -296,7 +296,7 @@ Stop and re-evaluate if any of these happen:
 - skipping collision screening because the domain script looks clean
 - recommending a single winner without alternatives
 
-## Common Mistakes
+## Common mistakes
 
 - Over-indexing on cleverness when the product needs trust
 - Letting the codename contaminate the naming space

@@ -110,7 +110,7 @@ void app_main(void)
 
 ## Examples
 
-### Basic Station Mode
+### Basic station mode
 ```c
 void app_main(void)
 {

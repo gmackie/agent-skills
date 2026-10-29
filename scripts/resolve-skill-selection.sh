@@ -54,7 +54,7 @@ jq -n \
           | select($projectTags | index($tag) != null)
           | $tag] as $matches
         | {
-            enabled: ($matches | length) > 0,
+            enabled: (($matches | length) > 0),
             reason: (if ($matches | length) > 0 then "tag-match" else "no-tag-match" end),
             matchedTags: $matches
           }

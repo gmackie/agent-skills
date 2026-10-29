@@ -20,7 +20,7 @@ This skill focuses on:
 - networking and firewall assumptions
 - drift between declared infra and actual service setup
 
-## Default Workflow
+## Default workflow
 
 ### 1. Inventory the Hetzner surface
 
@@ -70,7 +70,7 @@ Default output location:
 docs/infrastructure/YYYY-MM-DD-hetzner-cloud-ops.md
 ```
 
-## Output Contract
+## Output contract
 
 Minimum sections:
 

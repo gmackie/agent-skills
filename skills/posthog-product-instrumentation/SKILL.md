@@ -20,7 +20,7 @@ This skill focuses on:
 - feature-flag boundaries
 - gaps between product intent and what is actually instrumented
 
-## Default Workflow
+## Default workflow
 
 ### 1. Inventory the PostHog surface
 
@@ -71,7 +71,7 @@ Default output location:
 docs/observability/YYYY-MM-DD-posthog-instrumentation.md
 ```
 
-## Output Contract
+## Output contract
 
 Minimum sections:
 
@@ -82,7 +82,7 @@ Minimum sections:
 - blocking gaps
 - next steps
 
-## Common Mistakes
+## Common mistakes
 
 - adding events without a naming strategy
 - overusing feature flags for low-value paths

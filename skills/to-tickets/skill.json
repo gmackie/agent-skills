@@ -33,7 +33,7 @@
     "sourcePath": "skills/engineering/to-tickets",
     "sourceTree": "80c1bedbdaa72a4abd524055013accb4fe0ea8c4",
     "importedAt": "2026-08-13",
-    "importMode": "vendored-with-frontmatter-metadata"
+    "importMode": "vendored-with-frontmatter-metadata-and-unslop-overlay"
   },
   "outputs": {
     "skillPath": "skills/to-tickets",

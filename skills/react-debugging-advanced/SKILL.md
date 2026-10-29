@@ -125,7 +125,7 @@ export class ErrorBoundary extends Component<Props, State> {
 }
 ```
 
-### 3. Performance debugging with React DevTools Profiler
+### 3. Performance debugging with React DevTools profiler
 
 **Performance monitoring component:**
 ```typescript
